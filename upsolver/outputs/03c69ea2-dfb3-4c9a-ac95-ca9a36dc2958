@@ -12,7 +12,7 @@
     "modifiedBy" : {
       "value" : "Sagiv Masvari (sagiv@upsolver.com)"
     },
-    "versionId" : "05049372-8dc6-4942-87d8-ce9799f08049"
+    "versionId" : "4b72eb02-7458-4ac2-aa11-4a11ae17e029"
   },
   "inputs" : [ "20d17de8-9edf-449d-a0f3-771aa22169eb" ],
   "organizationId" : "355e3b5f-960d-406b-afa7-12f4fd8327eb",
@@ -95,7 +95,7 @@
   "endExecutionAt" : "2023-01-02T13:50:00Z",
   "allowCartesianProducts" : false,
   "isDeleted" : false,
-  "isRunning" : true,
+  "isRunning" : false,
   "deployedEver" : true,
   "connectionPointer" : "0b1162bc-ca6a-48e7-8d1e-74a7ba5440d1",
   "version" : 75,
@@ -116,7 +116,7 @@
   "restrictions" : [ ],
   "deployTime" : "2023-01-02T13:42:48.281682910Z",
   "status" : {
-    "clazz" : "Running"
+    "clazz" : "Stopped"
   },
   "shards" : {
     "clazz" : "ManualParallelismType",
