@@ -8,11 +8,11 @@
     "description" : "",
     "creationTime" : "2023-01-02T13:42:09.915011645Z",
     "createdBy" : "Sagiv Masvari (sagiv@upsolver.com)",
-    "modifiedTime" : "2023-01-02T13:44:22.310231664Z",
+    "modifiedTime" : "2023-01-02T13:44:28.354435697Z",
     "modifiedBy" : {
       "value" : "Sagiv Masvari (sagiv@upsolver.com)"
     },
-    "versionId" : "6bc4e234-37c2-4ea7-9ec2-4e11acf0750a"
+    "versionId" : "d33ff94b-09db-42f9-a00d-5c9444ebc078"
   },
   "inputs" : [ "20d17de8-9edf-449d-a0f3-771aa22169eb" ],
   "organizationId" : "355e3b5f-960d-406b-afa7-12f4fd8327eb",
@@ -95,7 +95,7 @@
   "endExecutionAt" : "2023-01-02T13:50:00Z",
   "allowCartesianProducts" : false,
   "isDeleted" : false,
-  "isRunning" : false,
+  "isRunning" : true,
   "deployedEver" : true,
   "connectionPointer" : "0b1162bc-ca6a-48e7-8d1e-74a7ba5440d1",
   "version" : 75,
@@ -116,7 +116,7 @@
   "restrictions" : [ ],
   "deployTime" : "2023-01-02T13:42:48.281682910Z",
   "status" : {
-    "clazz" : "Stopped"
+    "clazz" : "Running"
   },
   "shards" : {
     "clazz" : "ManualParallelismType",
