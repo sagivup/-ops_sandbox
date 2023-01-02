@@ -1,0 +1,205 @@
+{
+  "clazz" : "OutputTemplate",
+  "useNewEscaping" : false,
+  "supportMapSameKeyMultipleTimes" : false,
+  "id" : "6729ce41-46a3-4474-8bb8-cf70ad6cbe30",
+  "displayData" : {
+    "name" : "S3_from-sagiv_ou (1)",
+    "description" : "Duplicate of S3_from-sagiv_ou",
+    "creationTime" : "2022-12-26T10:02:22.278523832Z",
+    "createdBy" : "Sagiv Masvari (sagiv@upsolver.com)",
+    "modifiedTime" : "2022-12-26T10:02:56.480191652Z",
+    "modifiedBy" : {
+      "value" : "Sagiv Masvari (sagiv@upsolver.com)"
+    },
+    "versionId" : "a258936d-e5a3-4221-aabe-3f7f58193b4f"
+  },
+  "inputs" : [ "4f94d1db-6a3a-4230-9ebc-f2ede6f1a612" ],
+  "organizationId" : "355e3b5f-960d-406b-afa7-12f4fd8327eb",
+  "groupBy" : false,
+  "outputParameters" : {
+    "clazz" : "CloudStorageOutputParameters",
+    "compression" : {
+      "clazz" : "NoneCompression",
+      "noCompression" : [ ],
+      "displayName" : "None"
+    },
+    "outputFields" : [ {
+      "clazz" : "RawCalculatedFieldOutput",
+      "outputs" : [ {
+        "name" : "negate_salesTax",
+        "index" : 2,
+        "warnings" : [ ],
+        "originalOutput" : {
+          "name" : "negate_salesTax",
+          "index" : 2,
+          "warnings" : [ ]
+        }
+      } ],
+      "featureDefinition" : {
+        "clazz" : "FeatureDefinition",
+        "dsl" : "NEGATE(salesTax:number)",
+        "field" : {
+          "name" : "negate_salesTax",
+          "nativeType" : {
+            "name" : "number",
+            "isArray" : false,
+            "subFields" : [ ]
+          }
+        },
+        "featureInputs" : [ {
+          "clazz" : "FieldFeatureInput",
+          "nativeType" : {
+            "name" : "number",
+            "isArray" : false,
+            "subFields" : [ ]
+          },
+          "field" : {
+            "name" : "salesTax",
+            "nativeType" : {
+              "name" : "number",
+              "isArray" : false,
+              "subFields" : [ ]
+            }
+          },
+          "isAggregationField" : false,
+          "isFromInline" : false
+        } ],
+        "feature" : {
+          "clazz" : "SimpleNumericFeatures$NegateFeature"
+        },
+        "inline" : false,
+        "id" : "3b27980a-54ba-e999-55ab-00c7e7cc07d5",
+        "infix" : false,
+        "blockId" : "2c064c74-f026-4b10-bc96-2c267bb1359f",
+        "pathForRead" : { }
+      }
+    }, {
+      "clazz" : "RawOutput",
+      "outputs" : [ {
+        "name" : "processing_time",
+        "index" : 0,
+        "warnings" : [ ],
+        "originalOutput" : {
+          "name" : "processing_time",
+          "index" : 0,
+          "warnings" : [ ]
+        }
+      } ],
+      "field" : {
+        "clazz" : "FieldFeatureInput",
+        "nativeType" : {
+          "name" : "number",
+          "isArray" : false,
+          "subFields" : [ ]
+        },
+        "field" : {
+          "name" : "time",
+          "nativeType" : {
+            "name" : "number",
+            "isArray" : false,
+            "subFields" : [ ]
+          }
+        },
+        "isAggregationField" : false,
+        "isFromInline" : false
+      }
+    }, {
+      "clazz" : "RawOutput",
+      "outputs" : [ {
+        "name" : "salesTax",
+        "index" : 1,
+        "warnings" : [ ],
+        "originalOutput" : {
+          "name" : "salesTax",
+          "index" : 1,
+          "warnings" : [ ]
+        }
+      } ],
+      "field" : {
+        "clazz" : "FieldFeatureInput",
+        "nativeType" : {
+          "name" : "number",
+          "isArray" : false,
+          "subFields" : [ ]
+        },
+        "field" : {
+          "name" : "salesTax",
+          "nativeType" : {
+            "name" : "number",
+            "isArray" : false,
+            "subFields" : [ ]
+          }
+        },
+        "isAggregationField" : false,
+        "isFromInline" : false
+      }
+    } ],
+    "path" : "",
+    "dateFormat" : {
+      "clazz" : "DefaultDateExtractor",
+      "pattern" : "yyyy/MM/dd/HH/mm/",
+      "smallestPart" : 1,
+      "hasWeek" : false,
+      "hasYear" : true,
+      "displayName" : "Default",
+      "displayValue" : "Default (yyyy/MM/dd/HH/mm/)"
+    },
+    "shouldFlatten" : true,
+    "softRetention" : false,
+    "outputOffset" : 0
+  },
+  "outputInterval" : 1,
+  "startExecutionFrom" : "2022-12-12T19:00:00Z",
+  "allowCartesianProducts" : false,
+  "isDeleted" : true,
+  "isRunning" : false,
+  "deployedEver" : false,
+  "physicalDelete" : {
+    "initiated" : false,
+    "shouldRun" : false
+  },
+  "version" : 75,
+  "allowRenaming" : true,
+  "operationParallelism" : {
+    "clazz" : "NoOperationParallelism"
+  },
+  "outputSharding" : {
+    "clazz" : "NoOperationParallelism"
+  },
+  "executionState" : {
+    "clazz" : "ExecutionState$Running"
+  },
+  "workspaces" : [ ],
+  "reportingTags" : "",
+  "blocks" : [ {
+    "id" : "2c064c74-f026-4b10-bc96-2c267bb1359f",
+    "title" : "Select Block",
+    "expression" : "SET negate_salesTax = NEGATE(salesTax);\n// GENERATED @ 2022-12-22T10:37:10.497323046Z\nSELECT time AS processing_time,\n       salesTax AS salesTax,\n       negate_salesTax AS negate_salesTax\n  FROM \"sagiv_ou\"  \n",
+    "dslWarnings" : [ ],
+    "isSelectBlock" : true
+  } ],
+  "groupByDeletion" : true,
+  "eventTypes" : [ ],
+  "inputInterval" : 1,
+  "restrictions" : [ ],
+  "duplicateHandlingInfo" : {
+    "handling" : {
+      "clazz" : "DefaultDuplicateHandling"
+    },
+    "isUserDefined" : false
+  },
+  "deployTime" : "2022-12-22T10:37:53.831641493Z",
+  "status" : {
+    "clazz" : "Archived"
+  },
+  "shards" : {
+    "clazz" : "ManualParallelismType",
+    "executionParallelism" : 1,
+    "displayValue" : "Manual - Shards"
+  },
+  "outputShards" : 1,
+  "hasAggregations" : false,
+  "allReferences" : [ "4f94d1db-6a3a-4230-9ebc-f2ede6f1a612" ],
+  "versionNumber" : 1
+}

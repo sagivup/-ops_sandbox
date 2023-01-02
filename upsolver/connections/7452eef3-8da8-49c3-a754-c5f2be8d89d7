@@ -1,0 +1,39 @@
+{
+  "id" : "7452eef3-8da8-49c3-a754-c5f2be8d89d7",
+  "organizationId" : "355e3b5f-960d-406b-afa7-12f4fd8327eb",
+  "connection" : {
+    "clazz" : "AthenaConnection",
+    "credentials" : {
+      "clazz" : "AwsIntegrationCredentials"
+    },
+    "s3StagingDir" : "s3://upsolver-managed-garbage-us-east-1/eran//upsolver-query-results",
+    "region" : "us-east-1",
+    "displayData" : {
+      "name" : "eran test",
+      "description" : "",
+      "creationTime" : "2022-10-20T12:36:44.743704028Z",
+      "createdBy" : "Eran Malovany (eranm@upsolver.com)",
+      "modifiedTime" : "2022-10-20T12:36:45.464274463Z",
+      "modifiedBy" : {
+        "value" : "Eran Malovany (eranm@upsolver.com)"
+      },
+      "versionId" : "326c6a56-ee84-4370-96b0-704976dfe97c"
+    },
+    "supportsGlue" : true,
+    "databaseIncludePolicy" : {
+      "clazz" : "EntitiesIncludePolicy$All"
+    },
+    "defaultStoragePointerMaybe" : {
+      "id" : "35eb7098-bf4b-4336-9cc2-a8f7ce2fe0a5",
+      "location" : "upsolver-managed-garbage-us-east-1/eran/"
+    },
+    "displayValue" : "eran test"
+  },
+  "validation" : {
+    "errors" : [ ],
+    "time" : "2023-01-02T13:40:00.203302147Z"
+  },
+  "workspaces" : [ ],
+  "extraOrganizationIds" : [ ],
+  "isManaged" : false
+}

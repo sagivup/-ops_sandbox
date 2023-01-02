@@ -1,0 +1,45 @@
+{
+  "inputId" : "edb3dd34-b2c1-4e03-bade-8ff304bf50f9",
+  "organizationId" : "",
+  "fields" : [ {
+    "feature" : {
+      "clazz" : "FeatureDefinition",
+      "dsl" : "GEO_IP('Continent Code', data.\"Month\":string)",
+      "field" : {
+        "name" : "data.continent",
+        "nativeType" : {
+          "name" : "string",
+          "isArray" : false,
+          "subFields" : [ ]
+        }
+      },
+      "featureInputs" : [ {
+        "clazz" : "FieldFeatureInput",
+        "nativeType" : {
+          "name" : "string",
+          "isArray" : false,
+          "subFields" : [ ]
+        },
+        "field" : {
+          "name" : "data.Month",
+          "nativeType" : {
+            "name" : "string",
+            "isArray" : false,
+            "subFields" : [ ]
+          }
+        },
+        "isAggregationField" : false,
+        "isFromInline" : false
+      } ],
+      "feature" : {
+        "clazz" : "GeoIp",
+        "attributes" : [ "Continent Code" ]
+      },
+      "inline" : false,
+      "id" : "28b0ee68-176c-8c5a-f6cc-5054bf5258c2",
+      "infix" : false,
+      "pathForRead" : { }
+    },
+    "immutable" : true
+  } ]
+}

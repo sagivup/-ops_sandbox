@@ -1,0 +1,44 @@
+{
+  "inputId" : "ba639c52-1d16-4883-ad43-597b2f327662",
+  "organizationId" : "",
+  "fields" : [ {
+    "feature" : {
+      "clazz" : "FeatureDefinition",
+      "dsl" : "TO_LOWER(data.device.ifa:string)",
+      "field" : {
+        "name" : "data.device.lower_ifa",
+        "nativeType" : {
+          "name" : "string",
+          "isArray" : false,
+          "subFields" : [ ]
+        }
+      },
+      "featureInputs" : [ {
+        "clazz" : "FieldFeatureInput",
+        "nativeType" : {
+          "name" : "string",
+          "isArray" : false,
+          "subFields" : [ ]
+        },
+        "field" : {
+          "name" : "data.device.ifa",
+          "nativeType" : {
+            "name" : "string",
+            "isArray" : false,
+            "subFields" : [ ]
+          }
+        },
+        "isAggregationField" : false,
+        "isFromInline" : false
+      } ],
+      "feature" : {
+        "clazz" : "StringFeatures$ToLowerFeature"
+      },
+      "inline" : false,
+      "id" : "38234386-56e9-6e37-a930-9c333e4f1794",
+      "infix" : false,
+      "pathForRead" : { }
+    },
+    "immutable" : true
+  } ]
+}

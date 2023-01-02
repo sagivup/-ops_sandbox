@@ -1,0 +1,38 @@
+{
+  "id" : "0f00f98c-c6c8-4ba1-8bfa-93679cdd87e2",
+  "organizationId" : "355e3b5f-960d-406b-afa7-12f4fd8327eb",
+  "connection" : {
+    "clazz" : "S3DBXConnection",
+    "displayData" : {
+      "name" : "Upsolver_SA_S3",
+      "description" : "S3 Connection to Upsolver SA AWS Account with full S3 permissions",
+      "creationTime" : "2022-07-27T15:37:31.971070675Z",
+      "createdBy" : "Chandra (chandra@upsolver.com)",
+      "modifiedTime" : "2022-07-27T15:37:32.059307571Z",
+      "modifiedBy" : {
+        "value" : "Chandra (chandra@upsolver.com)"
+      },
+      "versionId" : "2485d4c7-c3c0-4876-865a-2f4a59348691"
+    },
+    "credentials" : {
+      "clazz" : "KeyBasedCredentials",
+      "accessKey" : "AKIA3EL7ISXTSNVJU56J",
+      "secretKey" : "X7rqnsU+BovE6gbkEdFjBZy/5aV9MsnkmAP0RC82piB1VbOY1JU1/Cel/si/XaMl"
+    },
+    "bucketsIncludePolicy" : {
+      "clazz" : "EntitiesIncludePolicy$All"
+    },
+    "readOnly" : false,
+    "serverSideEncryptionKey" : {
+      "clazz" : "DefaultEncryptionKey"
+    },
+    "displayValue" : "S3 Storage"
+  },
+  "validation" : {
+    "errors" : [ ],
+    "time" : "2023-01-02T13:40:00.203302147Z"
+  },
+  "workspaces" : [ ],
+  "extraOrganizationIds" : [ ],
+  "isManaged" : false
+}

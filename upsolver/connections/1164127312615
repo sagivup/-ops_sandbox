@@ -1,0 +1,42 @@
+{
+  "id" : "1164127312615",
+  "organizationId" : "355e3b5f-960d-406b-afa7-12f4fd8327eb",
+  "connection" : {
+    "clazz" : "SpotinstPrivateVPCConnection",
+    "encryptedSpotinstToken" : "ZFIUlXsexw+sdFY7zzt+LxhTupBBM7OX8cYsIMPBHdRME0ytRJzJD8nYgGTs5B+2x5cqOl2+HIDwLzb+gI6lKbExeKTIG2o8tNMoE8JHPVQ=",
+    "spotinstAccountId" : "act-92dbe842",
+    "vpcId" : "vpc-4759a53e",
+    "subnetIds" : {
+      "e" : "subnet-07d74ea482632afbc",
+      "f" : "subnet-0a038aa0c9e6d25cf",
+      "a" : "subnet-7255995e",
+      "b" : "subnet-38b30b70",
+      "c" : "subnet-53945109",
+      "d" : "subnet-03542a34529700f98"
+    },
+    "securityGroupIds" : [ "sg-0431555924aa2d939" ],
+    "iamRole" : "upsolver-aws-integration-a2c45670-6884-49f0-8a9f-81a5514169c6-UpsolveRoleInstanceProfile-U5OT3ZNN4ON",
+    "region" : "us-east-1",
+    "displayData" : {
+      "name" : "UpsolverDefaultVPC",
+      "description" : "",
+      "creationTime" : "2022-01-10T10:46:08.084056Z",
+      "createdBy" : "Integration",
+      "modifiedTime" : "2022-01-10T10:46:09.099073Z",
+      "modifiedBy" : {
+        "value" : "Shay Weiner (shay@upsolver.com)"
+      },
+      "versionId" : "facd6078-aaa7-4897-acce-d686ff4a1e82"
+    },
+    "tags" : { },
+    "useDefaultQueueLocker" : false,
+    "displayValue" : "Spotinst Private VPC"
+  },
+  "validation" : {
+    "errors" : [ ],
+    "time" : "2023-01-02T13:40:00.203302147Z"
+  },
+  "workspaces" : [ ],
+  "extraOrganizationIds" : [ ],
+  "isManaged" : false
+}

@@ -1,0 +1,35 @@
+{
+  "id" : "83819e83-6198-47d3-9d23-4df7f61cde40",
+  "organizationId" : "355e3b5f-960d-406b-afa7-12f4fd8327eb",
+  "connection" : {
+    "clazz" : "MySqlCdcConnection",
+    "displayData" : {
+      "name" : "maor-test-cdc",
+      "description" : "",
+      "creationTime" : "2022-11-23T15:22:51.141685858Z",
+      "createdBy" : "Maor Cohen (maor@upsolver.com)",
+      "modifiedTime" : "2022-11-23T15:22:51.295044293Z",
+      "modifiedBy" : {
+        "value" : "Maor Cohen (maor@upsolver.com)"
+      },
+      "versionId" : "382c9092-f945-401c-b7bf-f1824ff8ff81"
+    },
+    "hostName" : "cdctest.cnpkgni9k2tq.us-east-1.rds.amazonaws.com",
+    "port" : 3306,
+    "userName" : "admin",
+    "password" : "kcIYx8+5drwlnn3RHiOoog==",
+    "databaseVersion" : {
+      "clazz" : "MySqlVersion",
+      "majorVersion" : 8,
+      "minorVersion" : 0
+    },
+    "displayValue" : "jdbc:mysql://cdctest.cnpkgni9k2tq.us-east-1.rds.amazonaws.com:3306"
+  },
+  "validation" : {
+    "errors" : [ ],
+    "time" : "2023-01-02T13:40:00.203302147Z"
+  },
+  "workspaces" : [ ],
+  "extraOrganizationIds" : [ ],
+  "isManaged" : false
+}

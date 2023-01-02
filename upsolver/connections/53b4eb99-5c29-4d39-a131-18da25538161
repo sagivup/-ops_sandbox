@@ -1,0 +1,38 @@
+{
+  "id" : "53b4eb99-5c29-4d39-a131-18da25538161",
+  "organizationId" : "355e3b5f-960d-406b-afa7-12f4fd8327eb",
+  "connection" : {
+    "clazz" : "KinesisConnection",
+    "credentials" : {
+      "clazz" : "RoleBasedCredentials",
+      "arnRole" : "arn:aws:iam::949275490180:role/upsolver_samples_role",
+      "externalId" : "SAMPLES",
+      "enforceExternalId" : true
+    },
+    "region" : "us-east-1",
+    "displayData" : {
+      "name" : "upsolver_kinesis_samples_validate",
+      "description" : "",
+      "creationTime" : "2022-12-22T02:35:58.276113326Z",
+      "createdBy" : "Shay Weiner (shay@upsolver.com)",
+      "modifiedTime" : "2022-12-22T02:35:58.362049372Z",
+      "modifiedBy" : {
+        "value" : "Shay Weiner (shay@upsolver.com)"
+      },
+      "versionId" : "eaf7ea72-71a8-4b3c-9024-3e657cac6573"
+    },
+    "readOnly" : true,
+    "maxWriters" : 20,
+    "streamsIncludePolicy" : {
+      "clazz" : "EntitiesIncludePolicy$All"
+    },
+    "displayValue" : "upsolver_kinesis_samples_validate/usEast1"
+  },
+  "validation" : {
+    "errors" : [ ],
+    "time" : "2023-01-02T13:40:00.203302147Z"
+  },
+  "workspaces" : [ ],
+  "extraOrganizationIds" : [ ],
+  "isManaged" : false
+}

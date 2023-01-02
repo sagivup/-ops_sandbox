@@ -1,0 +1,63 @@
+{
+  "clazz" : "CloudStorageInput",
+  "id" : "ebd360c8-f8bf-4877-be00-c7fc6dc50843",
+  "globalId" : "ebd360c8-f8bf-4877-be00-c7fc6dc50843",
+  "organizationId" : "355e3b5f-960d-406b-afa7-12f4fd8327eb",
+  "computeEnvironment" : "1dda980d-c4d2-4db8-af9b-911bef9cb4ad",
+  "sourceStorage" : "82e57821-1fff-449f-8c7c-4dbec076ca40",
+  "prefix" : "",
+  "datePattern" : "yyyy/MM/dd/HH/mm/",
+  "dataDumpDate" : "2022-10-03T17:28:28.838752563Z",
+  "destinationStorage" : "0b1162bc-ca6a-48e7-8d1e-74a7ba5440d1",
+  "maxDelay" : 1440,
+  "interval" : 1,
+  "startExecutionFrom" : "2022-10-02T00:09:00Z",
+  "fileMatchPattern" : "^.*\\Q/\\E\\Q0\\E\\Q9\\E\\Q/\\E.*$",
+  "compression" : {
+    "clazz" : "AutoDetectCompression",
+    "displayName" : "Auto Detect (Supports ZIP, GZip, Tar, Snappy and AWS KPL)"
+  },
+  "contentType" : {
+    "clazz" : "JsonContentType",
+    "nestedJsonPaths" : [ ],
+    "nestedJsons" : [ ],
+    "splitRootArray" : true,
+    "keepOriginalNestedJsonString" : false,
+    "storeJsonAsString" : false
+  },
+  "displayData" : {
+    "name" : "upsolver-tutorials-orders-sr",
+    "description" : "",
+    "creationTime" : "2022-10-03T17:28:28.838779952Z",
+    "createdBy" : "pauline@dbx (pauline@upsolver.com)",
+    "modifiedTime" : "2022-10-03T17:28:29.037572942Z",
+    "modifiedBy" : {
+      "value" : "pauline@dbx (pauline@upsolver.com)"
+    },
+    "versionId" : "ac219313-b6b1-4853-8815-cb92e9168424"
+  },
+  "isDeleted" : false,
+  "anchorDatePatternToStart" : true,
+  "softRetention" : false,
+  "version" : 72,
+  "operationParallelism" : {
+    "clazz" : "NoOperationParallelism"
+  },
+  "requestType" : "CloudStorageInputRequest",
+  "workspaces" : [ "7c0fa7e3-bb4a-4fdd-8afc-36351270cfc8" ],
+  "previousLocations" : {
+    "locations" : [ ]
+  },
+  "reportingTags" : "",
+  "previewId" : "d088bd635422baa335bbe9cdb4b383b3",
+  "isRunning" : true,
+  "parallelismType" : {
+    "clazz" : "ManualParallelismType",
+    "executionParallelism" : 1,
+    "displayValue" : "Manual - Shards"
+  },
+  "status" : {
+    "clazz" : "Running"
+  },
+  "safeStartTime" : "2022-10-02T00:09:00Z"
+}

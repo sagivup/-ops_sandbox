@@ -1,0 +1,760 @@
+{
+  "inputId" : "e2937af5-6605-4906-9181-e9bbdb030671",
+  "organizationId" : "",
+  "fields" : [ {
+    "feature" : {
+      "clazz" : "FeatureDefinition",
+      "dsl" : "REGEX_NAMED_GROUPS('(?<t>\\d{13,13})\\t(?<a>[^\\t]+)\\t(?<b>[^\\t]+)', data.datumBytes:string)",
+      "field" : {
+        "name" : "bla",
+        "nativeType" : {
+          "name" : "regex_(?<t>\\d{13,13})\\t(?<a>[^\\t]+)\\t(?<b>[^\\t]+)",
+          "isArray" : false,
+          "subFields" : [ {
+            "name" : "t",
+            "nativeType" : {
+              "name" : "string",
+              "isArray" : false,
+              "subFields" : [ ]
+            }
+          }, {
+            "name" : "a",
+            "nativeType" : {
+              "name" : "string",
+              "isArray" : false,
+              "subFields" : [ ]
+            }
+          }, {
+            "name" : "b",
+            "nativeType" : {
+              "name" : "string",
+              "isArray" : false,
+              "subFields" : [ ]
+            }
+          } ]
+        }
+      },
+      "featureInputs" : [ {
+        "clazz" : "FieldFeatureInput",
+        "nativeType" : {
+          "name" : "string",
+          "isArray" : false,
+          "subFields" : [ ]
+        },
+        "field" : {
+          "name" : "data.datumBytes",
+          "nativeType" : {
+            "name" : "string",
+            "isArray" : false,
+            "subFields" : [ ]
+          }
+        },
+        "isAggregationField" : false,
+        "isFromInline" : false
+      } ],
+      "feature" : {
+        "clazz" : "RegexNamed",
+        "pattern" : "(?<t>\\d{13,13})\\t(?<a>[^\\t]+)\\t(?<b>[^\\t]+)",
+        "allMatches" : false,
+        "filterEmpty" : false
+      },
+      "inline" : false,
+      "source" : {
+        "source" : "e2937af5-6605-4906-9181-e9bbdb030671",
+        "version" : 1
+      },
+      "id" : "9e4b1dde-254c-492d-8d7d-09defb758517",
+      "infix" : false,
+      "pathForRead" : { }
+    }
+  }, {
+    "feature" : {
+      "clazz" : "FeatureDefinition",
+      "dsl" : "REGEX_NAMED_GROUPS('(?<clicktimestamp>\\d{13,13})(\\t(?<referreddockey>[^\\t]*))?(\\t(?<referreddocid>[^\\t]*))?(\\t(?<referredsourceid>[^\\t]*))?(\\t(?<referredadid>[^\\t]*))?(\\t(?<agent>[^\\t]*))?(\\t(?<agentid>[^\\t]*))?(\\t(?<referrerurl>[^\\t]*))?(\\t(?<referrerdocid>[^\\t]*))?(\\t(?<referrersourceid>[^\\t]*))?(\\t(?<rectype>[^\\t]*))?(\\t(?<version>[^\\t]*))?(\\t(?<remoteaddr>[^\\t]*))?(\\t(?<user>[^\\t]*))?(\\t(?<uuid>[^\\t]*))?(\\t(?<machine>[^\\t]*))?(\\t(?<index>[^\\t]*))?(\\t(?<countrycode>[^\\t]*))?(\\t(?<reqid>[^\\t]*))?(\\t(?<ishiddenrec>[^\\t]*))?(\\t(?<widgetid>[^\\t]*))?(\\t(?<recsreqtype>[^\\t]*))?(\\t(?<recdisplaytype>[^\\t]*))?(\\t(?<imgtype>[^\\t]*))?(\\t(?<location>[^\\t]*))?(\\t(?<clickid>[^\\t]*))?(\\t(?<useragent>[^\\t]*))?(\\t(?<platformname>[^\\t]*))?(\\t(?<publisherid>[^\\t]*))?(\\t(?<personalizationenabled>[^\\t]*))?(\\t(?<clicktype>[^\\t]*))?(\\t(?<productid>[^\\t]*))?(\\t(?<abtestid>[^\\t]*))?(\\t(?<abtestvariantid>[^\\t]*))?(\\t(?<clickvalue>[^\\t]*))?(\\t(?<uiexperimenttype>[^\\t]*))?(\\t(?<uiexperimentismatch>[^\\t]*))?(\\t(?<uiexperimentenabled>[^\\t]*))?(\\t(?<idx>[^\\t]*))?(\\t(?<pvid>[^\\t]*))?(\\t(?<referredpublisherid>[^\\t]*))?(\\t(?<recsabtestvariants>[^\\t]*))?(\\t(?<organiccampaignid>[^\\t]*))?(\\t(?<reqtimestamp>[^\\t]*))?(\\t(?<postalcode>[^\\t]*))?(\\t(?<campaignid>[^\\t]*))?(\\t(?<noredirect>[^\\t]*))?(\\t(?<remoteaddrhash>[^\\t]*))?(\\t(?<traffictypeid>[^\\t]*))?(\\t(?<rtbproductcode>[^\\t]*))?(\\t(?<rtbadvertiserdomain>[^\\t]*))?(\\t(?<localdatetime>[^\\t]*))?(\\t(?<advertiserid>[^\\t]*))?(\\t(?<budgetid>[^\\t]*))?(\\t(?<agencyid>[^\\t]*))?(\\t(?<targetedsegments>[^\\t]*))?(\\t(?<isfreecampaign>[^\\t]*))?(\\t(?<oenpath>[^\\t]*))?(\\t(?<subplatform>[^\\t]*))?(\\t(?<partnerappid>[^\\t]*))?(\\t(?<obrevenueopt>[^\\t]*))?(\\t(?<appclickid>[^\\t]*))?(\\t(?<kpioactivationmode>[^\\t]*))?(\\t(?<oentoken>[^\\t]*))?(\\t(?<redirplt>[^\\t]*))?(\\t(?<externalid>[^\\t]*))?(\\t(?<imageuuid>[^\\t]*))?(\\t(?<browser>[^\\t]*))?(\\t(?<osname>[^\\t]*))?(\\t(?<osversion>[^\\t]*))?(\\t(?<topinterests>[^\\t]*))?(\\t(?<rtbadvertiserid>[^\\t]*))?(\\t(?<subwidgetid>[^\\t]*))?(\\t(?<targeturl>[^\\t]*))?(\\t(?<sessionid>[^\\t]*))?(\\t(?<scpc>[^\\t]*))?(\\t(?<internalip>[^\\t]*))?(\\t(?<notinuse>[^\\t]*))?(\\t(?<trafficsourcedomainid>[^\\t]*))?(\\t(?<consentinfo>[^\\t]*))?', data.datumBytes:string)",
+      "field" : {
+        "name" : "data.dwcl",
+        "nativeType" : {
+          "name" : "regex_(?<clicktimestamp>\\d{13,13})(\\t(?<referreddockey>[^\\t]*))?(\\t(?<referreddocid>[^\\t]*))?(\\t(?<referredsourceid>[^\\t]*))?(\\t(?<referredadid>[^\\t]*))?(\\t(?<agent>[^\\t]*))?(\\t(?<agentid>[^\\t]*))?(\\t(?<referrerurl>[^\\t]*))?(\\t(?<referrerdocid>[^\\t]*))?(\\t(?<referrersourceid>[^\\t]*))?(\\t(?<rectype>[^\\t]*))?(\\t(?<version>[^\\t]*))?(\\t(?<remoteaddr>[^\\t]*))?(\\t(?<user>[^\\t]*))?(\\t(?<uuid>[^\\t]*))?(\\t(?<machine>[^\\t]*))?(\\t(?<index>[^\\t]*))?(\\t(?<countrycode>[^\\t]*))?(\\t(?<reqid>[^\\t]*))?(\\t(?<ishiddenrec>[^\\t]*))?(\\t(?<widgetid>[^\\t]*))?(\\t(?<recsreqtype>[^\\t]*))?(\\t(?<recdisplaytype>[^\\t]*))?(\\t(?<imgtype>[^\\t]*))?(\\t(?<location>[^\\t]*))?(\\t(?<clickid>[^\\t]*))?(\\t(?<useragent>[^\\t]*))?(\\t(?<platformname>[^\\t]*))?(\\t(?<publisherid>[^\\t]*))?(\\t(?<personalizationenabled>[^\\t]*))?(\\t(?<clicktype>[^\\t]*))?(\\t(?<productid>[^\\t]*))?(\\t(?<abtestid>[^\\t]*))?(\\t(?<abtestvariantid>[^\\t]*))?(\\t(?<clickvalue>[^\\t]*))?(\\t(?<uiexperimenttype>[^\\t]*))?(\\t(?<uiexperimentismatch>[^\\t]*))?(\\t(?<uiexperimentenabled>[^\\t]*))?(\\t(?<idx>[^\\t]*))?(\\t(?<pvid>[^\\t]*))?(\\t(?<referredpublisherid>[^\\t]*))?(\\t(?<recsabtestvariants>[^\\t]*))?(\\t(?<organiccampaignid>[^\\t]*))?(\\t(?<reqtimestamp>[^\\t]*))?(\\t(?<postalcode>[^\\t]*))?(\\t(?<campaignid>[^\\t]*))?(\\t(?<noredirect>[^\\t]*))?(\\t(?<remoteaddrhash>[^\\t]*))?(\\t(?<traffictypeid>[^\\t]*))?(\\t(?<rtbproductcode>[^\\t]*))?(\\t(?<rtbadvertiserdomain>[^\\t]*))?(\\t(?<localdatetime>[^\\t]*))?(\\t(?<advertiserid>[^\\t]*))?(\\t(?<budgetid>[^\\t]*))?(\\t(?<agencyid>[^\\t]*))?(\\t(?<targetedsegments>[^\\t]*))?(\\t(?<isfreecampaign>[^\\t]*))?(\\t(?<oenpath>[^\\t]*))?(\\t(?<subplatform>[^\\t]*))?(\\t(?<partnerappid>[^\\t]*))?(\\t(?<obrevenueopt>[^\\t]*))?(\\t(?<appclickid>[^\\t]*))?(\\t(?<kpioactivationmode>[^\\t]*))?(\\t(?<oentoken>[^\\t]*))?(\\t(?<redirplt>[^\\t]*))?(\\t(?<externalid>[^\\t]*))?(\\t(?<imageuuid>[^\\t]*))?(\\t(?<browser>[^\\t]*))?(\\t(?<osname>[^\\t]*))?(\\t(?<osversion>[^\\t]*))?(\\t(?<topinterests>[^\\t]*))?(\\t(?<rtbadvertiserid>[^\\t]*))?(\\t(?<subwidgetid>[^\\t]*))?(\\t(?<targeturl>[^\\t]*))?(\\t(?<sessionid>[^\\t]*))?(\\t(?<scpc>[^\\t]*))?(\\t(?<internalip>[^\\t]*))?(\\t(?<notinuse>[^\\t]*))?(\\t(?<trafficsourcedomainid>[^\\t]*))?(\\t(?<consentinfo>[^\\t]*))?",
+          "isArray" : false,
+          "subFields" : [ {
+            "name" : "clicktimestamp",
+            "nativeType" : {
+              "name" : "string",
+              "isArray" : false,
+              "subFields" : [ ]
+            }
+          }, {
+            "name" : "referreddockey",
+            "nativeType" : {
+              "name" : "string",
+              "isArray" : false,
+              "subFields" : [ ]
+            }
+          }, {
+            "name" : "referreddocid",
+            "nativeType" : {
+              "name" : "string",
+              "isArray" : false,
+              "subFields" : [ ]
+            }
+          }, {
+            "name" : "referredsourceid",
+            "nativeType" : {
+              "name" : "string",
+              "isArray" : false,
+              "subFields" : [ ]
+            }
+          }, {
+            "name" : "referredadid",
+            "nativeType" : {
+              "name" : "string",
+              "isArray" : false,
+              "subFields" : [ ]
+            }
+          }, {
+            "name" : "agent",
+            "nativeType" : {
+              "name" : "string",
+              "isArray" : false,
+              "subFields" : [ ]
+            }
+          }, {
+            "name" : "agentid",
+            "nativeType" : {
+              "name" : "string",
+              "isArray" : false,
+              "subFields" : [ ]
+            }
+          }, {
+            "name" : "referrerurl",
+            "nativeType" : {
+              "name" : "string",
+              "isArray" : false,
+              "subFields" : [ ]
+            }
+          }, {
+            "name" : "referrerdocid",
+            "nativeType" : {
+              "name" : "string",
+              "isArray" : false,
+              "subFields" : [ ]
+            }
+          }, {
+            "name" : "referrersourceid",
+            "nativeType" : {
+              "name" : "string",
+              "isArray" : false,
+              "subFields" : [ ]
+            }
+          }, {
+            "name" : "rectype",
+            "nativeType" : {
+              "name" : "string",
+              "isArray" : false,
+              "subFields" : [ ]
+            }
+          }, {
+            "name" : "version",
+            "nativeType" : {
+              "name" : "string",
+              "isArray" : false,
+              "subFields" : [ ]
+            }
+          }, {
+            "name" : "remoteaddr",
+            "nativeType" : {
+              "name" : "string",
+              "isArray" : false,
+              "subFields" : [ ]
+            }
+          }, {
+            "name" : "user",
+            "nativeType" : {
+              "name" : "string",
+              "isArray" : false,
+              "subFields" : [ ]
+            }
+          }, {
+            "name" : "uuid",
+            "nativeType" : {
+              "name" : "string",
+              "isArray" : false,
+              "subFields" : [ ]
+            }
+          }, {
+            "name" : "machine",
+            "nativeType" : {
+              "name" : "string",
+              "isArray" : false,
+              "subFields" : [ ]
+            }
+          }, {
+            "name" : "index",
+            "nativeType" : {
+              "name" : "string",
+              "isArray" : false,
+              "subFields" : [ ]
+            }
+          }, {
+            "name" : "countrycode",
+            "nativeType" : {
+              "name" : "string",
+              "isArray" : false,
+              "subFields" : [ ]
+            }
+          }, {
+            "name" : "reqid",
+            "nativeType" : {
+              "name" : "string",
+              "isArray" : false,
+              "subFields" : [ ]
+            }
+          }, {
+            "name" : "ishiddenrec",
+            "nativeType" : {
+              "name" : "string",
+              "isArray" : false,
+              "subFields" : [ ]
+            }
+          }, {
+            "name" : "widgetid",
+            "nativeType" : {
+              "name" : "string",
+              "isArray" : false,
+              "subFields" : [ ]
+            }
+          }, {
+            "name" : "recsreqtype",
+            "nativeType" : {
+              "name" : "string",
+              "isArray" : false,
+              "subFields" : [ ]
+            }
+          }, {
+            "name" : "recdisplaytype",
+            "nativeType" : {
+              "name" : "string",
+              "isArray" : false,
+              "subFields" : [ ]
+            }
+          }, {
+            "name" : "imgtype",
+            "nativeType" : {
+              "name" : "string",
+              "isArray" : false,
+              "subFields" : [ ]
+            }
+          }, {
+            "name" : "location",
+            "nativeType" : {
+              "name" : "string",
+              "isArray" : false,
+              "subFields" : [ ]
+            }
+          }, {
+            "name" : "clickid",
+            "nativeType" : {
+              "name" : "string",
+              "isArray" : false,
+              "subFields" : [ ]
+            }
+          }, {
+            "name" : "useragent",
+            "nativeType" : {
+              "name" : "string",
+              "isArray" : false,
+              "subFields" : [ ]
+            }
+          }, {
+            "name" : "platformname",
+            "nativeType" : {
+              "name" : "string",
+              "isArray" : false,
+              "subFields" : [ ]
+            }
+          }, {
+            "name" : "publisherid",
+            "nativeType" : {
+              "name" : "string",
+              "isArray" : false,
+              "subFields" : [ ]
+            }
+          }, {
+            "name" : "personalizationenabled",
+            "nativeType" : {
+              "name" : "string",
+              "isArray" : false,
+              "subFields" : [ ]
+            }
+          }, {
+            "name" : "clicktype",
+            "nativeType" : {
+              "name" : "string",
+              "isArray" : false,
+              "subFields" : [ ]
+            }
+          }, {
+            "name" : "productid",
+            "nativeType" : {
+              "name" : "string",
+              "isArray" : false,
+              "subFields" : [ ]
+            }
+          }, {
+            "name" : "abtestid",
+            "nativeType" : {
+              "name" : "string",
+              "isArray" : false,
+              "subFields" : [ ]
+            }
+          }, {
+            "name" : "abtestvariantid",
+            "nativeType" : {
+              "name" : "string",
+              "isArray" : false,
+              "subFields" : [ ]
+            }
+          }, {
+            "name" : "clickvalue",
+            "nativeType" : {
+              "name" : "string",
+              "isArray" : false,
+              "subFields" : [ ]
+            }
+          }, {
+            "name" : "uiexperimenttype",
+            "nativeType" : {
+              "name" : "string",
+              "isArray" : false,
+              "subFields" : [ ]
+            }
+          }, {
+            "name" : "uiexperimentismatch",
+            "nativeType" : {
+              "name" : "string",
+              "isArray" : false,
+              "subFields" : [ ]
+            }
+          }, {
+            "name" : "uiexperimentenabled",
+            "nativeType" : {
+              "name" : "string",
+              "isArray" : false,
+              "subFields" : [ ]
+            }
+          }, {
+            "name" : "idx",
+            "nativeType" : {
+              "name" : "string",
+              "isArray" : false,
+              "subFields" : [ ]
+            }
+          }, {
+            "name" : "pvid",
+            "nativeType" : {
+              "name" : "string",
+              "isArray" : false,
+              "subFields" : [ ]
+            }
+          }, {
+            "name" : "referredpublisherid",
+            "nativeType" : {
+              "name" : "string",
+              "isArray" : false,
+              "subFields" : [ ]
+            }
+          }, {
+            "name" : "recsabtestvariants",
+            "nativeType" : {
+              "name" : "string",
+              "isArray" : false,
+              "subFields" : [ ]
+            }
+          }, {
+            "name" : "organiccampaignid",
+            "nativeType" : {
+              "name" : "string",
+              "isArray" : false,
+              "subFields" : [ ]
+            }
+          }, {
+            "name" : "reqtimestamp",
+            "nativeType" : {
+              "name" : "string",
+              "isArray" : false,
+              "subFields" : [ ]
+            }
+          }, {
+            "name" : "postalcode",
+            "nativeType" : {
+              "name" : "string",
+              "isArray" : false,
+              "subFields" : [ ]
+            }
+          }, {
+            "name" : "campaignid",
+            "nativeType" : {
+              "name" : "string",
+              "isArray" : false,
+              "subFields" : [ ]
+            }
+          }, {
+            "name" : "noredirect",
+            "nativeType" : {
+              "name" : "string",
+              "isArray" : false,
+              "subFields" : [ ]
+            }
+          }, {
+            "name" : "remoteaddrhash",
+            "nativeType" : {
+              "name" : "string",
+              "isArray" : false,
+              "subFields" : [ ]
+            }
+          }, {
+            "name" : "traffictypeid",
+            "nativeType" : {
+              "name" : "string",
+              "isArray" : false,
+              "subFields" : [ ]
+            }
+          }, {
+            "name" : "rtbproductcode",
+            "nativeType" : {
+              "name" : "string",
+              "isArray" : false,
+              "subFields" : [ ]
+            }
+          }, {
+            "name" : "rtbadvertiserdomain",
+            "nativeType" : {
+              "name" : "string",
+              "isArray" : false,
+              "subFields" : [ ]
+            }
+          }, {
+            "name" : "localdatetime",
+            "nativeType" : {
+              "name" : "string",
+              "isArray" : false,
+              "subFields" : [ ]
+            }
+          }, {
+            "name" : "advertiserid",
+            "nativeType" : {
+              "name" : "string",
+              "isArray" : false,
+              "subFields" : [ ]
+            }
+          }, {
+            "name" : "budgetid",
+            "nativeType" : {
+              "name" : "string",
+              "isArray" : false,
+              "subFields" : [ ]
+            }
+          }, {
+            "name" : "agencyid",
+            "nativeType" : {
+              "name" : "string",
+              "isArray" : false,
+              "subFields" : [ ]
+            }
+          }, {
+            "name" : "targetedsegments",
+            "nativeType" : {
+              "name" : "string",
+              "isArray" : false,
+              "subFields" : [ ]
+            }
+          }, {
+            "name" : "isfreecampaign",
+            "nativeType" : {
+              "name" : "string",
+              "isArray" : false,
+              "subFields" : [ ]
+            }
+          }, {
+            "name" : "oenpath",
+            "nativeType" : {
+              "name" : "string",
+              "isArray" : false,
+              "subFields" : [ ]
+            }
+          }, {
+            "name" : "subplatform",
+            "nativeType" : {
+              "name" : "string",
+              "isArray" : false,
+              "subFields" : [ ]
+            }
+          }, {
+            "name" : "partnerappid",
+            "nativeType" : {
+              "name" : "string",
+              "isArray" : false,
+              "subFields" : [ ]
+            }
+          }, {
+            "name" : "obrevenueopt",
+            "nativeType" : {
+              "name" : "string",
+              "isArray" : false,
+              "subFields" : [ ]
+            }
+          }, {
+            "name" : "appclickid",
+            "nativeType" : {
+              "name" : "string",
+              "isArray" : false,
+              "subFields" : [ ]
+            }
+          }, {
+            "name" : "kpioactivationmode",
+            "nativeType" : {
+              "name" : "string",
+              "isArray" : false,
+              "subFields" : [ ]
+            }
+          }, {
+            "name" : "oentoken",
+            "nativeType" : {
+              "name" : "string",
+              "isArray" : false,
+              "subFields" : [ ]
+            }
+          }, {
+            "name" : "redirplt",
+            "nativeType" : {
+              "name" : "string",
+              "isArray" : false,
+              "subFields" : [ ]
+            }
+          }, {
+            "name" : "externalid",
+            "nativeType" : {
+              "name" : "string",
+              "isArray" : false,
+              "subFields" : [ ]
+            }
+          }, {
+            "name" : "imageuuid",
+            "nativeType" : {
+              "name" : "string",
+              "isArray" : false,
+              "subFields" : [ ]
+            }
+          }, {
+            "name" : "browser",
+            "nativeType" : {
+              "name" : "string",
+              "isArray" : false,
+              "subFields" : [ ]
+            }
+          }, {
+            "name" : "osname",
+            "nativeType" : {
+              "name" : "string",
+              "isArray" : false,
+              "subFields" : [ ]
+            }
+          }, {
+            "name" : "osversion",
+            "nativeType" : {
+              "name" : "string",
+              "isArray" : false,
+              "subFields" : [ ]
+            }
+          }, {
+            "name" : "topinterests",
+            "nativeType" : {
+              "name" : "string",
+              "isArray" : false,
+              "subFields" : [ ]
+            }
+          }, {
+            "name" : "rtbadvertiserid",
+            "nativeType" : {
+              "name" : "string",
+              "isArray" : false,
+              "subFields" : [ ]
+            }
+          }, {
+            "name" : "subwidgetid",
+            "nativeType" : {
+              "name" : "string",
+              "isArray" : false,
+              "subFields" : [ ]
+            }
+          }, {
+            "name" : "targeturl",
+            "nativeType" : {
+              "name" : "string",
+              "isArray" : false,
+              "subFields" : [ ]
+            }
+          }, {
+            "name" : "sessionid",
+            "nativeType" : {
+              "name" : "string",
+              "isArray" : false,
+              "subFields" : [ ]
+            }
+          }, {
+            "name" : "scpc",
+            "nativeType" : {
+              "name" : "string",
+              "isArray" : false,
+              "subFields" : [ ]
+            }
+          }, {
+            "name" : "internalip",
+            "nativeType" : {
+              "name" : "string",
+              "isArray" : false,
+              "subFields" : [ ]
+            }
+          }, {
+            "name" : "notinuse",
+            "nativeType" : {
+              "name" : "string",
+              "isArray" : false,
+              "subFields" : [ ]
+            }
+          }, {
+            "name" : "trafficsourcedomainid",
+            "nativeType" : {
+              "name" : "string",
+              "isArray" : false,
+              "subFields" : [ ]
+            }
+          }, {
+            "name" : "consentinfo",
+            "nativeType" : {
+              "name" : "string",
+              "isArray" : false,
+              "subFields" : [ ]
+            }
+          } ]
+        }
+      },
+      "featureInputs" : [ {
+        "clazz" : "FieldFeatureInput",
+        "nativeType" : {
+          "name" : "string",
+          "isArray" : false,
+          "subFields" : [ ]
+        },
+        "field" : {
+          "name" : "data.datumBytes",
+          "nativeType" : {
+            "name" : "string",
+            "isArray" : false,
+            "subFields" : [ ]
+          }
+        },
+        "isAggregationField" : false,
+        "isFromInline" : false
+      } ],
+      "feature" : {
+        "clazz" : "RegexNamed",
+        "pattern" : "(?<clicktimestamp>\\d{13,13})(\\t(?<referreddockey>[^\\t]*))?(\\t(?<referreddocid>[^\\t]*))?(\\t(?<referredsourceid>[^\\t]*))?(\\t(?<referredadid>[^\\t]*))?(\\t(?<agent>[^\\t]*))?(\\t(?<agentid>[^\\t]*))?(\\t(?<referrerurl>[^\\t]*))?(\\t(?<referrerdocid>[^\\t]*))?(\\t(?<referrersourceid>[^\\t]*))?(\\t(?<rectype>[^\\t]*))?(\\t(?<version>[^\\t]*))?(\\t(?<remoteaddr>[^\\t]*))?(\\t(?<user>[^\\t]*))?(\\t(?<uuid>[^\\t]*))?(\\t(?<machine>[^\\t]*))?(\\t(?<index>[^\\t]*))?(\\t(?<countrycode>[^\\t]*))?(\\t(?<reqid>[^\\t]*))?(\\t(?<ishiddenrec>[^\\t]*))?(\\t(?<widgetid>[^\\t]*))?(\\t(?<recsreqtype>[^\\t]*))?(\\t(?<recdisplaytype>[^\\t]*))?(\\t(?<imgtype>[^\\t]*))?(\\t(?<location>[^\\t]*))?(\\t(?<clickid>[^\\t]*))?(\\t(?<useragent>[^\\t]*))?(\\t(?<platformname>[^\\t]*))?(\\t(?<publisherid>[^\\t]*))?(\\t(?<personalizationenabled>[^\\t]*))?(\\t(?<clicktype>[^\\t]*))?(\\t(?<productid>[^\\t]*))?(\\t(?<abtestid>[^\\t]*))?(\\t(?<abtestvariantid>[^\\t]*))?(\\t(?<clickvalue>[^\\t]*))?(\\t(?<uiexperimenttype>[^\\t]*))?(\\t(?<uiexperimentismatch>[^\\t]*))?(\\t(?<uiexperimentenabled>[^\\t]*))?(\\t(?<idx>[^\\t]*))?(\\t(?<pvid>[^\\t]*))?(\\t(?<referredpublisherid>[^\\t]*))?(\\t(?<recsabtestvariants>[^\\t]*))?(\\t(?<organiccampaignid>[^\\t]*))?(\\t(?<reqtimestamp>[^\\t]*))?(\\t(?<postalcode>[^\\t]*))?(\\t(?<campaignid>[^\\t]*))?(\\t(?<noredirect>[^\\t]*))?(\\t(?<remoteaddrhash>[^\\t]*))?(\\t(?<traffictypeid>[^\\t]*))?(\\t(?<rtbproductcode>[^\\t]*))?(\\t(?<rtbadvertiserdomain>[^\\t]*))?(\\t(?<localdatetime>[^\\t]*))?(\\t(?<advertiserid>[^\\t]*))?(\\t(?<budgetid>[^\\t]*))?(\\t(?<agencyid>[^\\t]*))?(\\t(?<targetedsegments>[^\\t]*))?(\\t(?<isfreecampaign>[^\\t]*))?(\\t(?<oenpath>[^\\t]*))?(\\t(?<subplatform>[^\\t]*))?(\\t(?<partnerappid>[^\\t]*))?(\\t(?<obrevenueopt>[^\\t]*))?(\\t(?<appclickid>[^\\t]*))?(\\t(?<kpioactivationmode>[^\\t]*))?(\\t(?<oentoken>[^\\t]*))?(\\t(?<redirplt>[^\\t]*))?(\\t(?<externalid>[^\\t]*))?(\\t(?<imageuuid>[^\\t]*))?(\\t(?<browser>[^\\t]*))?(\\t(?<osname>[^\\t]*))?(\\t(?<osversion>[^\\t]*))?(\\t(?<topinterests>[^\\t]*))?(\\t(?<rtbadvertiserid>[^\\t]*))?(\\t(?<subwidgetid>[^\\t]*))?(\\t(?<targeturl>[^\\t]*))?(\\t(?<sessionid>[^\\t]*))?(\\t(?<scpc>[^\\t]*))?(\\t(?<internalip>[^\\t]*))?(\\t(?<notinuse>[^\\t]*))?(\\t(?<trafficsourcedomainid>[^\\t]*))?(\\t(?<consentinfo>[^\\t]*))?",
+        "allMatches" : false,
+        "filterEmpty" : false
+      },
+      "inline" : false,
+      "source" : {
+        "source" : "e2937af5-6605-4906-9181-e9bbdb030671",
+        "version" : 1
+      },
+      "id" : "738efb04-f9d3-4866-a34b-698586576e39",
+      "infix" : false,
+      "pathForRead" : { }
+    }
+  }, {
+    "feature" : {
+      "clazz" : "FeatureDefinition",
+      "dsl" : "TO_NUMBER(data.dwcl.referreddocid:string)",
+      "field" : {
+        "name" : "data.dwcl.referred_doc_id",
+        "nativeType" : {
+          "name" : "number",
+          "isArray" : false,
+          "subFields" : [ ]
+        }
+      },
+      "featureInputs" : [ {
+        "clazz" : "FieldFeatureInput",
+        "nativeType" : {
+          "name" : "string",
+          "isArray" : false,
+          "subFields" : [ ]
+        },
+        "field" : {
+          "name" : "data.dwcl.referreddocid",
+          "nativeType" : {
+            "name" : "string",
+            "isArray" : false,
+            "subFields" : [ ]
+          }
+        },
+        "isAggregationField" : false,
+        "isFromInline" : false
+      } ],
+      "feature" : {
+        "clazz" : "StringFeatures$ToNumber"
+      },
+      "inline" : false,
+      "source" : {
+        "source" : "e2937af5-6605-4906-9181-e9bbdb030671",
+        "version" : 1
+      },
+      "id" : "09b77efe-0b05-427c-909f-69429334235c",
+      "infix" : false,
+      "pathForRead" : { }
+    }
+  }, {
+    "feature" : {
+      "clazz" : "FeatureDefinition",
+      "dsl" : "TO_NUMBER(data.dwcl.clickvalue:string)",
+      "field" : {
+        "name" : "data.dwcl.click_value",
+        "nativeType" : {
+          "name" : "number",
+          "isArray" : false,
+          "subFields" : [ ]
+        }
+      },
+      "featureInputs" : [ {
+        "clazz" : "FieldFeatureInput",
+        "nativeType" : {
+          "name" : "string",
+          "isArray" : false,
+          "subFields" : [ ]
+        },
+        "field" : {
+          "name" : "data.dwcl.clickvalue",
+          "nativeType" : {
+            "name" : "string",
+            "isArray" : false,
+            "subFields" : [ ]
+          }
+        },
+        "isAggregationField" : false,
+        "isFromInline" : false
+      } ],
+      "feature" : {
+        "clazz" : "StringFeatures$ToNumber"
+      },
+      "inline" : false,
+      "source" : {
+        "source" : "e2937af5-6605-4906-9181-e9bbdb030671",
+        "version" : 1
+      },
+      "id" : "138009f7-cae6-46f6-8a07-96634d87af2c",
+      "infix" : false,
+      "pathForRead" : { }
+    }
+  } ]
+}

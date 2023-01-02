@@ -1,0 +1,130 @@
+{
+  "clazz" : "OutputTemplate",
+  "useNewEscaping" : false,
+  "supportMapSameKeyMultipleTimes" : false,
+  "id" : "03c69ea2-dfb3-4c9a-ac95-ca9a36dc2958",
+  "displayData" : {
+    "name" : "Sagiv_ES",
+    "description" : "",
+    "creationTime" : "2023-01-02T13:42:09.915011645Z",
+    "createdBy" : "Sagiv Masvari (sagiv@upsolver.com)",
+    "modifiedTime" : "2023-01-02T13:42:48.291312729Z",
+    "modifiedBy" : {
+      "value" : "Sagiv Masvari (sagiv@upsolver.com)"
+    },
+    "versionId" : "05049372-8dc6-4942-87d8-ce9799f08049"
+  },
+  "inputs" : [ "20d17de8-9edf-449d-a0f3-771aa22169eb" ],
+  "organizationId" : "355e3b5f-960d-406b-afa7-12f4fd8327eb",
+  "groupBy" : false,
+  "computeEnvironment" : "1dda980d-c4d2-4db8-af9b-911bef9cb4ad",
+  "outputParameters" : {
+    "clazz" : "UpsolverOutputParameters",
+    "outputFields" : [ {
+      "clazz" : "RawOutput",
+      "outputs" : [ {
+        "name" : "$event_date",
+        "index" : 0,
+        "outputType" : {
+          "name" : "number",
+          "isArray" : false,
+          "subFields" : [ ]
+        },
+        "warnings" : [ ]
+      } ],
+      "field" : {
+        "clazz" : "FieldFeatureInput",
+        "nativeType" : {
+          "name" : "date",
+          "isArray" : false,
+          "subFields" : [ ]
+        },
+        "field" : {
+          "name" : "$event_date",
+          "nativeType" : {
+            "name" : "date",
+            "isArray" : false,
+            "subFields" : [ ]
+          }
+        },
+        "isAggregationField" : false,
+        "isFromInline" : false
+      }
+    }, {
+      "clazz" : "RawOutput",
+      "outputs" : [ {
+        "name" : "$file_last_modified",
+        "index" : 1,
+        "outputType" : {
+          "name" : "number",
+          "isArray" : false,
+          "subFields" : [ ]
+        },
+        "warnings" : [ ]
+      } ],
+      "field" : {
+        "clazz" : "FieldFeatureInput",
+        "nativeType" : {
+          "name" : "number",
+          "isArray" : false,
+          "subFields" : [ ]
+        },
+        "field" : {
+          "name" : "$file_last_modified",
+          "nativeType" : {
+            "name" : "number",
+            "isArray" : false,
+            "subFields" : [ ]
+          }
+        },
+        "isAggregationField" : false,
+        "isFromInline" : false
+      }
+    } ],
+    "softRetention" : false,
+    "addTimeField" : true,
+    "path" : "",
+    "mandatory" : {
+      "clazz" : "MandatoryUpsolverOutputParameters",
+      "connection" : "0b1162bc-ca6a-48e7-8d1e-74a7ba5440d1"
+    },
+    "shouldFlatten" : false
+  },
+  "outputInterval" : 1,
+  "startExecutionFrom" : "2022-11-22T01:52:00Z",
+  "endExecutionAt" : "2023-01-02T13:50:00Z",
+  "allowCartesianProducts" : false,
+  "isDeleted" : false,
+  "isRunning" : true,
+  "deployedEver" : true,
+  "connectionPointer" : "0b1162bc-ca6a-48e7-8d1e-74a7ba5440d1",
+  "version" : 75,
+  "allowRenaming" : true,
+  "operationParallelism" : {
+    "clazz" : "NoOperationParallelism"
+  },
+  "outputSharding" : {
+    "clazz" : "NoOperationParallelism"
+  },
+  "earliestStartExecutionFrom" : "2022-11-22T01:52:00Z",
+  "workspaces" : [ ],
+  "reportingTags" : "",
+  "blocks" : [ ],
+  "groupByDeletion" : true,
+  "eventTypes" : [ ],
+  "inputInterval" : 1,
+  "restrictions" : [ ],
+  "deployTime" : "2023-01-02T13:42:48.281682910Z",
+  "status" : {
+    "clazz" : "Running"
+  },
+  "shards" : {
+    "clazz" : "ManualParallelismType",
+    "executionParallelism" : 1,
+    "displayValue" : "Manual - Shards"
+  },
+  "outputShards" : 1,
+  "hasAggregations" : false,
+  "allReferences" : [ "20d17de8-9edf-449d-a0f3-771aa22169eb" ],
+  "versionNumber" : 1
+}

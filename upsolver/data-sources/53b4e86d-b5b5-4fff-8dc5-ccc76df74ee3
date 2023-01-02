@@ -1,0 +1,67 @@
+{
+  "clazz" : "CloudStorageInput",
+  "id" : "53b4e86d-b5b5-4fff-8dc5-ccc76df74ee3",
+  "globalId" : "53b4e86d-b5b5-4fff-8dc5-ccc76df74ee3",
+  "organizationId" : "355e3b5f-960d-406b-afa7-12f4fd8327eb",
+  "computeEnvironment" : "1dda980d-c4d2-4db8-af9b-911bef9cb4ad",
+  "sourceStorage" : "82e57821-1fff-449f-8c7c-4dbec076ca40",
+  "prefix" : "",
+  "datePattern" : "yyyy/MM/dd/HH/mm/",
+  "dataDumpDate" : "2022-09-27T15:34:53.398051964Z",
+  "destinationStorage" : "0b1162bc-ca6a-48e7-8d1e-74a7ba5440d1",
+  "maxDelay" : 1440,
+  "interval" : 1,
+  "startExecutionFrom" : "2022-09-25T21:31:00Z",
+  "fileMatchPattern" : "^.*$",
+  "compression" : {
+    "clazz" : "AutoDetectCompression",
+    "displayName" : "Auto Detect (Supports ZIP, GZip, Tar, Snappy and AWS KPL)"
+  },
+  "contentType" : {
+    "clazz" : "JsonContentType",
+    "nestedJsonPaths" : [ ],
+    "nestedJsons" : [ ],
+    "splitRootArray" : true,
+    "keepOriginalNestedJsonString" : false,
+    "storeJsonAsString" : false
+  },
+  "displayData" : {
+    "name" : "upsolver-tutorials-orders_test",
+    "description" : "",
+    "creationTime" : "2022-09-27T15:34:53.398063738Z",
+    "createdBy" : "pauline@dbx (pauline@upsolver.com)",
+    "modifiedTime" : "2022-09-27T15:35:25.946235119Z",
+    "modifiedBy" : {
+      "value" : "pauline@dbx (pauline@upsolver.com)"
+    },
+    "versionId" : "b8ca818b-ffb4-4159-a393-7257fb625589"
+  },
+  "isDeleted" : true,
+  "anchorDatePatternToStart" : true,
+  "softRetention" : false,
+  "physicalDelete" : {
+    "initiated" : true,
+    "shouldRun" : false
+  },
+  "version" : 72,
+  "operationParallelism" : {
+    "clazz" : "NoOperationParallelism"
+  },
+  "requestType" : "CloudStorageInputRequest",
+  "workspaces" : [ ],
+  "previousLocations" : {
+    "locations" : [ ]
+  },
+  "reportingTags" : "",
+  "previewId" : "2a15b47d8a3355a337283d3cba7b0be6",
+  "isRunning" : false,
+  "parallelismType" : {
+    "clazz" : "ManualParallelismType",
+    "executionParallelism" : 1,
+    "displayValue" : "Manual - Shards"
+  },
+  "status" : {
+    "clazz" : "Archived"
+  },
+  "safeStartTime" : "2022-09-25T21:31:00Z"
+}

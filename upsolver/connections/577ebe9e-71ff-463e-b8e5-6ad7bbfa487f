@@ -1,0 +1,35 @@
+{
+  "id" : "577ebe9e-71ff-463e-b8e5-6ad7bbfa487f",
+  "organizationId" : "355e3b5f-960d-406b-afa7-12f4fd8327eb",
+  "connection" : {
+    "clazz" : "SnowflakeConnection",
+    "connectionString" : "jdbc:snowflake://https://pwccuif-apb11044.snowflakecomputing.com?db=pauline&warehouse=testdata&role=accountadmin",
+    "userName" : "PAULINETYK",
+    "password" : "RGKZYULAs+HSNjgl0gIT+A==",
+    "displayData" : {
+      "name" : "sf_pauline_connection",
+      "description" : "",
+      "creationTime" : "2022-09-27T15:59:22.934596687Z",
+      "createdBy" : "pauline@dbx (pauline@upsolver.com)",
+      "modifiedTime" : "2022-09-27T15:59:23.732127880Z",
+      "modifiedBy" : {
+        "value" : "pauline@dbx (pauline@upsolver.com)"
+      },
+      "versionId" : "70b71275-c6e8-42d3-860a-54e2914addd8"
+    },
+    "schemas" : [ ],
+    "displayValue" : "jdbc:snowflake://https://pwccuif-apb11044.snowflakecomputing.com?db=pauline&warehouse=testdata&role=accountadmin"
+  },
+  "validation" : {
+    "errors" : [ {
+      "clazz" : "SimpleValidationResult",
+      "property" : "connectionString",
+      "error" : "Connection Error: Your free trial has ended and all of your virtual warehouses have been suspended. Add billing information in the Snowflake web UI to continue using the full set of Snowflake features.",
+      "severity" : "error"
+    } ],
+    "time" : "2023-01-02T13:40:00.203302147Z"
+  },
+  "workspaces" : [ ],
+  "extraOrganizationIds" : [ ],
+  "isManaged" : false
+}

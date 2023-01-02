@@ -1,0 +1,39 @@
+{
+  "id" : "aa63c706-5c47-44c5-8f60-7cc48bcefd44",
+  "organizationId" : "355e3b5f-960d-406b-afa7-12f4fd8327eb",
+  "connection" : {
+    "clazz" : "S3DBXConnection",
+    "displayData" : {
+      "name" : "S3",
+      "description" : "",
+      "creationTime" : "2022-01-18T13:42:32.099842Z",
+      "createdBy" : "Maor Cohen (maor@upsolver.com)",
+      "modifiedTime" : "2022-01-18T13:42:32.202489Z",
+      "modifiedBy" : {
+        "value" : "Maor Cohen (maor@upsolver.com)"
+      },
+      "versionId" : "acf60cb9-2bbe-4ced-9ff4-1204c1203cad"
+    },
+    "credentials" : {
+      "clazz" : "RoleBasedCredentials",
+      "arnRole" : "arn:aws:iam::428641199958:role/upsolver-role-355e3b5f-960d-406b-afa7-12f4fd8327eb",
+      "externalId" : "355e3b5f-960d-406b-afa7-12f4fd8327eb",
+      "enforceExternalId" : true
+    },
+    "bucketsIncludePolicy" : {
+      "clazz" : "EntitiesIncludePolicy$All"
+    },
+    "readOnly" : false,
+    "serverSideEncryptionKey" : {
+      "clazz" : "DefaultEncryptionKey"
+    },
+    "displayValue" : "S3 Storage"
+  },
+  "validation" : {
+    "errors" : [ ],
+    "time" : "2023-01-02T13:40:00.203302147Z"
+  },
+  "workspaces" : [ ],
+  "extraOrganizationIds" : [ ],
+  "isManaged" : false
+}

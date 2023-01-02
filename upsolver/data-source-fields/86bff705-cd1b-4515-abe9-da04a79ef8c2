@@ -1,0 +1,101 @@
+{
+  "inputId" : "86bff705-cd1b-4515-abe9-da04a79ef8c2",
+  "organizationId" : "",
+  "fields" : [ {
+    "feature" : {
+      "clazz" : "FeatureDefinition",
+      "dsl" : "TO_LOWER(data.device.ifa:string)",
+      "field" : {
+        "name" : "data.device.lower_ifa",
+        "nativeType" : {
+          "name" : "string",
+          "isArray" : false,
+          "subFields" : [ ]
+        }
+      },
+      "featureInputs" : [ {
+        "clazz" : "FieldFeatureInput",
+        "nativeType" : {
+          "name" : "string",
+          "isArray" : false,
+          "subFields" : [ ]
+        },
+        "field" : {
+          "name" : "data.device.ifa",
+          "nativeType" : {
+            "name" : "string",
+            "isArray" : false,
+            "subFields" : [ ]
+          }
+        },
+        "isAggregationField" : false,
+        "isFromInline" : false
+      } ],
+      "feature" : {
+        "clazz" : "StringFeatures$ToLowerFeature"
+      },
+      "inline" : false,
+      "id" : "2f67a9ee-d36f-37de-bb44-85d9622e5ff5",
+      "infix" : false,
+      "pathForRead" : { }
+    },
+    "immutable" : true
+  }, {
+    "feature" : {
+      "clazz" : "FeatureDefinition",
+      "dsl" : "STRING_FORMAT(data.device.make:string, data.device.model:string)",
+      "field" : {
+        "name" : "data.device.make_model",
+        "nativeType" : {
+          "name" : "string",
+          "isArray" : false,
+          "subFields" : [ ]
+        }
+      },
+      "featureInputs" : [ {
+        "clazz" : "FieldFeatureInput",
+        "nativeType" : {
+          "name" : "string",
+          "isArray" : false,
+          "subFields" : [ ]
+        },
+        "field" : {
+          "name" : "data.device.make",
+          "nativeType" : {
+            "name" : "string",
+            "isArray" : false,
+            "subFields" : [ ]
+          }
+        },
+        "isAggregationField" : false,
+        "isFromInline" : false
+      }, {
+        "clazz" : "FieldFeatureInput",
+        "nativeType" : {
+          "name" : "string",
+          "isArray" : false,
+          "subFields" : [ ]
+        },
+        "field" : {
+          "name" : "data.device.model",
+          "nativeType" : {
+            "name" : "string",
+            "isArray" : false,
+            "subFields" : [ ]
+          }
+        },
+        "isAggregationField" : false,
+        "isFromInline" : false
+      } ],
+      "feature" : {
+        "clazz" : "StringFeatures$BinaryMessageFormat",
+        "format" : "{0}.{1}"
+      },
+      "inline" : false,
+      "id" : "e98980da-16d5-17fa-349f-7087fc329fcb",
+      "infix" : false,
+      "pathForRead" : { }
+    },
+    "immutable" : true
+  } ]
+}

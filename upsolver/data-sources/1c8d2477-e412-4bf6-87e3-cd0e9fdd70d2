@@ -1,0 +1,67 @@
+{
+  "clazz" : "CloudStorageInput",
+  "id" : "1c8d2477-e412-4bf6-87e3-cd0e9fdd70d2",
+  "globalId" : "1c8d2477-e412-4bf6-87e3-cd0e9fdd70d2",
+  "organizationId" : "355e3b5f-960d-406b-afa7-12f4fd8327eb",
+  "computeEnvironment" : "7151ced9-cfd2-4403-af23-25a1f298785e",
+  "sourceStorage" : "82e57821-1fff-449f-8c7c-4dbec076ca40",
+  "prefix" : "",
+  "datePattern" : "yyyy/MM/dd/HH/",
+  "dataDumpDate" : "2022-10-12T11:25:42.139189166Z",
+  "destinationStorage" : "0b1162bc-ca6a-48e7-8d1e-74a7ba5440d1",
+  "maxDelay" : 1440,
+  "interval" : 1,
+  "startExecutionFrom" : "2022-10-10T17:00:00Z",
+  "fileMatchPattern" : "^.*$",
+  "compression" : {
+    "clazz" : "AutoDetectCompression",
+    "displayName" : "Auto Detect (Supports ZIP, GZip, Tar, Snappy and AWS KPL)"
+  },
+  "contentType" : {
+    "clazz" : "JsonContentType",
+    "nestedJsonPaths" : [ ],
+    "nestedJsons" : [ ],
+    "splitRootArray" : true,
+    "keepOriginalNestedJsonString" : false,
+    "storeJsonAsString" : false
+  },
+  "displayData" : {
+    "name" : "orders",
+    "description" : "",
+    "creationTime" : "2022-10-12T11:25:42.139213217Z",
+    "createdBy" : "Motty Chirinos (motty@upsolver.com)",
+    "modifiedTime" : "2022-10-12T14:55:33.538906733Z",
+    "modifiedBy" : {
+      "value" : "Motty Chirinos (motty@upsolver.com)"
+    },
+    "versionId" : "42e5edc9-3910-4ef9-bdbb-6f92effa2951"
+  },
+  "isDeleted" : true,
+  "anchorDatePatternToStart" : true,
+  "softRetention" : false,
+  "physicalDelete" : {
+    "initiated" : true,
+    "shouldRun" : false
+  },
+  "version" : 72,
+  "operationParallelism" : {
+    "clazz" : "NoOperationParallelism"
+  },
+  "requestType" : "CloudStorageInputRequest",
+  "workspaces" : [ ],
+  "previousLocations" : {
+    "locations" : [ ]
+  },
+  "reportingTags" : "",
+  "previewId" : "bab8ca64c71f858b7e92157fe49edd09",
+  "isRunning" : false,
+  "parallelismType" : {
+    "clazz" : "ManualParallelismType",
+    "executionParallelism" : 1,
+    "displayValue" : "Manual - Shards"
+  },
+  "status" : {
+    "clazz" : "Archived"
+  },
+  "safeStartTime" : "2022-10-10T17:00:00Z"
+}

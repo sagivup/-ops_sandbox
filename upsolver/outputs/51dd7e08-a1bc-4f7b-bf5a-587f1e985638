@@ -1,0 +1,216 @@
+{
+  "clazz" : "OutputTemplate",
+  "useNewEscaping" : false,
+  "supportMapSameKeyMultipleTimes" : false,
+  "id" : "51dd7e08-a1bc-4f7b-bf5a-587f1e985638",
+  "displayData" : {
+    "name" : "motty-test (1)",
+    "description" : "Duplicate of motty-test",
+    "creationTime" : "2022-12-14T10:56:39.766840702Z",
+    "createdBy" : "Motty Chirinos (motty@upsolver.com)",
+    "modifiedTime" : "2022-12-14T11:58:26.240672799Z",
+    "modifiedBy" : {
+      "value" : "Motty Chirinos (motty@upsolver.com)"
+    },
+    "versionId" : "766ca72d-6e76-4de5-b28b-d8786154b25a"
+  },
+  "inputs" : [ "840415d3-1ea6-4b1f-8c03-df5d041d70c9" ],
+  "organizationId" : "355e3b5f-960d-406b-afa7-12f4fd8327eb",
+  "groupBy" : false,
+  "computeEnvironment" : "77902366-93f2-4b1f-96f0-7a6d82949cd9",
+  "outputParameters" : {
+    "clazz" : "CloudStorageOutputParameters",
+    "compression" : {
+      "clazz" : "NoneCompression",
+      "noCompression" : [ ],
+      "displayName" : "None"
+    },
+    "outputFields" : [ {
+      "clazz" : "RawOutput",
+      "outputs" : [ {
+        "name" : "processing_time",
+        "index" : 0,
+        "warnings" : [ ],
+        "originalOutput" : {
+          "name" : "processing_time",
+          "index" : 0,
+          "warnings" : [ ]
+        }
+      } ],
+      "field" : {
+        "clazz" : "FieldFeatureInput",
+        "nativeType" : {
+          "name" : "number",
+          "isArray" : false,
+          "subFields" : [ ]
+        },
+        "field" : {
+          "name" : "time",
+          "nativeType" : {
+            "name" : "number",
+            "isArray" : false,
+            "subFields" : [ ]
+          }
+        },
+        "isAggregationField" : false,
+        "isFromInline" : false
+      }
+    }, {
+      "clazz" : "RawOutput",
+      "outputs" : [ {
+        "name" : "netTotal",
+        "index" : 1,
+        "warnings" : [ ],
+        "originalOutput" : {
+          "name" : "netTotal",
+          "index" : 1,
+          "warnings" : [ ]
+        }
+      } ],
+      "field" : {
+        "clazz" : "FieldFeatureInput",
+        "nativeType" : {
+          "name" : "number",
+          "isArray" : false,
+          "subFields" : [ ]
+        },
+        "field" : {
+          "name" : "data.netTotal",
+          "nativeType" : {
+            "name" : "number",
+            "isArray" : false,
+            "subFields" : [ ]
+          }
+        },
+        "isAggregationField" : false,
+        "isFromInline" : false
+      }
+    }, {
+      "clazz" : "RawCalculatedFieldOutput",
+      "outputs" : [ {
+        "name" : "timestamp",
+        "index" : 2,
+        "warnings" : [ ],
+        "originalOutput" : {
+          "name" : "timestamp",
+          "index" : 2,
+          "warnings" : [ ]
+        }
+      } ],
+      "featureDefinition" : {
+        "clazz" : "FeatureDefinition",
+        "dsl" : "UNIX_EPOCH_TO_DATE(time:number)",
+        "field" : {
+          "name" : "undefined-value-b72f3117-841d-46b0-8364-48bc8ae6f1ae",
+          "nativeType" : {
+            "name" : "instant",
+            "isArray" : false,
+            "subFields" : [ ]
+          }
+        },
+        "featureInputs" : [ {
+          "clazz" : "FieldFeatureInput",
+          "nativeType" : {
+            "name" : "number",
+            "isArray" : false,
+            "subFields" : [ ]
+          },
+          "field" : {
+            "name" : "time",
+            "nativeType" : {
+              "name" : "number",
+              "isArray" : false,
+              "subFields" : [ ]
+            }
+          },
+          "isAggregationField" : false,
+          "isFromInline" : false
+        } ],
+        "feature" : {
+          "clazz" : "NumericFeatures$EpochMillisToInstant"
+        },
+        "inline" : true,
+        "id" : "1503bdb4-551d-4b90-80bc-f928768bb22d",
+        "infix" : false,
+        "blockId" : "9cc99b2e-267c-40c9-bd45-ee627357b6b6",
+        "pathForRead" : { }
+      }
+    } ],
+    "path" : "",
+    "dateFormat" : {
+      "clazz" : "DefaultDateExtractor",
+      "pattern" : "yyyy/MM/dd/HH/mm/",
+      "smallestPart" : 1,
+      "hasWeek" : false,
+      "hasYear" : true,
+      "displayName" : "Default",
+      "displayValue" : "Default (yyyy/MM/dd/HH/mm/)"
+    },
+    "shouldFlatten" : true,
+    "softRetention" : false,
+    "outputOffset" : 0,
+    "mandatory" : {
+      "clazz" : "MandatoryCloudStorageOutputParameters",
+      "outputFormat" : {
+        "clazz" : "CsvOutputFormat",
+        "formatName" : "CSV",
+        "fileExtension" : "csv",
+        "supportsDynamicFields" : false
+      },
+      "connection" : "0b1162bc-ca6a-48e7-8d1e-74a7ba5440d1"
+    }
+  },
+  "outputInterval" : 1,
+  "startExecutionFrom" : "2022-12-13T12:45:00Z",
+  "endExecutionAt" : "2022-12-14T11:06:00Z",
+  "allowCartesianProducts" : false,
+  "isDeleted" : false,
+  "isRunning" : false,
+  "deployedEver" : true,
+  "connectionPointer" : "0b1162bc-ca6a-48e7-8d1e-74a7ba5440d1",
+  "version" : 74,
+  "allowRenaming" : true,
+  "operationParallelism" : {
+    "clazz" : "NoOperationParallelism"
+  },
+  "outputSharding" : {
+    "clazz" : "NoOperationParallelism"
+  },
+  "earliestStartExecutionFrom" : "2022-12-13T12:45:00Z",
+  "isCompleted" : false,
+  "executionState" : {
+    "clazz" : "ExecutionState$Deleting"
+  },
+  "workspaces" : [ ],
+  "reportingTags" : "",
+  "blocks" : [ {
+    "id" : "9cc99b2e-267c-40c9-bd45-ee627357b6b6",
+    "title" : "Select Block",
+    "expression" : "// GENERATED @ 2022-12-14T09:15:18.794555111Z\nSELECT time AS processing_time,\n       data.netTotal AS netTotal,\n       (UNIX_EPOCH_TO_DATE(time)) AS \"timestamp\"\n\n  FROM \"orders-motty\"  \n",
+    "dslWarnings" : [ ],
+    "isSelectBlock" : true
+  } ],
+  "groupByDeletion" : true,
+  "eventTypes" : [ ],
+  "inputInterval" : 1,
+  "restrictions" : [ ],
+  "duplicateHandlingInfo" : {
+    "handling" : {
+      "clazz" : "DefaultDuplicateHandling"
+    },
+    "isUserDefined" : false
+  },
+  "deployTime" : "2022-12-14T10:57:29.153791777Z",
+  "status" : {
+    "clazz" : "Stopped"
+  },
+  "shards" : {
+    "clazz" : "ManualParallelismType",
+    "executionParallelism" : 1,
+    "displayValue" : "Manual - Shards"
+  },
+  "outputShards" : 1,
+  "hasAggregations" : false,
+  "allReferences" : [ "840415d3-1ea6-4b1f-8c03-df5d041d70c9" ],
+  "versionNumber" : 1
+}

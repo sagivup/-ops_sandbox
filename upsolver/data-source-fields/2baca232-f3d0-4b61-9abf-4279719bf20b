@@ -1,0 +1,117 @@
+{
+  "inputId" : "2baca232-f3d0-4b61-9abf-4279719bf20b",
+  "organizationId" : "",
+  "fields" : [ {
+    "feature" : {
+      "clazz" : "FeatureDefinition",
+      "dsl" : "ADD(data.\"at\":long, data.\"at\":long)",
+      "field" : {
+        "name" : "data.gfhfggf",
+        "nativeType" : {
+          "name" : "long",
+          "isArray" : false,
+          "subFields" : [ ]
+        }
+      },
+      "featureInputs" : [ {
+        "clazz" : "FieldFeatureInput",
+        "nativeType" : {
+          "name" : "long",
+          "isArray" : false,
+          "subFields" : [ ]
+        },
+        "field" : {
+          "name" : "data.at",
+          "nativeType" : {
+            "name" : "long",
+            "isArray" : false,
+            "subFields" : [ ]
+          }
+        },
+        "isAggregationField" : false,
+        "isFromInline" : false
+      }, {
+        "clazz" : "FieldFeatureInput",
+        "nativeType" : {
+          "name" : "long",
+          "isArray" : false,
+          "subFields" : [ ]
+        },
+        "field" : {
+          "name" : "data.at",
+          "nativeType" : {
+            "name" : "long",
+            "isArray" : false,
+            "subFields" : [ ]
+          }
+        },
+        "isAggregationField" : false,
+        "isFromInline" : false
+      } ],
+      "feature" : {
+        "clazz" : "SimpleLongFeatures$AddFeature"
+      },
+      "inline" : false,
+      "id" : "a1bc3024-740b-7874-77d2-1c1c56ff449d",
+      "infix" : false,
+      "pathForRead" : { }
+    },
+    "immutable" : true
+  }, {
+    "feature" : {
+      "clazz" : "FeatureDefinition",
+      "dsl" : "ADD(data.gfhfggf:long, data.\"at\":long)",
+      "field" : {
+        "name" : "data.b",
+        "nativeType" : {
+          "name" : "long",
+          "isArray" : false,
+          "subFields" : [ ]
+        }
+      },
+      "featureInputs" : [ {
+        "clazz" : "FieldFeatureInput",
+        "nativeType" : {
+          "name" : "long",
+          "isArray" : false,
+          "subFields" : [ ]
+        },
+        "field" : {
+          "name" : "data.gfhfggf",
+          "nativeType" : {
+            "name" : "long",
+            "isArray" : false,
+            "subFields" : [ ]
+          }
+        },
+        "isAggregationField" : false,
+        "isFromInline" : false
+      }, {
+        "clazz" : "FieldFeatureInput",
+        "nativeType" : {
+          "name" : "long",
+          "isArray" : false,
+          "subFields" : [ ]
+        },
+        "field" : {
+          "name" : "data.at",
+          "nativeType" : {
+            "name" : "long",
+            "isArray" : false,
+            "subFields" : [ ]
+          }
+        },
+        "isAggregationField" : false,
+        "isFromInline" : false
+      } ],
+      "feature" : {
+        "clazz" : "SimpleLongFeatures$AddFeature"
+      },
+      "inline" : false,
+      "id" : "53d14d05-d9da-8af1-a253-1a7bc59f3bb8",
+      "infix" : false,
+      "pathForRead" : { }
+    },
+    "immutable" : true
+  } ]
+}

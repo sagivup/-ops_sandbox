@@ -1,0 +1,49 @@
+{
+  "inputId" : "66785a43-e42d-41c1-9c1d-7f609ed5a4de",
+  "organizationId" : "",
+  "fields" : [ {
+    "feature" : {
+      "clazz" : "FeatureDefinition",
+      "dsl" : "GEO_IP('Country Name', data.\"c-ip\":string)",
+      "field" : {
+        "name" : "data.calc_city",
+        "nativeType" : {
+          "name" : "string",
+          "isArray" : false,
+          "subFields" : [ ]
+        }
+      },
+      "featureInputs" : [ {
+        "clazz" : "FieldFeatureInput",
+        "nativeType" : {
+          "name" : "string",
+          "isArray" : false,
+          "subFields" : [ ]
+        },
+        "field" : {
+          "name" : "data.c-ip",
+          "nativeType" : {
+            "name" : "string",
+            "isArray" : false,
+            "subFields" : [ ]
+          }
+        },
+        "isAggregationField" : false,
+        "isFromInline" : false
+      } ],
+      "feature" : {
+        "clazz" : "GeoIp",
+        "attributes" : [ "Country Name" ]
+      },
+      "inline" : false,
+      "source" : {
+        "source" : "66785a43-e42d-41c1-9c1d-7f609ed5a4de",
+        "version" : 1
+      },
+      "id" : "28351a48-18c2-6a54-2f1e-fe6b1bf7e9c2",
+      "infix" : false,
+      "pathForRead" : { }
+    },
+    "immutable" : true
+  } ]
+}

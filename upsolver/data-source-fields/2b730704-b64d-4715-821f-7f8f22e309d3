@@ -1,0 +1,61 @@
+{
+  "inputId" : "2b730704-b64d-4715-821f-7f8f22e309d3",
+  "organizationId" : "",
+  "fields" : [ {
+    "feature" : {
+      "clazz" : "FeatureDefinition",
+      "dsl" : "ADD(data.\"at\":long, data.device.connectiontype:long)",
+      "field" : {
+        "name" : "data.device.a",
+        "nativeType" : {
+          "name" : "long",
+          "isArray" : false,
+          "subFields" : [ ]
+        }
+      },
+      "featureInputs" : [ {
+        "clazz" : "FieldFeatureInput",
+        "nativeType" : {
+          "name" : "long",
+          "isArray" : false,
+          "subFields" : [ ]
+        },
+        "field" : {
+          "name" : "data.at",
+          "nativeType" : {
+            "name" : "long",
+            "isArray" : false,
+            "subFields" : [ ]
+          }
+        },
+        "isAggregationField" : false,
+        "isFromInline" : false
+      }, {
+        "clazz" : "FieldFeatureInput",
+        "nativeType" : {
+          "name" : "long",
+          "isArray" : false,
+          "subFields" : [ ]
+        },
+        "field" : {
+          "name" : "data.device.connectiontype",
+          "nativeType" : {
+            "name" : "long",
+            "isArray" : false,
+            "subFields" : [ ]
+          }
+        },
+        "isAggregationField" : false,
+        "isFromInline" : false
+      } ],
+      "feature" : {
+        "clazz" : "SimpleLongFeatures$AddFeature"
+      },
+      "inline" : false,
+      "id" : "b3285a7a-b982-ce42-6a5b-3908b69710d8",
+      "infix" : false,
+      "pathForRead" : { }
+    },
+    "immutable" : true
+  } ]
+}

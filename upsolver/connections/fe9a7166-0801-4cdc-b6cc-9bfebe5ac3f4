@@ -1,0 +1,31 @@
+{
+  "id" : "fe9a7166-0801-4cdc-b6cc-9bfebe5ac3f4",
+  "organizationId" : "355e3b5f-960d-406b-afa7-12f4fd8327eb",
+  "connection" : {
+    "clazz" : "ElasticConnection",
+    "connectionString" : "elasticsearch://search-elastic1-tiq6hb7ltwvcu2vwp3tbii7cey.us-east-1.es.amazonaws.com:443?cluster.name=elastic1&ssl=true",
+    "username" : "upsolver",
+    "password" : "ArEnbbV+OOiWU2tv4VKSYw==",
+    "displayData" : {
+      "name" : "elastic",
+      "description" : "",
+      "creationTime" : "2022-12-28T16:00:06.979547080Z",
+      "createdBy" : "Shay Weiner (shay@upsolver.com)",
+      "modifiedTime" : "2022-12-28T16:00:07.366359829Z",
+      "modifiedBy" : {
+        "value" : "Shay Weiner (shay@upsolver.com)"
+      },
+      "versionId" : "0228c661-8190-4d7a-8e84-ac64354cdc5d"
+    },
+    "maxWriters" : 20,
+    "indices" : [ ],
+    "displayValue" : "elasticsearch://search-elastic1-tiq6hb7ltwvcu2vwp3tbii7cey.us-east-1.es.amazonaws.com:443?cluster.name=elastic1&ssl=true"
+  },
+  "validation" : {
+    "errors" : [ ],
+    "time" : "2023-01-02T13:40:00.203302147Z"
+  },
+  "workspaces" : [ ],
+  "extraOrganizationIds" : [ ],
+  "isManaged" : false
+}

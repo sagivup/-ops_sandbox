@@ -1,0 +1,78 @@
+{
+  "clazz" : "OutputTemplate",
+  "useNewEscaping" : false,
+  "supportMapSameKeyMultipleTimes" : false,
+  "id" : "9e42e9cd-f6a4-4861-a2bd-f8ced6d8c102",
+  "displayData" : {
+    "name" : "vpclog_on_S3",
+    "description" : "",
+    "creationTime" : "2022-03-05T10:34:50.079749Z",
+    "createdBy" : "amir (amir@upsolver.com)",
+    "modifiedTime" : "2022-03-05T12:08:15.479457Z",
+    "modifiedBy" : {
+      "value" : "amir (amir@upsolver.com)"
+    },
+    "versionId" : "8afdef2f-2215-4a57-a972-d504768d3382"
+  },
+  "inputs" : [ "24bfa8b4-31c4-4e39-a9e7-4580d8a34f8f" ],
+  "organizationId" : "355e3b5f-960d-406b-afa7-12f4fd8327eb",
+  "groupBy" : false,
+  "outputParameters" : {
+    "clazz" : "CloudStorageOutputParameters",
+    "compression" : {
+      "clazz" : "NoneCompression",
+      "noCompression" : [ ],
+      "displayName" : "None"
+    },
+    "outputFields" : [ ],
+    "path" : "",
+    "dateFormat" : {
+      "clazz" : "DefaultDateExtractor",
+      "pattern" : "yyyy/MM/dd/HH/mm/",
+      "smallestPart" : 1,
+      "hasWeek" : false,
+      "hasYear" : true,
+      "displayName" : "Default",
+      "displayValue" : "Default (yyyy/MM/dd/HH/mm/)"
+    },
+    "shouldFlatten" : true,
+    "softRetention" : false,
+    "outputOffset" : 0
+  },
+  "outputInterval" : 1,
+  "startExecutionFrom" : "2022-03-05T10:01:00Z",
+  "allowCartesianProducts" : false,
+  "isDeleted" : true,
+  "isRunning" : false,
+  "deployedEver" : false,
+  "physicalDelete" : {
+    "initiated" : false,
+    "shouldRun" : false
+  },
+  "version" : 68,
+  "allowRenaming" : true,
+  "operationParallelism" : {
+    "clazz" : "NoOperationParallelism"
+  },
+  "outputSharding" : {
+    "clazz" : "NoOperationParallelism"
+  },
+  "workspaces" : [ ],
+  "reportingTags" : "",
+  "blocks" : [ ],
+  "groupByDeletion" : true,
+  "eventTypes" : [ ],
+  "restrictions" : [ ],
+  "status" : {
+    "clazz" : "Archived"
+  },
+  "shards" : {
+    "clazz" : "ManualParallelismType",
+    "executionParallelism" : 1,
+    "displayValue" : "Manual - Shards"
+  },
+  "outputShards" : 1,
+  "hasAggregations" : false,
+  "allReferences" : [ "24bfa8b4-31c4-4e39-a9e7-4580d8a34f8f" ],
+  "versionNumber" : 1
+}

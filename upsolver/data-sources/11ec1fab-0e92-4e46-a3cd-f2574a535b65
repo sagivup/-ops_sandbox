@@ -1,0 +1,50 @@
+{
+  "clazz" : "UploadFileInput",
+  "id" : "11ec1fab-0e92-4e46-a3cd-f2574a535b65",
+  "globalId" : "11ec1fab-0e92-4e46-a3cd-f2574a535b65",
+  "organizationId" : "355e3b5f-960d-406b-afa7-12f4fd8327eb",
+  "computeEnvironment" : "1dda980d-c4d2-4db8-af9b-911bef9cb4ad",
+  "connectionPointer" : "0b1162bc-ca6a-48e7-8d1e-74a7ba5440d1",
+  "displayData" : {
+    "name" : "nabeel_overflow",
+    "description" : "",
+    "creationTime" : "2023-01-02T10:35:33.029782018Z",
+    "createdBy" : "Sagiv Masvari (sagiv@upsolver.com)",
+    "modifiedTime" : "2023-01-02T12:29:29.630185289Z",
+    "modifiedBy" : {
+      "value" : "Omer (omer@upsolver.com)"
+    },
+    "versionId" : "1798fb5c-1217-4ce0-8893-7c9f92256beb"
+  },
+  "contentType" : {
+    "clazz" : "CsvContentType",
+    "inferTypes" : false,
+    "header" : "",
+    "delimiter" : ",",
+    "quoteEscapeChar" : "\"",
+    "nestedJsons" : [ ],
+    "keepOriginalNestedJsonString" : false,
+    "allowDuplicateHeaders" : false,
+    "headers" : [ ]
+  },
+  "startExecutionFrom" : "2023-01-02T10:33:00Z",
+  "folder" : "uploads/2739f325-fbd7-402d-8ffc-824c7c0b63f1",
+  "isDeleted" : true,
+  "physicalDelete" : {
+    "initiated" : true,
+    "shouldRun" : false
+  },
+  "version" : 75,
+  "workspaces" : [ ],
+  "previewId" : "5f7ddf3c0f356dc091e1b17c81b14bde",
+  "isRunning" : false,
+  "parallelismType" : {
+    "clazz" : "ManualParallelismType",
+    "executionParallelism" : 1,
+    "displayValue" : "Manual - Shards"
+  },
+  "status" : {
+    "clazz" : "Archived"
+  },
+  "safeStartTime" : "2023-01-02T10:33:00Z"
+}

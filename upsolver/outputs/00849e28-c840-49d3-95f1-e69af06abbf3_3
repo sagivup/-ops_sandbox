@@ -1,0 +1,206 @@
+{
+  "clazz" : "OutputTemplate",
+  "useNewEscaping" : false,
+  "supportMapSameKeyMultipleTimes" : false,
+  "id" : "00849e28-c840-49d3-95f1-e69af06abbf3_3",
+  "displayData" : {
+    "name" : "motty-test",
+    "description" : "",
+    "creationTime" : "2022-12-14T09:15:17.483997410Z",
+    "createdBy" : "Motty Chirinos (motty@upsolver.com)",
+    "modifiedTime" : "2022-12-14T11:58:51.238409517Z",
+    "modifiedBy" : {
+      "value" : "Motty Chirinos (motty@upsolver.com)"
+    },
+    "versionId" : "97a461a1-b475-4b0a-a443-e904969f71a9"
+  },
+  "inputs" : [ "840415d3-1ea6-4b1f-8c03-df5d041d70c9" ],
+  "organizationId" : "355e3b5f-960d-406b-afa7-12f4fd8327eb",
+  "groupBy" : false,
+  "computeEnvironment" : "77902366-93f2-4b1f-96f0-7a6d82949cd9",
+  "outputParameters" : {
+    "clazz" : "CloudStorageOutputParameters",
+    "compression" : {
+      "clazz" : "NoneCompression",
+      "noCompression" : [ ],
+      "displayName" : "None"
+    },
+    "outputFields" : [ {
+      "clazz" : "RawOutput",
+      "outputs" : [ {
+        "name" : "processing_time",
+        "index" : 0,
+        "warnings" : [ ]
+      } ],
+      "field" : {
+        "clazz" : "FieldFeatureInput",
+        "nativeType" : {
+          "name" : "number",
+          "isArray" : false,
+          "subFields" : [ ]
+        },
+        "field" : {
+          "name" : "time",
+          "nativeType" : {
+            "name" : "number",
+            "isArray" : false,
+            "subFields" : [ ]
+          }
+        },
+        "isAggregationField" : false,
+        "isFromInline" : false
+      }
+    }, {
+      "clazz" : "RawOutput",
+      "outputs" : [ {
+        "name" : "netTotal",
+        "index" : 1,
+        "warnings" : [ ]
+      } ],
+      "field" : {
+        "clazz" : "FieldFeatureInput",
+        "nativeType" : {
+          "name" : "number",
+          "isArray" : false,
+          "subFields" : [ ]
+        },
+        "field" : {
+          "name" : "data.netTotal",
+          "nativeType" : {
+            "name" : "number",
+            "isArray" : false,
+            "subFields" : [ ]
+          }
+        },
+        "isAggregationField" : false,
+        "isFromInline" : false
+      }
+    }, {
+      "clazz" : "RawCalculatedFieldOutput",
+      "outputs" : [ {
+        "name" : "timestamp",
+        "index" : 2,
+        "warnings" : [ ]
+      } ],
+      "featureDefinition" : {
+        "clazz" : "FeatureDefinition",
+        "dsl" : "UNIX_EPOCH_TO_DATE(time:number)",
+        "field" : {
+          "name" : "undefined-value-b72f3117-841d-46b0-8364-48bc8ae6f1ae",
+          "nativeType" : {
+            "name" : "instant",
+            "isArray" : false,
+            "subFields" : [ ]
+          }
+        },
+        "featureInputs" : [ {
+          "clazz" : "FieldFeatureInput",
+          "nativeType" : {
+            "name" : "number",
+            "isArray" : false,
+            "subFields" : [ ]
+          },
+          "field" : {
+            "name" : "time",
+            "nativeType" : {
+              "name" : "number",
+              "isArray" : false,
+              "subFields" : [ ]
+            }
+          },
+          "isAggregationField" : false,
+          "isFromInline" : false
+        } ],
+        "feature" : {
+          "clazz" : "NumericFeatures$EpochMillisToInstant"
+        },
+        "inline" : true,
+        "id" : "1503bdb4-551d-4b90-80bc-f928768bb22d",
+        "infix" : false,
+        "blockId" : "9cc99b2e-267c-40c9-bd45-ee627357b6b6",
+        "pathForRead" : { }
+      }
+    } ],
+    "path" : "",
+    "dateFormat" : {
+      "clazz" : "DefaultDateExtractor",
+      "pattern" : "yyyy/MM/dd/HH/mm/",
+      "smallestPart" : 1,
+      "hasWeek" : false,
+      "hasYear" : true,
+      "displayName" : "Default",
+      "displayValue" : "Default (yyyy/MM/dd/HH/mm/)"
+    },
+    "shouldFlatten" : true,
+    "softRetention" : false,
+    "outputOffset" : 0,
+    "mandatory" : {
+      "clazz" : "MandatoryCloudStorageOutputParameters",
+      "outputFormat" : {
+        "clazz" : "CsvOutputFormat",
+        "formatName" : "CSV",
+        "fileExtension" : "csv",
+        "supportsDynamicFields" : false
+      },
+      "connection" : "0b1162bc-ca6a-48e7-8d1e-74a7ba5440d1"
+    }
+  },
+  "outputInterval" : 1,
+  "startExecutionFrom" : "2022-12-13T13:42:00Z",
+  "allowCartesianProducts" : false,
+  "isDeleted" : false,
+  "isRunning" : false,
+  "deployedEver" : false,
+  "connectionPointer" : "0b1162bc-ca6a-48e7-8d1e-74a7ba5440d1",
+  "link" : {
+    "parentId" : "00849e28-c840-49d3-95f1-e69af06abbf3_2",
+    "rootId" : "00849e28-c840-49d3-95f1-e69af06abbf3",
+    "currentVersion" : 3,
+    "isCorrection" : false
+  },
+  "version" : 74,
+  "allowRenaming" : true,
+  "operationParallelism" : {
+    "clazz" : "NoOperationParallelism"
+  },
+  "outputSharding" : {
+    "clazz" : "NoOperationParallelism"
+  },
+  "earliestStartExecutionFrom" : "2022-12-13T13:42:00Z",
+  "isCompleted" : false,
+  "executionState" : {
+    "clazz" : "ExecutionState$Running"
+  },
+  "workspaces" : [ ],
+  "reportingTags" : "",
+  "blocks" : [ {
+    "id" : "9cc99b2e-267c-40c9-bd45-ee627357b6b6",
+    "title" : "Select Block",
+    "expression" : "// GENERATED @ 2022-12-14T09:15:18.794555111Z\nSELECT time AS processing_time,\n       data.netTotal AS netTotal,\n       (UNIX_EPOCH_TO_DATE(time)) AS \"timestamp\"\n\n  FROM \"orders-motty\"  \n",
+    "dslWarnings" : [ ],
+    "isSelectBlock" : true
+  } ],
+  "groupByDeletion" : true,
+  "eventTypes" : [ ],
+  "inputInterval" : 1,
+  "restrictions" : [ ],
+  "duplicateHandlingInfo" : {
+    "handling" : {
+      "clazz" : "DefaultDuplicateHandling"
+    },
+    "isUserDefined" : false
+  },
+  "deployTime" : "2022-12-14T10:50:25.932828314Z",
+  "status" : {
+    "clazz" : "Draft"
+  },
+  "shards" : {
+    "clazz" : "ManualParallelismType",
+    "executionParallelism" : 1,
+    "displayValue" : "Manual - Shards"
+  },
+  "outputShards" : 1,
+  "hasAggregations" : false,
+  "allReferences" : [ "840415d3-1ea6-4b1f-8c03-df5d041d70c9" ],
+  "versionNumber" : 3
+}

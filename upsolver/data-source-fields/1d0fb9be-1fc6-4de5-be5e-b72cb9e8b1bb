@@ -1,0 +1,61 @@
+{
+  "inputId" : "1d0fb9be-1fc6-4de5-be5e-b72cb9e8b1bb",
+  "organizationId" : "",
+  "fields" : [ {
+    "feature" : {
+      "clazz" : "FeatureDefinition",
+      "dsl" : "ADD(data.\"at\":long, time:long)",
+      "field" : {
+        "name" : "data.f",
+        "nativeType" : {
+          "name" : "long",
+          "isArray" : false,
+          "subFields" : [ ]
+        }
+      },
+      "featureInputs" : [ {
+        "clazz" : "FieldFeatureInput",
+        "nativeType" : {
+          "name" : "long",
+          "isArray" : false,
+          "subFields" : [ ]
+        },
+        "field" : {
+          "name" : "data.at",
+          "nativeType" : {
+            "name" : "long",
+            "isArray" : false,
+            "subFields" : [ ]
+          }
+        },
+        "isAggregationField" : false,
+        "isFromInline" : false
+      }, {
+        "clazz" : "FieldFeatureInput",
+        "nativeType" : {
+          "name" : "long",
+          "isArray" : false,
+          "subFields" : [ ]
+        },
+        "field" : {
+          "name" : "time",
+          "nativeType" : {
+            "name" : "long",
+            "isArray" : false,
+            "subFields" : [ ]
+          }
+        },
+        "isAggregationField" : false,
+        "isFromInline" : false
+      } ],
+      "feature" : {
+        "clazz" : "SimpleLongFeatures$AddFeature"
+      },
+      "inline" : false,
+      "id" : "cb7e8fdd-b9d9-2ddf-0eef-66773c89768b",
+      "infix" : false,
+      "pathForRead" : { }
+    },
+    "immutable" : true
+  } ]
+}

@@ -1,0 +1,91 @@
+{
+  "inputId" : "c0e5942a-f665-4c81-84a6-208fb50c8031",
+  "organizationId" : "",
+  "fields" : [ {
+    "feature" : {
+      "clazz" : "FeatureDefinition",
+      "dsl" : "GEO_IP('Country Name', data.ip:string)",
+      "field" : {
+        "name" : "data.country",
+        "nativeType" : {
+          "name" : "string",
+          "isArray" : false,
+          "subFields" : [ ]
+        }
+      },
+      "featureInputs" : [ {
+        "clazz" : "FieldFeatureInput",
+        "nativeType" : {
+          "name" : "string",
+          "isArray" : false,
+          "subFields" : [ ]
+        },
+        "field" : {
+          "name" : "data.ip",
+          "nativeType" : {
+            "name" : "string",
+            "isArray" : false,
+            "subFields" : [ ]
+          }
+        },
+        "isAggregationField" : false,
+        "isFromInline" : false
+      } ],
+      "feature" : {
+        "clazz" : "GeoIp",
+        "attributes" : [ "Country Name" ]
+      },
+      "inline" : false,
+      "source" : {
+        "source" : "c0e5942a-f665-4c81-84a6-208fb50c8031",
+        "version" : 1
+      },
+      "id" : "b72566c8-1512-4e7e-a94c-8ac6da693119",
+      "infix" : false,
+      "pathForRead" : { }
+    }
+  }, {
+    "feature" : {
+      "clazz" : "FeatureDefinition",
+      "dsl" : "GEO_IP('City Name', data.ip:string)",
+      "field" : {
+        "name" : "data.city",
+        "nativeType" : {
+          "name" : "string",
+          "isArray" : false,
+          "subFields" : [ ]
+        }
+      },
+      "featureInputs" : [ {
+        "clazz" : "FieldFeatureInput",
+        "nativeType" : {
+          "name" : "string",
+          "isArray" : false,
+          "subFields" : [ ]
+        },
+        "field" : {
+          "name" : "data.ip",
+          "nativeType" : {
+            "name" : "string",
+            "isArray" : false,
+            "subFields" : [ ]
+          }
+        },
+        "isAggregationField" : false,
+        "isFromInline" : false
+      } ],
+      "feature" : {
+        "clazz" : "GeoIp",
+        "attributes" : [ "City Name" ]
+      },
+      "inline" : false,
+      "source" : {
+        "source" : "c0e5942a-f665-4c81-84a6-208fb50c8031",
+        "version" : 1
+      },
+      "id" : "151745e0-f54e-4edd-8551-7aa5efe914e3",
+      "infix" : false,
+      "pathForRead" : { }
+    }
+  } ]
+}

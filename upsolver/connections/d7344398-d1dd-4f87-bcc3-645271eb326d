@@ -1,0 +1,35 @@
+{
+  "id" : "d7344398-d1dd-4f87-bcc3-645271eb326d",
+  "organizationId" : "355e3b5f-960d-406b-afa7-12f4fd8327eb",
+  "connection" : {
+    "clazz" : "S3Connection",
+    "credentials" : {
+      "clazz" : "AwsIntegrationCredentials"
+    },
+    "bucket" : "upsolver-managed-garbage-us-east-1",
+    "region" : "us-east-1",
+    "readOnly" : true,
+    "displayData" : {
+      "name" : "upsolver-managed-garbage-us-east-1 source",
+      "description" : "",
+      "creationTime" : "2022-09-27T17:23:54.272827070Z",
+      "createdBy" : "Motty Chirinos (motty@upsolver.com)",
+      "modifiedTime" : "2022-09-27T17:23:54.558184538Z",
+      "modifiedBy" : {
+        "value" : "Motty Chirinos (motty@upsolver.com)"
+      },
+      "versionId" : "f9cbb143-9e97-47d1-a0eb-b44222581a4d"
+    },
+    "serverSideEncryptionKey" : {
+      "clazz" : "DefaultEncryptionKey"
+    },
+    "displayValue" : "s3://upsolver-managed-garbage-us-east-1/"
+  },
+  "validation" : {
+    "errors" : [ ],
+    "time" : "2023-01-02T13:40:00.203302147Z"
+  },
+  "workspaces" : [ ],
+  "extraOrganizationIds" : [ ],
+  "isManaged" : false
+}

@@ -1,0 +1,29 @@
+{
+  "id" : "1a08d9b2-fb52-4528-b7ac-9b15e1cb8f1c",
+  "organizationId" : "355e3b5f-960d-406b-afa7-12f4fd8327eb",
+  "connection" : {
+    "clazz" : "MySqlDbxConnection",
+    "connectionString" : "jdbc:mysql://cdctest.cnpkgni9k2tq.us-east-1.rds.amazonaws.com/",
+    "userName" : "admin",
+    "password" : "nE9nquGLtNC5QklF6Bn4nw==",
+    "displayData" : {
+      "name" : "mysql",
+      "description" : "",
+      "creationTime" : "2022-11-29T04:12:30.923246776Z",
+      "createdBy" : "Shay Weiner (shay@upsolver.com)",
+      "modifiedTime" : "2022-11-29T04:12:30.948807704Z",
+      "modifiedBy" : {
+        "value" : "Shay Weiner (shay@upsolver.com)"
+      },
+      "versionId" : "83f8c042-9488-4f92-ac16-93b86b94d1b9"
+    },
+    "displayValue" : "jdbc:mysql://cdctest.cnpkgni9k2tq.us-east-1.rds.amazonaws.com/"
+  },
+  "validation" : {
+    "errors" : [ ],
+    "time" : "2023-01-02T13:40:00.203302147Z"
+  },
+  "workspaces" : [ ],
+  "extraOrganizationIds" : [ ],
+  "isManaged" : false
+}

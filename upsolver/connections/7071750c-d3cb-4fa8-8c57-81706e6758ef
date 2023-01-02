@@ -1,0 +1,43 @@
+{
+  "id" : "7071750c-d3cb-4fa8-8c57-81706e6758ef",
+  "organizationId" : "afa44ef7-b55b-4ed4-9572-05446860743f",
+  "connection" : {
+    "clazz" : "S3DBXConnection",
+    "displayData" : {
+      "name" : "Upsolver Sample Data",
+      "description" : "",
+      "creationTime" : "2022-01-18T09:01:03.319936Z",
+      "createdBy" : "Maor Cohen",
+      "modifiedTime" : "2022-01-18T09:01:03.324774Z",
+      "modifiedBy" : {
+        "value" : "Maor Cohen (maor@upsolver.com)"
+      },
+      "versionId" : "a07111b3-6693-4162-88c0-67c9f7e1037c"
+    },
+    "credentials" : {
+      "clazz" : "KeyBasedCredentials",
+      "accessKey" : "AKIAWHTIBU5LIFUJU4UA",
+      "secretKey" : "A9kaBejJrvehOhlpegwKkZjPrBew5CbC6uRLZV7Ywr4+MdxQ4+Qc7L9cR9rUmTgt"
+    },
+    "bucketsIncludePolicy" : {
+      "clazz" : "EntitiesIncludePolicy$All"
+    },
+    "readOnly" : true,
+    "serverSideEncryptionKey" : {
+      "clazz" : "DefaultEncryptionKey"
+    },
+    "displayValue" : "S3 Storage"
+  },
+  "validation" : {
+    "errors" : [ {
+      "clazz" : "SimpleValidationResult",
+      "property" : "credentials",
+      "error" : "The specified user does not have access credentials to access the resource(s): `bucket list`. One or more of the following permissions may be missing: ListAllMyBuckets.",
+      "severity" : "error"
+    } ],
+    "time" : "2023-01-02T13:40:00.045474697Z"
+  },
+  "workspaces" : [ ],
+  "extraOrganizationIds" : [ "355e3b5f-960d-406b-afa7-12f4fd8327eb" ],
+  "isManaged" : false
+}

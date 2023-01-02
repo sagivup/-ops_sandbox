@@ -1,0 +1,32 @@
+{
+  "id" : "8f399540-e007-40a8-9a49-fb1fe96cb5e0",
+  "organizationId" : "355e3b5f-960d-406b-afa7-12f4fd8327eb",
+  "connection" : {
+    "clazz" : "RedshiftConnection",
+    "connectionString" : "jdbc:redshift://redshift-cluster-1.criri5wxyugj.us-east-1.redshift.amazonaws.com:5439/dev",
+    "userName" : "upsolver",
+    "password" : "hM3RlWktEje4FjcmVplRcg==",
+    "displayData" : {
+      "name" : "redshift_connection",
+      "description" : "",
+      "creationTime" : "2022-11-29T03:24:05.599142604Z",
+      "createdBy" : "Shay Weiner (shay@upsolver.com)",
+      "modifiedTime" : "2022-11-29T03:24:05.735900245Z",
+      "modifiedBy" : {
+        "value" : "Shay Weiner (shay@upsolver.com)"
+      },
+      "versionId" : "c71604a8-cf33-4b87-9987-7d4da45e0194"
+    },
+    "useTemporaryTokenCredentials" : true,
+    "concurrentConnections" : 10,
+    "schemas" : [ ],
+    "displayValue" : "jdbc:redshift://redshift-cluster-1.criri5wxyugj.us-east-1.redshift.amazonaws.com:5439/dev"
+  },
+  "validation" : {
+    "errors" : [ ],
+    "time" : "2023-01-02T13:40:00.203302147Z"
+  },
+  "workspaces" : [ ],
+  "extraOrganizationIds" : [ ],
+  "isManaged" : false
+}

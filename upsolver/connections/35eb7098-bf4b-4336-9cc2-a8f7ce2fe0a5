@@ -1,0 +1,36 @@
+{
+  "id" : "35eb7098-bf4b-4336-9cc2-a8f7ce2fe0a5",
+  "organizationId" : "355e3b5f-960d-406b-afa7-12f4fd8327eb",
+  "connection" : {
+    "clazz" : "S3DBXConnection",
+    "displayData" : {
+      "name" : "default_s3_connection",
+      "description" : "",
+      "creationTime" : "2022-06-14T14:48:10.876401074Z",
+      "createdBy" : "Yoni Iny (yoni@upsolver.com)",
+      "modifiedTime" : "2022-06-14T14:48:10.978861594Z",
+      "modifiedBy" : {
+        "value" : "Yoni Iny (yoni@upsolver.com)"
+      },
+      "versionId" : "ccabd4b9-feb0-440e-b53d-04bd91dc3966"
+    },
+    "credentials" : {
+      "clazz" : "AwsIntegrationCredentials"
+    },
+    "bucketsIncludePolicy" : {
+      "clazz" : "EntitiesIncludePolicy$All"
+    },
+    "readOnly" : false,
+    "serverSideEncryptionKey" : {
+      "clazz" : "DefaultEncryptionKey"
+    },
+    "displayValue" : "S3 Storage"
+  },
+  "validation" : {
+    "errors" : [ ],
+    "time" : "2023-01-02T13:40:00.203302147Z"
+  },
+  "workspaces" : [ ],
+  "extraOrganizationIds" : [ ],
+  "isManaged" : false
+}

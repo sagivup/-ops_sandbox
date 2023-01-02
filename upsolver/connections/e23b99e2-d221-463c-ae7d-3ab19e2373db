@@ -1,0 +1,29 @@
+{
+  "id" : "e23b99e2-d221-463c-ae7d-3ab19e2373db",
+  "organizationId" : "355e3b5f-960d-406b-afa7-12f4fd8327eb",
+  "connection" : {
+    "clazz" : "MySqlDbxConnection",
+    "connectionString" : "jdbc:mysql://mysql-cdc.cqngd9s2fl85.eu-west-1.rds.amazonaws.com/",
+    "userName" : "admin",
+    "password" : "9k2QoR0FZV/eIXnJWcR9es8DdzfOxYN3h5HY/xSCFaY=",
+    "displayData" : {
+      "name" : "mysql_cdc_david",
+      "description" : "",
+      "creationTime" : "2022-12-21T06:58:49.806804338Z",
+      "createdBy" : "David Aisenthal (david@upsolver.com)",
+      "modifiedTime" : "2022-12-21T06:58:50.690699475Z",
+      "modifiedBy" : {
+        "value" : "David Aisenthal (david@upsolver.com)"
+      },
+      "versionId" : "c71d79ad-ce53-4460-ab72-8c9d9a59d754"
+    },
+    "displayValue" : "jdbc:mysql://mysql-cdc.cqngd9s2fl85.eu-west-1.rds.amazonaws.com/"
+  },
+  "validation" : {
+    "errors" : [ ],
+    "time" : "2023-01-02T13:40:00.203302147Z"
+  },
+  "workspaces" : [ ],
+  "extraOrganizationIds" : [ ],
+  "isManaged" : false
+}

@@ -1,0 +1,126 @@
+{
+  "inputId" : "84954015-ab91-4a94-b7e2-f7b49660379a",
+  "organizationId" : "",
+  "fields" : [ {
+    "feature" : {
+      "clazz" : "FeatureDefinition",
+      "dsl" : "STRING_FORMAT(data.history[].actions[].action8Bit:long)",
+      "field" : {
+        "name" : "data.history[].actions[].action8bitAsString",
+        "nativeType" : {
+          "name" : "string",
+          "isArray" : false,
+          "subFields" : [ ]
+        }
+      },
+      "featureInputs" : [ {
+        "clazz" : "FieldFeatureInput",
+        "nativeType" : {
+          "name" : "long",
+          "isArray" : false,
+          "subFields" : [ ]
+        },
+        "field" : {
+          "name" : "data.history[].actions[].action8Bit",
+          "nativeType" : {
+            "name" : "long",
+            "isArray" : false,
+            "subFields" : [ ]
+          }
+        },
+        "isAggregationField" : false,
+        "isFromInline" : false
+      } ],
+      "feature" : {
+        "clazz" : "StringFeatures$UnaryMessageFormat",
+        "format" : "{0}"
+      },
+      "inline" : false,
+      "id" : "ce9d4288-54d9-9fcd-f51e-9b3dba0bf92b",
+      "infix" : false,
+      "pathForRead" : { }
+    },
+    "immutable" : true
+  }, {
+    "feature" : {
+      "clazz" : "FeatureDefinition",
+      "dsl" : "TRANSLATE('0,bla', true, false, data.history[].actions[].action8bitAsString:string)",
+      "field" : {
+        "name" : "data.history[].actions[].c",
+        "nativeType" : {
+          "name" : "string",
+          "isArray" : false,
+          "subFields" : [ ]
+        }
+      },
+      "featureInputs" : [ {
+        "clazz" : "FieldFeatureInput",
+        "nativeType" : {
+          "name" : "string",
+          "isArray" : false,
+          "subFields" : [ ]
+        },
+        "field" : {
+          "name" : "data.history[].actions[].action8bitAsString",
+          "nativeType" : {
+            "name" : "string",
+            "isArray" : false,
+            "subFields" : [ ]
+          }
+        },
+        "isAggregationField" : false,
+        "isFromInline" : false
+      } ],
+      "feature" : {
+        "clazz" : "StringFeatures$TranslateFeature",
+        "dictionary" : "0,bla",
+        "keepValuesWithoutTranslation" : true
+      },
+      "inline" : false,
+      "id" : "cbf09d0f-9929-7768-764a-81f0af58849e",
+      "infix" : false,
+      "pathForRead" : { }
+    },
+    "immutable" : true
+  }, {
+    "feature" : {
+      "clazz" : "FeatureDefinition",
+      "dsl" : "REGEX('A', data.users[].userInHand.cards:string)",
+      "field" : {
+        "name" : "data.users[].userInHand.has_ace",
+        "nativeType" : {
+          "name" : "string",
+          "isArray" : true,
+          "subFields" : [ ]
+        }
+      },
+      "featureInputs" : [ {
+        "clazz" : "FieldFeatureInput",
+        "nativeType" : {
+          "name" : "string",
+          "isArray" : false,
+          "subFields" : [ ]
+        },
+        "field" : {
+          "name" : "data.users[].userInHand.cards",
+          "nativeType" : {
+            "name" : "string",
+            "isArray" : false,
+            "subFields" : [ ]
+          }
+        },
+        "isAggregationField" : false,
+        "isFromInline" : false
+      } ],
+      "feature" : {
+        "clazz" : "RegexMatchAll",
+        "pattern" : "A"
+      },
+      "inline" : false,
+      "id" : "88c7119e-0307-4aed-5a64-bb6d4d277e96",
+      "infix" : false,
+      "pathForRead" : { }
+    },
+    "immutable" : true
+  } ]
+}

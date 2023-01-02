@@ -1,0 +1,43 @@
+{
+  "id" : "381ea93e-453c-468f-9637-8ac1617c8bdd",
+  "organizationId" : "355e3b5f-960d-406b-afa7-12f4fd8327eb",
+  "connection" : {
+    "clazz" : "AthenaConnection",
+    "credentials" : {
+      "clazz" : "KeyBasedCredentials",
+      "accessKey" : "AKIA5MCE4W6KLMNZEE7C",
+      "secretKey" : "s5L1QeP8zmE24EXBowDzjqdQbJ02cJGRWAhUXscb4Amml1VOxt/dEavlXZUUPkty"
+    },
+    "s3StagingDir" : "s3://system-table-query-results",
+    "region" : "us-east-1",
+    "displayData" : {
+      "name" : "SystemTables",
+      "description" : "Connection to access system tables, created by Upsolver",
+      "creationTime" : "2022-05-30T15:37:37.471316965Z",
+      "createdBy" : "Upsolver",
+      "modifiedBy" : { },
+      "versionId" : "3bdd2b5b-5b94-4f0b-a16d-25d323fe9c09"
+    },
+    "supportsGlue" : true,
+    "databaseIncludePolicy" : {
+      "clazz" : "EntitiesIncludePolicy$All"
+    },
+    "defaultStoragePointerMaybe" : {
+      "id" : "aa63c706-5c47-44c5-8f60-7cc48bcefd44",
+      "location" : "us-east-1-upsolver-355e3b5f-960d-406b-afa7-12f4fd8327eb"
+    },
+    "displayValue" : "SystemTables"
+  },
+  "validation" : {
+    "errors" : [ {
+      "clazz" : "SimpleValidationResult",
+      "property" : "credentials",
+      "error" : "Failed to validate connection to Athena service: User: arn:aws:iam::919267489684:user/system-table-reader_355e3b5f-960d-406b-afa7-12f4fd8327eb is not authorized to perform: glue:GetTable on resource: arn:aws:glue:us-east-1:919267489684:table/logs/dummy_table_name because no identity-based policy allows the glue:GetTable action (Service: AWSGlue; Status Code: 400; Error Code: AccessDeniedException; Request ID: 57f5746b-883b-4e9e-9837-01c3cf469ee0; Proxy: null)",
+      "severity" : "error"
+    } ],
+    "time" : "2023-01-02T13:40:00.203302147Z"
+  },
+  "workspaces" : [ ],
+  "extraOrganizationIds" : [ ],
+  "isManaged" : false
+}

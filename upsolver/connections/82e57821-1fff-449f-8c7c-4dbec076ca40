@@ -1,0 +1,39 @@
+{
+  "id" : "82e57821-1fff-449f-8c7c-4dbec076ca40",
+  "organizationId" : "afa44ef7-b55b-4ed4-9572-05446860743f",
+  "connection" : {
+    "clazz" : "S3Connection",
+    "credentials" : {
+      "clazz" : "KeyBasedCredentials",
+      "accessKey" : "AKIAWHTIBU5LNCWVREMC",
+      "secretKey" : "sfSgIsDMdWNEIn2trJdMqYDaq5EDOGZ+up+cXz4LkGAVfWrXS3deZVQqtGEf47FW"
+    },
+    "bucket" : "upsolver-tutorials-orders",
+    "region" : "us-east-1",
+    "path" : "data/",
+    "readOnly" : true,
+    "displayData" : {
+      "name" : "upsolver-tutorials-orders-readonly",
+      "description" : "",
+      "creationTime" : "2020-10-26T12:01:57.786854Z",
+      "createdBy" : "Omer (omer@upsolver.com)",
+      "modifiedTime" : "2022-02-03T18:16:18.299695Z",
+      "modifiedBy" : {
+        "value" : "Brian Moore (brian@upsolver.com)"
+      },
+      "versionId" : "c761bdbf-f262-4fb7-a271-ca1b124f6317"
+    },
+    "serverSideEncryptionKey" : {
+      "clazz" : "DefaultEncryptionKey"
+    },
+    "displayValue" : "s3://upsolver-tutorials-orders/data/"
+  },
+  "isLogicalDeleted" : false,
+  "validation" : {
+    "errors" : [ ],
+    "time" : "2023-01-02T13:40:00.045474697Z"
+  },
+  "workspaces" : [ ],
+  "extraOrganizationIds" : [ "0a881d09-dc00-4ed7-a00d-520938416744", "16766505-b79e-4cd3-bcf9-892ce6a7c87e", "17e8021c-0c4d-4b22-9f13-915570a9d0d3", "22fd4b90-6a9c-43d9-b2ab-6745f6214452", "277ac9bc-d559-4434-baee-d621f2abe42a", "2f723b93-baa5-49a8-9586-4644eadb1193", "40bfb431-de44-436d-843c-dc907cc430ab", "40f3e592-1efc-4a9a-b18f-297ee6b060af", "7af6b444-7720-4299-91b9-685273653889", "7f957ad2-82a4-434d-a166-b05bbdf828aa", "94d2a82c-caed-4021-a932-1faf37aedc24", "afa44ef7-b55b-4ed4-9572-05446860743f", "fe8b67fe-9c9c-40bf-8144-47c649030fc7", "daee1a8e-0371-410b-97d6-96b34e5965bc", "*" ],
+  "isManaged" : false
+}

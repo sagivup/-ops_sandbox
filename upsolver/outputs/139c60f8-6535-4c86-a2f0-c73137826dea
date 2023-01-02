@@ -1,0 +1,71 @@
+{
+  "clazz" : "OutputTemplate",
+  "useNewEscaping" : false,
+  "supportMapSameKeyMultipleTimes" : false,
+  "id" : "139c60f8-6535-4c86-a2f0-c73137826dea",
+  "displayData" : {
+    "name" : "sagiv_snow",
+    "description" : "",
+    "creationTime" : "2022-12-15T13:50:53.746628955Z",
+    "createdBy" : "Sagiv Masvari (sagiv@upsolver.com)",
+    "modifiedTime" : "2022-12-15T13:51:13.149208380Z",
+    "modifiedBy" : {
+      "value" : "Sagiv Masvari (sagiv@upsolver.com)"
+    },
+    "versionId" : "a9df3be3-9073-48a9-8737-d8296fc36e6c"
+  },
+  "inputs" : [ "ff31d9e0-5f56-4d8a-9026-4dc89a1dff34" ],
+  "organizationId" : "355e3b5f-960d-406b-afa7-12f4fd8327eb",
+  "groupBy" : false,
+  "outputParameters" : {
+    "clazz" : "SnowflakeOutputParameters",
+    "outputFields" : [ ],
+    "columnTypes" : { },
+    "softRetention" : false,
+    "alters" : {
+      "alters" : [ ]
+    },
+    "columns" : [ ],
+    "columnTypesInfo" : [ ],
+    "failOnWriteError" : false,
+    "createTable" : true,
+    "shouldFlatten" : true,
+    "resetQuotedIdentifiersIgnoreCase" : false
+  },
+  "outputInterval" : 1,
+  "startExecutionFrom" : "2022-12-12T19:00:00Z",
+  "allowCartesianProducts" : false,
+  "isDeleted" : true,
+  "isRunning" : false,
+  "deployedEver" : false,
+  "physicalDelete" : {
+    "initiated" : false,
+    "shouldRun" : false
+  },
+  "version" : 75,
+  "allowRenaming" : true,
+  "operationParallelism" : {
+    "clazz" : "NoOperationParallelism"
+  },
+  "outputSharding" : {
+    "clazz" : "NoOperationParallelism"
+  },
+  "workspaces" : [ ],
+  "reportingTags" : "",
+  "blocks" : [ ],
+  "groupByDeletion" : true,
+  "eventTypes" : [ ],
+  "restrictions" : [ ],
+  "status" : {
+    "clazz" : "Archived"
+  },
+  "shards" : {
+    "clazz" : "ManualParallelismType",
+    "executionParallelism" : 1,
+    "displayValue" : "Manual - Shards"
+  },
+  "outputShards" : 1,
+  "hasAggregations" : false,
+  "allReferences" : [ "ff31d9e0-5f56-4d8a-9026-4dc89a1dff34" ],
+  "versionNumber" : 1
+}

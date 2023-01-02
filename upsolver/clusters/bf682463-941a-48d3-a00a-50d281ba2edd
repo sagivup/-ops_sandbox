@@ -1,0 +1,73 @@
+{
+  "id" : "bf682463-941a-48d3-a00a-50d281ba2edd",
+  "organizationId" : "355e3b5f-960d-406b-afa7-12f4fd8327eb",
+  "displayData" : {
+    "name" : "Default Query",
+    "description" : "Default Query for DBX",
+    "creationTime" : "2022-01-10T10:46:08.096829Z",
+    "createdBy" : "Upsolver Integration",
+    "modifiedTime" : "2022-12-27T07:49:27.535475215Z",
+    "modifiedBy" : {
+      "value" : "Yair Uziel (yair@upsolver.com)"
+    },
+    "versionId" : "1d6d13f3-4d34-47cd-940c-4c458c502df1"
+  },
+  "size" : {
+    "min" : "XS",
+    "max" : "XS"
+  },
+  "environmentType" : "query",
+  "privateVpc" : "1164127312615",
+  "region" : "us-east-1",
+  "hosts" : {
+    "hosts" : [ ]
+  },
+  "running" : false,
+  "runOnDefault" : true,
+  "elasticIps" : {
+    "value" : false
+  },
+  "nextRestartOperation" : {
+    "clazz" : "CustomerEnvironment$RollOperation",
+    "time" : "2022-06-09T16:15:15.967Z"
+  },
+  "writeLogsToUpsolver" : true,
+  "runReplayCluster" : false,
+  "extraSecurityGroups" : [ ],
+  "scalingProviderOverride" : {
+    "clazz" : "Scaling$LowLatency"
+  },
+  "deploymentType" : {
+    "clazz" : "DeploymentType$AWS",
+    "amiTagName" : "UpsolverPrivateVpc"
+  },
+  "isDeleted" : false,
+  "lastUpdatedBy" : "yair@upsolver.com",
+  "lastUpdateTime" : "2022-12-27T07:49:27.535126854Z",
+  "version" : 66,
+  "allowUpsolverSsh" : false,
+  "exposePrivateIps" : false,
+  "alwaysAssociatePublicIps" : false,
+  "useVersionsCoordinator" : false,
+  "assumeRoleOnServerRole" : false,
+  "storeType" : {
+    "clazz" : "RemoteStoreType",
+    "secretKey" : "Z+POmlVXLdfGHr/3JO/h/9v9jCHba9KzubBOasUY+o4bmyYZlm17T5rtfyH0s4ad"
+  },
+  "workspaces" : [ ],
+  "shouldCompareConfiguration" : true,
+  "tags" : {
+    "tags" : [ ]
+  },
+  "extraSpotTypes" : [ ],
+  "lastDeploymentTime" : "2022-01-10T10:46:08.096837Z",
+  "excludeMonitoringReporters" : [ ],
+  "hibernated" : false,
+  "autohealEnabled" : true,
+  "serverFiles" : [ ],
+  "spotinstOverrides" : "",
+  "clazz" : "CustomerEnvironment",
+  "status" : {
+    "clazz" : "Stopped"
+  }
+}

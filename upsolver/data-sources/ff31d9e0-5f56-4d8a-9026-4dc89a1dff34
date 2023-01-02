@@ -1,0 +1,63 @@
+{
+  "clazz" : "CloudStorageInput",
+  "id" : "ff31d9e0-5f56-4d8a-9026-4dc89a1dff34",
+  "globalId" : "ff31d9e0-5f56-4d8a-9026-4dc89a1dff34",
+  "organizationId" : "355e3b5f-960d-406b-afa7-12f4fd8327eb",
+  "computeEnvironment" : "1dda980d-c4d2-4db8-af9b-911bef9cb4ad",
+  "sourceStorage" : "35ecd68a-c27e-4de7-b6b8-7b2559c9da75",
+  "prefix" : "",
+  "datePattern" : "'data/'yyyy/MM/dd/HH",
+  "dataDumpDate" : "2022-12-14T13:46:39.263330250Z",
+  "destinationStorage" : "0b1162bc-ca6a-48e7-8d1e-74a7ba5440d1",
+  "maxDelay" : 1440,
+  "interval" : 1,
+  "startExecutionFrom" : "2022-12-12T19:00:00Z",
+  "fileMatchPattern" : "^.*$",
+  "compression" : {
+    "clazz" : "AutoDetectCompression",
+    "displayName" : "Auto Detect (Supports ZIP, GZip, Tar, Snappy and AWS KPL)"
+  },
+  "contentType" : {
+    "clazz" : "JsonContentType",
+    "nestedJsonPaths" : [ ],
+    "nestedJsons" : [ ],
+    "splitRootArray" : true,
+    "keepOriginalNestedJsonString" : false,
+    "storeJsonAsString" : false
+  },
+  "displayData" : {
+    "name" : "sagiv_ds_tutorial",
+    "description" : "",
+    "creationTime" : "2022-12-14T13:46:39.263363322Z",
+    "createdBy" : "Sagiv Masvari (sagiv@upsolver.com)",
+    "modifiedTime" : "2022-12-22T10:08:49.667309655Z",
+    "modifiedBy" : {
+      "value" : "Sagiv Masvari (sagiv@upsolver.com)"
+    },
+    "versionId" : "bf19ce29-35fc-4c69-b514-be0d14d9002a"
+  },
+  "isDeleted" : false,
+  "anchorDatePatternToStart" : true,
+  "softRetention" : false,
+  "version" : 74,
+  "operationParallelism" : {
+    "clazz" : "NoOperationParallelism"
+  },
+  "requestType" : "CloudStorageInputRequest",
+  "workspaces" : [ ],
+  "previousLocations" : {
+    "locations" : [ ]
+  },
+  "reportingTags" : "",
+  "previewId" : "0a3e3f5bc7654c86ac632d262b32af6b",
+  "isRunning" : true,
+  "parallelismType" : {
+    "clazz" : "ManualParallelismType",
+    "executionParallelism" : 1,
+    "displayValue" : "Manual - Shards"
+  },
+  "status" : {
+    "clazz" : "Running"
+  },
+  "safeStartTime" : "2022-12-12T19:00:00Z"
+}

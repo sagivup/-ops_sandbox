@@ -1,0 +1,47 @@
+{
+  "id" : "6b05278c-389c-4c1f-aa71-e8b384b4fafc",
+  "organizationId" : "355e3b5f-960d-406b-afa7-12f4fd8327eb",
+  "connection" : {
+    "clazz" : "AthenaConnection",
+    "credentials" : {
+      "clazz" : "RoleBasedCredentials",
+      "arnRole" : "arn:aws:iam::428641199958:role/upsolver-role-355e3b5f-960d-406b-afa7-12f4fd8327eb",
+      "externalId" : "355e3b5f-960d-406b-afa7-12f4fd8327eb",
+      "integration" : {
+        "clazz" : "DefaultAwsCloudIntegration",
+        "accountId" : "428641199958",
+        "organizationId" : "355e3b5f-960d-406b-afa7-12f4fd8327eb",
+        "region" : "us-east-1",
+        "hasManagementRole" : true,
+        "includeRegionInRole" : false
+      },
+      "organizationId" : "355e3b5f-960d-406b-afa7-12f4fd8327eb",
+      "enforceExternalId" : true
+    },
+    "s3StagingDir" : "s3://aws-athena-query-results-428641199958-us-east-1/upsolver",
+    "region" : "us-east-1",
+    "displayData" : {
+      "name" : "PTest",
+      "description" : "",
+      "creationTime" : "2022-09-12T02:06:14.724402260Z",
+      "createdBy" : "pauline@dbx (pauline@upsolver.com)",
+      "modifiedTime" : "2022-09-12T02:06:15.526312797Z",
+      "modifiedBy" : {
+        "value" : "pauline@dbx (pauline@upsolver.com)"
+      },
+      "versionId" : "8c41c3cb-696f-4235-ba70-75424caffc16"
+    },
+    "supportsGlue" : true,
+    "databaseIncludePolicy" : {
+      "clazz" : "EntitiesIncludePolicy$All"
+    },
+    "displayValue" : "PTest"
+  },
+  "validation" : {
+    "errors" : [ ],
+    "time" : "2023-01-02T13:40:00.203302147Z"
+  },
+  "workspaces" : [ ],
+  "extraOrganizationIds" : [ ],
+  "isManaged" : false
+}

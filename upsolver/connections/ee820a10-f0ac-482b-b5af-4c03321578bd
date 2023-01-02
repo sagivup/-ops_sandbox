@@ -1,0 +1,30 @@
+{
+  "id" : "ee820a10-f0ac-482b-b5af-4c03321578bd",
+  "organizationId" : "355e3b5f-960d-406b-afa7-12f4fd8327eb",
+  "connection" : {
+    "clazz" : "PostgreSqlConnection",
+    "connectionString" : "jdbc:postgresql://ptpostgres.csjjje3nufza.us-east-1.rds.amazonaws.com/postgres",
+    "userName" : "postgres",
+    "password" : "ayKn1SYpdyXEFbR5EMy7FA==",
+    "displayData" : {
+      "name" : "pg_upsolver-tutorials-orders",
+      "description" : "",
+      "creationTime" : "2022-09-22T15:48:42.591160077Z",
+      "createdBy" : "pauline@dbx (pauline@upsolver.com)",
+      "modifiedTime" : "2022-09-22T15:48:42.770646356Z",
+      "modifiedBy" : {
+        "value" : "pauline@dbx (pauline@upsolver.com)"
+      },
+      "versionId" : "5d354423-e084-4e4d-8d9d-b96ca5413e96"
+    },
+    "schemas" : [ ],
+    "displayValue" : "jdbc:postgresql://ptpostgres.csjjje3nufza.us-east-1.rds.amazonaws.com/postgres"
+  },
+  "validation" : {
+    "errors" : [ ],
+    "time" : "2023-01-02T13:40:00.203302147Z"
+  },
+  "workspaces" : [ ],
+  "extraOrganizationIds" : [ ],
+  "isManaged" : false
+}

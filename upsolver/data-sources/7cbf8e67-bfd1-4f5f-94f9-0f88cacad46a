@@ -1,0 +1,62 @@
+{
+  "clazz" : "CloudStorageInput",
+  "id" : "7cbf8e67-bfd1-4f5f-94f9-0f88cacad46a",
+  "globalId" : "7cbf8e67-bfd1-4f5f-94f9-0f88cacad46a",
+  "organizationId" : "355e3b5f-960d-406b-afa7-12f4fd8327eb",
+  "computeEnvironment" : "1dda980d-c4d2-4db8-af9b-911bef9cb4ad",
+  "sourceStorage" : "d7344398-d1dd-4f87-bcc3-645271eb326d",
+  "prefix" : "",
+  "datePattern" : "yyyy/MM/dd/HH/",
+  "dataDumpDate" : "2022-09-27T17:23:54.272814082Z",
+  "destinationStorage" : "0b1162bc-ca6a-48e7-8d1e-74a7ba5440d1",
+  "maxDelay" : 1440,
+  "interval" : 1,
+  "startExecutionFrom" : "2022-09-26T17:23:54.522428930Z",
+  "fileMatchPattern" : "^.*$",
+  "compression" : {
+    "clazz" : "AutoDetectCompression",
+    "displayName" : "Auto Detect (Supports ZIP, GZip, Tar, Snappy and AWS KPL)"
+  },
+  "contentType" : {
+    "clazz" : "AvroContentType"
+  },
+  "displayData" : {
+    "name" : "upsolver-managed-garbage-us-east-1",
+    "description" : "",
+    "creationTime" : "2022-09-27T17:23:54.272827070Z",
+    "createdBy" : "Motty Chirinos (motty@upsolver.com)",
+    "modifiedTime" : "2022-09-27T18:27:33.578569163Z",
+    "modifiedBy" : {
+      "value" : "Motty Chirinos (motty@upsolver.com)"
+    },
+    "versionId" : "8b26b10f-00f6-4ade-ada6-2c2e34aa1e9b"
+  },
+  "isDeleted" : true,
+  "anchorDatePatternToStart" : true,
+  "softRetention" : false,
+  "physicalDelete" : {
+    "initiated" : false,
+    "shouldRun" : false
+  },
+  "version" : 72,
+  "operationParallelism" : {
+    "clazz" : "NoOperationParallelism"
+  },
+  "requestType" : "CloudStorageInputRequest",
+  "workspaces" : [ ],
+  "previousLocations" : {
+    "locations" : [ ]
+  },
+  "reportingTags" : "",
+  "previewId" : "e5e2cac5107bf7f858497403011ae465",
+  "isRunning" : false,
+  "parallelismType" : {
+    "clazz" : "ManualParallelismType",
+    "executionParallelism" : 1,
+    "displayValue" : "Manual - Shards"
+  },
+  "status" : {
+    "clazz" : "Archived"
+  },
+  "safeStartTime" : "2022-09-26T17:23:54.522428930Z"
+}

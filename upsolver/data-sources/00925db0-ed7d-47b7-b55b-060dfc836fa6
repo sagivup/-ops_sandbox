@@ -1,0 +1,74 @@
+{
+  "clazz" : "CloudStorageInput",
+  "id" : "00925db0-ed7d-47b7-b55b-060dfc836fa6",
+  "globalId" : "00925db0-ed7d-47b7-b55b-060dfc836fa6",
+  "organizationId" : "355e3b5f-960d-406b-afa7-12f4fd8327eb",
+  "computeEnvironment" : "1dda980d-c4d2-4db8-af9b-911bef9cb4ad",
+  "sourceStorage" : "ee8e597f-97e1-45ce-8f9c-ab23a9b862c5",
+  "prefix" : "vpclog-without_header.csv/",
+  "datePattern" : "yyyy/MM/dd/HH/mm/",
+  "dataDumpDate" : "2022-03-05T11:57:47.848824Z",
+  "destinationStorage" : "0b1162bc-ca6a-48e7-8d1e-74a7ba5440d1",
+  "maxDelay" : 1440,
+  "interval" : 1,
+  "startExecutionFrom" : "2022-03-04T11:57:47.868809Z",
+  "fileMatchPattern" : "^.*$",
+  "compression" : {
+    "clazz" : "AutoDetectCompression",
+    "displayName" : "Auto Detect (Supports ZIP, GZip, Tar, Snappy and AWS KPL)"
+  },
+  "contentType" : {
+    "clazz" : "CsvContentType",
+    "inferTypes" : true,
+    "header" : "fred",
+    "delimiter" : ",",
+    "quoteEscapeChar" : "\"",
+    "nestedJsons" : [ ],
+    "keepOriginalNestedJsonString" : false,
+    "allowDuplicateHeaders" : false,
+    "headers" : [ "fred" ]
+  },
+  "displayData" : {
+    "name" : "upsolver-quickstart-exercises",
+    "description" : "",
+    "creationTime" : "2022-03-05T11:57:47.848839Z",
+    "createdBy" : "amir (amir@upsolver.com)",
+    "modifiedTime" : "2022-03-05T11:57:58.389677Z",
+    "modifiedBy" : {
+      "value" : "amir (amir@upsolver.com)"
+    },
+    "versionId" : "1376bce6-37a4-4d75-883e-ed4e676ba4d6"
+  },
+  "isDeleted" : true,
+  "anchorDatePatternToStart" : true,
+  "softRetention" : false,
+  "physicalDelete" : {
+    "initiated" : false,
+    "shouldRun" : false
+  },
+  "version" : 68,
+  "operationParallelism" : {
+    "clazz" : "TaskTimeOperationParallelismProvider",
+    "parallelismByTime" : [ ],
+    "defaultTotalShards" : 1,
+    "defaultShardType" : {
+      "clazz" : "ShardingType$Dynamic"
+    }
+  },
+  "requestType" : "CloudStorageInputRequest",
+  "workspaces" : [ ],
+  "previousLocations" : {
+    "locations" : [ ]
+  },
+  "reportingTags" : "",
+  "previewId" : "5e567a65a40525b675d12c14c58a0394",
+  "isRunning" : true,
+  "parallelismType" : {
+    "clazz" : "AutomaticParallelismType",
+    "displayValue" : "Automatic"
+  },
+  "status" : {
+    "clazz" : "Archived"
+  },
+  "safeStartTime" : "2022-03-04T11:57:47.868809Z"
+}

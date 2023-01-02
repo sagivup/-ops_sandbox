@@ -1,0 +1,38 @@
+{
+  "id" : "e42330bc-a012-4485-961d-8c27bb4c2974",
+  "organizationId" : "355e3b5f-960d-406b-afa7-12f4fd8327eb",
+  "connection" : {
+    "clazz" : "KinesisConnection",
+    "credentials" : {
+      "clazz" : "RoleBasedCredentials",
+      "arnRole" : "arn:aws:iam::428641199958:role/upsolver-role-355e3b5f-960d-406b-afa7-12f4fd8327eb",
+      "externalId" : "355e3b5f-960d-406b-afa7-12f4fd8327eb",
+      "enforceExternalId" : false
+    },
+    "region" : "us-east-1",
+    "displayData" : {
+      "name" : "kinesis_customer360",
+      "description" : "",
+      "creationTime" : "2022-09-14T21:10:58.063880380Z",
+      "createdBy" : "Mei Long (mei@upsolver.com)",
+      "modifiedTime" : "2022-09-14T21:10:58.108789889Z",
+      "modifiedBy" : {
+        "value" : "Mei Long (mei@upsolver.com)"
+      },
+      "versionId" : "c8c75c33-213b-40bd-8a34-3a4faaca938f"
+    },
+    "readOnly" : true,
+    "maxWriters" : 20,
+    "streamsIncludePolicy" : {
+      "clazz" : "EntitiesIncludePolicy$All"
+    },
+    "displayValue" : "kinesis_customer360/usEast1"
+  },
+  "validation" : {
+    "errors" : [ ],
+    "time" : "2023-01-02T13:40:00.203302147Z"
+  },
+  "workspaces" : [ ],
+  "extraOrganizationIds" : [ ],
+  "isManaged" : false
+}

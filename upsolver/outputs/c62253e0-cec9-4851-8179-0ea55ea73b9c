@@ -1,0 +1,97 @@
+{
+  "clazz" : "OutputTemplate",
+  "useNewEscaping" : false,
+  "supportMapSameKeyMultipleTimes" : false,
+  "id" : "c62253e0-cec9-4851-8179-0ea55ea73b9c",
+  "displayData" : {
+    "name" : "Omri_Delete",
+    "description" : "",
+    "creationTime" : "2022-05-10T11:11:28.628342649Z",
+    "createdBy" : "Omri Perez (omri@upsolver.com)",
+    "modifiedTime" : "2022-05-16T07:57:11.041615075Z",
+    "modifiedBy" : {
+      "value" : "Omri Perez (omri@upsolver.com)"
+    },
+    "versionId" : "57fa57cd-bd61-4792-8b11-84d7a9718b22"
+  },
+  "inputs" : [ "72cae8bd-d5cf-494d-b075-f7acee1a34f4" ],
+  "organizationId" : "355e3b5f-960d-406b-afa7-12f4fd8327eb",
+  "groupBy" : false,
+  "outputParameters" : {
+    "clazz" : "UpsolverOutputParameters",
+    "outputFields" : [ {
+      "clazz" : "RawOutput",
+      "outputs" : [ {
+        "name" : "processing_time",
+        "index" : 0,
+        "warnings" : [ ]
+      } ],
+      "field" : {
+        "clazz" : "FieldFeatureInput",
+        "nativeType" : {
+          "name" : "number",
+          "isArray" : false,
+          "subFields" : [ ]
+        },
+        "field" : {
+          "name" : "time",
+          "nativeType" : {
+            "name" : "number",
+            "isArray" : false,
+            "subFields" : [ ]
+          }
+        },
+        "isAggregationField" : false,
+        "isFromInline" : false
+      }
+    } ],
+    "softRetention" : false,
+    "addTimeField" : true,
+    "path" : "",
+    "shouldFlatten" : false
+  },
+  "outputInterval" : 1,
+  "startExecutionFrom" : "2022-03-21T08:49:00Z",
+  "allowCartesianProducts" : false,
+  "isDeleted" : false,
+  "isRunning" : false,
+  "deployedEver" : false,
+  "version" : 70,
+  "allowRenaming" : true,
+  "operationParallelism" : {
+    "clazz" : "NoOperationParallelism"
+  },
+  "outputSharding" : {
+    "clazz" : "NoOperationParallelism"
+  },
+  "workspaces" : [ ],
+  "reportingTags" : "",
+  "blocks" : [ {
+    "id" : "9f043de7-3fd2-4f5f-9c23-3d189596a4d2",
+    "title" : "Select Block",
+    "expression" : "// GENERATED @ 2022-05-10T11:11:30.419271971Z\nSELECT time:number AS processing_time\n  FROM \"orders_all_1\"  \n",
+    "dslWarnings" : [ ],
+    "isSelectBlock" : true
+  } ],
+  "groupByDeletion" : true,
+  "eventTypes" : [ ],
+  "restrictions" : [ ],
+  "duplicateHandlingInfo" : {
+    "handling" : {
+      "clazz" : "DefaultDuplicateHandling"
+    },
+    "isUserDefined" : false
+  },
+  "status" : {
+    "clazz" : "New"
+  },
+  "shards" : {
+    "clazz" : "ManualParallelismType",
+    "executionParallelism" : 1,
+    "displayValue" : "Manual - Shards"
+  },
+  "outputShards" : 1,
+  "hasAggregations" : false,
+  "allReferences" : [ "72cae8bd-d5cf-494d-b075-f7acee1a34f4" ],
+  "versionNumber" : 1
+}

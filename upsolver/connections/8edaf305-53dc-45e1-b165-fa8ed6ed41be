@@ -1,0 +1,42 @@
+{
+  "id" : "8edaf305-53dc-45e1-b165-fa8ed6ed41be",
+  "organizationId" : "355e3b5f-960d-406b-afa7-12f4fd8327eb",
+  "connection" : {
+    "clazz" : "AthenaConnection",
+    "credentials" : {
+      "clazz" : "RoleBasedCredentials",
+      "arnRole" : "arn:aws:iam::428641199958:role/upsolver-role-355e3b5f-960d-406b-afa7-12f4fd8327eb",
+      "externalId" : "355e3b5f-960d-406b-afa7-12f4fd8327eb",
+      "enforceExternalId" : false
+    },
+    "s3StagingDir" : "s3://aws-athena-query-results-428641199958-us-east-1/upsolver",
+    "region" : "us-east-1",
+    "displayData" : {
+      "name" : "default_glue_catalog",
+      "description" : "",
+      "creationTime" : "2022-02-22T12:09:44.579114Z",
+      "createdBy" : "Itay Zohar (itay.z@upsolver.com)",
+      "modifiedTime" : "2022-02-22T12:09:45.193130Z",
+      "modifiedBy" : {
+        "value" : "Itay Zohar (itay.z@upsolver.com)"
+      },
+      "versionId" : "879f21df-548c-49e7-90ed-35461e2689bb"
+    },
+    "supportsGlue" : true,
+    "databaseIncludePolicy" : {
+      "clazz" : "EntitiesIncludePolicy$All"
+    },
+    "defaultStoragePointerMaybe" : {
+      "id" : "aa63c706-5c47-44c5-8f60-7cc48bcefd44",
+      "location" : "us-east-1-upsolver-355e3b5f-960d-406b-afa7-12f4fd8327eb"
+    },
+    "displayValue" : "default_glue_catalog"
+  },
+  "validation" : {
+    "errors" : [ ],
+    "time" : "2023-01-02T13:40:00.203302147Z"
+  },
+  "workspaces" : [ ],
+  "extraOrganizationIds" : [ ],
+  "isManaged" : false
+}

@@ -1,0 +1,116 @@
+{
+  "clazz" : "OutputTemplate",
+  "useNewEscaping" : false,
+  "supportMapSameKeyMultipleTimes" : false,
+  "id" : "a6e96650-e074-4c88-96e7-d1da3482aca8",
+  "displayData" : {
+    "name" : "noga_headerless_tsv",
+    "description" : "",
+    "creationTime" : "2022-11-28T15:28:02.870661875Z",
+    "createdBy" : "Noga Tzur (noga@upsolver.com)",
+    "modifiedTime" : "2022-12-26T12:35:17.109477790Z",
+    "modifiedBy" : {
+      "value" : "Jason Fine (jason@upsolver.com)"
+    },
+    "versionId" : "9c603748-f166-4ca0-b182-4c42bf7a419a"
+  },
+  "inputs" : [ "26ba0c9b-17ed-4f9e-a679-9dde70deaf42" ],
+  "organizationId" : "355e3b5f-960d-406b-afa7-12f4fd8327eb",
+  "groupBy" : false,
+  "computeEnvironment" : "1dda980d-c4d2-4db8-af9b-911bef9cb4ad",
+  "outputParameters" : {
+    "clazz" : "CloudStorageOutputParameters",
+    "compression" : {
+      "clazz" : "NoneCompression",
+      "noCompression" : [ ],
+      "displayName" : "None"
+    },
+    "outputFields" : [ {
+      "clazz" : "RawOutput",
+      "outputs" : [ {
+        "name" : "orderId",
+        "index" : 0,
+        "warnings" : [ ]
+      } ],
+      "field" : {
+        "clazz" : "FieldFeatureInput",
+        "nativeType" : {
+          "name" : "string",
+          "isArray" : false,
+          "subFields" : [ ]
+        },
+        "field" : {
+          "name" : "data.orderId",
+          "nativeType" : {
+            "name" : "string",
+            "isArray" : false,
+            "subFields" : [ ]
+          }
+        },
+        "isAggregationField" : false,
+        "isFromInline" : false
+      }
+    } ],
+    "path" : "",
+    "dateFormat" : {
+      "clazz" : "DefaultDateExtractor",
+      "pattern" : "yyyy/MM/dd/HH/mm/",
+      "smallestPart" : 1,
+      "hasWeek" : false,
+      "hasYear" : true,
+      "displayName" : "Default",
+      "displayValue" : "Default (yyyy/MM/dd/HH/mm/)"
+    },
+    "shouldFlatten" : true,
+    "softRetention" : false,
+    "outputOffset" : 0,
+    "mandatory" : {
+      "clazz" : "MandatoryCloudStorageOutputParameters",
+      "outputFormat" : {
+        "clazz" : "HeaderlessTsvOutputFormat",
+        "formatName" : "TSV (Headerless)",
+        "format" : { },
+        "fileExtension" : "tsv",
+        "supportsDynamicFields" : false
+      },
+      "connection" : "0b1162bc-ca6a-48e7-8d1e-74a7ba5440d1"
+    }
+  },
+  "outputInterval" : 1,
+  "startExecutionFrom" : "2022-09-10T00:00:00Z",
+  "endExecutionAt" : "2022-11-28T15:42:00Z",
+  "allowCartesianProducts" : false,
+  "isDeleted" : false,
+  "isRunning" : false,
+  "deployedEver" : true,
+  "connectionPointer" : "0b1162bc-ca6a-48e7-8d1e-74a7ba5440d1",
+  "version" : 74,
+  "allowRenaming" : true,
+  "operationParallelism" : {
+    "clazz" : "NoOperationParallelism"
+  },
+  "outputSharding" : {
+    "clazz" : "NoOperationParallelism"
+  },
+  "earliestStartExecutionFrom" : "2022-09-10T00:00:00Z",
+  "workspaces" : [ ],
+  "reportingTags" : "",
+  "blocks" : [ ],
+  "groupByDeletion" : true,
+  "eventTypes" : [ ],
+  "inputInterval" : 1,
+  "restrictions" : [ ],
+  "deployTime" : "2022-11-28T15:28:23.571193473Z",
+  "status" : {
+    "clazz" : "Stopped"
+  },
+  "shards" : {
+    "clazz" : "ManualParallelismType",
+    "executionParallelism" : 1,
+    "displayValue" : "Manual - Shards"
+  },
+  "outputShards" : 1,
+  "hasAggregations" : false,
+  "allReferences" : [ "26ba0c9b-17ed-4f9e-a679-9dde70deaf42" ],
+  "versionNumber" : 1
+}

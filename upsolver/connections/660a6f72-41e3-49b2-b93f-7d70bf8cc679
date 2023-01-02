@@ -1,0 +1,43 @@
+{
+  "id" : "660a6f72-41e3-49b2-b93f-7d70bf8cc679",
+  "organizationId" : "355e3b5f-960d-406b-afa7-12f4fd8327eb",
+  "connection" : {
+    "clazz" : "S3DBXConnection",
+    "displayData" : {
+      "name" : "noad_s3_connection",
+      "description" : "",
+      "creationTime" : "2022-11-21T12:43:29.329718524Z",
+      "createdBy" : " (noa@upsolver.com)",
+      "modifiedTime" : "2022-11-21T12:43:29.401633168Z",
+      "modifiedBy" : {
+        "value" : " (noa@upsolver.com)"
+      },
+      "versionId" : "26eeb561-663c-4058-a0c4-35cbb7c6b94b"
+    },
+    "credentials" : {
+      "clazz" : "KeyBasedCredentials",
+      "accessKey" : "AKIAUHP4B3REUV4NIIA4",
+      "secretKey" : "96Xd1pgC/9nmAnRgdGQ4EiVbsH1RA38wgxtVMzGcAHbaagjko0R+NKWJUPARFlvj"
+    },
+    "bucketsIncludePolicy" : {
+      "clazz" : "EntitiesIncludePolicy$All"
+    },
+    "readOnly" : false,
+    "serverSideEncryptionKey" : {
+      "clazz" : "DefaultEncryptionKey"
+    },
+    "displayValue" : "S3 Storage"
+  },
+  "validation" : {
+    "errors" : [ {
+      "clazz" : "SimpleValidationResult",
+      "property" : "credentials.accessKey",
+      "error" : "Invalid access key: `AKIAUHP4B3REUV4NIIA4`",
+      "severity" : "error"
+    } ],
+    "time" : "2023-01-02T13:40:00.203302147Z"
+  },
+  "workspaces" : [ ],
+  "extraOrganizationIds" : [ ],
+  "isManaged" : false
+}

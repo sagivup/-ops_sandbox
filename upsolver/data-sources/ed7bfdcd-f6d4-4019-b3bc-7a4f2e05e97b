@@ -1,0 +1,67 @@
+{
+  "clazz" : "MySqlCdcInput",
+  "id" : "ed7bfdcd-f6d4-4019-b3bc-7a4f2e05e97b",
+  "globalId" : "ed7bfdcd-f6d4-4019-b3bc-7a4f2e05e97b",
+  "organizationId" : "355e3b5f-960d-406b-afa7-12f4fd8327eb",
+  "computeEnvironment" : "1dda980d-c4d2-4db8-af9b-911bef9cb4ad",
+  "connectionPointer" : "0b1162bc-ca6a-48e7-8d1e-74a7ba5440d1",
+  "previousLocations" : {
+    "locations" : [ ]
+  },
+  "startExecutionFrom" : "2022-11-23T15:22:51.237496890Z",
+  "displayData" : {
+    "name" : "maor-test-cdc",
+    "description" : "",
+    "creationTime" : "2022-11-23T15:22:51.236588033Z",
+    "createdBy" : "Maor Cohen (maor@upsolver.com)",
+    "modifiedTime" : "2022-11-23T15:50:36.263989134Z",
+    "modifiedBy" : {
+      "value" : "Maor Cohen (maor@upsolver.com)"
+    },
+    "versionId" : "ca2125d2-0851-4b98-9942-ba6ee464781d"
+  },
+  "isDeleted" : true,
+  "softRetention" : false,
+  "version" : 72,
+  "operationParallelism" : {
+    "clazz" : "NoOperationParallelism"
+  },
+  "workspaces" : [ ],
+  "eventTypeField" : {
+    "name" : "data.full_table_name",
+    "nativeType" : {
+      "name" : "string",
+      "isArray" : false,
+      "subFields" : [ ]
+    }
+  },
+  "inputOffset" : 1,
+  "physicalDelete" : {
+    "initiated" : true,
+    "shouldRun" : false
+  },
+  "reportingTags" : "",
+  "isRunning" : false,
+  "tableIncludeList" : "e2e_tests.People,e2e_tests.People3",
+  "cdcConnection" : "83819e83-6198-47d3-9d23-4df7f61cde40",
+  "requestType" : "MySqlCdcInputRequest",
+  "writeDeletesToRow" : true,
+  "skipSnapshots" : false,
+  "contentType" : {
+    "clazz" : "JsonContentType",
+    "nestedJsonPaths" : [ ],
+    "nestedJsons" : [ ],
+    "splitRootArray" : true,
+    "keepOriginalNestedJsonString" : false,
+    "storeJsonAsString" : false
+  },
+  "parallelismType" : {
+    "clazz" : "ManualParallelismType",
+    "executionParallelism" : 1,
+    "displayValue" : "Manual - Shards"
+  },
+  "status" : {
+    "clazz" : "Archived"
+  },
+  "safeStartTime" : "2022-11-23T15:22:51.237496890Z"
+}

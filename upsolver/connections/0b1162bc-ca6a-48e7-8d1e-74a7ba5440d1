@@ -1,0 +1,38 @@
+{
+  "id" : "0b1162bc-ca6a-48e7-8d1e-74a7ba5440d1",
+  "organizationId" : "355e3b5f-960d-406b-afa7-12f4fd8327eb",
+  "connection" : {
+    "clazz" : "S3Connection",
+    "credentials" : {
+      "clazz" : "RoleBasedCredentials",
+      "arnRole" : "arn:aws:iam::428641199958:role/upsolver-role-355e3b5f-960d-406b-afa7-12f4fd8327eb",
+      "externalId" : "355e3b5f-960d-406b-afa7-12f4fd8327eb",
+      "enforceExternalId" : true
+    },
+    "bucket" : "us-east-1-upsolver-355e3b5f-960d-406b-afa7-12f4fd8327eb",
+    "region" : "us-east-1",
+    "readOnly" : false,
+    "displayData" : {
+      "name" : "S3 Default Output Storage",
+      "description" : "",
+      "creationTime" : "2022-02-22T12:09:57.517845Z",
+      "createdBy" : "Itay Zohar (itay.z@upsolver.com)",
+      "modifiedTime" : "2022-02-22T12:09:57.973966Z",
+      "modifiedBy" : {
+        "value" : "Itay Zohar (itay.z@upsolver.com)"
+      },
+      "versionId" : "8cad9fce-dc12-4b46-bead-4bf8543afdcb"
+    },
+    "serverSideEncryptionKey" : {
+      "clazz" : "DefaultEncryptionKey"
+    },
+    "displayValue" : "s3://us-east-1-upsolver-355e3b5f-960d-406b-afa7-12f4fd8327eb/"
+  },
+  "validation" : {
+    "errors" : [ ],
+    "time" : "2023-01-02T13:40:00.203302147Z"
+  },
+  "workspaces" : [ ],
+  "extraOrganizationIds" : [ ],
+  "isManaged" : false
+}

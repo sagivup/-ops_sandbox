@@ -1,0 +1,361 @@
+{
+  "clazz" : "OutputTemplate",
+  "useNewEscaping" : false,
+  "supportMapSameKeyMultipleTimes" : false,
+  "id" : "1cf7ba39-2e8e-405f-9d1c-d619d83ae4b4",
+  "displayData" : {
+    "name" : "order-pg",
+    "description" : "",
+    "creationTime" : "2022-09-23T03:54:51.531336269Z",
+    "createdBy" : "pauline@dbx (pauline@upsolver.com)",
+    "modifiedTime" : "2022-09-23T04:07:42.122191261Z",
+    "modifiedBy" : {
+      "value" : "pauline@dbx (pauline@upsolver.com)"
+    },
+    "versionId" : "1b0c6742-9202-46c3-be41-80afac9df1c4"
+  },
+  "inputs" : [ "d61e0801-02f4-4596-89fb-420325539947" ],
+  "organizationId" : "355e3b5f-960d-406b-afa7-12f4fd8327eb",
+  "groupBy" : false,
+  "computeEnvironment" : "1dda980d-c4d2-4db8-af9b-911bef9cb4ad",
+  "outputParameters" : {
+    "clazz" : "PostgreSqlOutputParameters",
+    "mandatory" : {
+      "clazz" : "MandatoryPostgreSqlOutputParameters",
+      "jdbcConnection" : "ee820a10-f0ac-482b-b5af-4c03321578bd",
+      "schema" : {
+        "catalog" : "postgres",
+        "name" : "public"
+      },
+      "tableName" : "order-shipping",
+      "cloudStorageConnection" : "0b1162bc-ca6a-48e7-8d1e-74a7ba5440d1"
+    },
+    "outputFields" : [ {
+      "clazz" : "RawOutput",
+      "outputs" : [ {
+        "name" : "time",
+        "index" : 0,
+        "warnings" : [ ]
+      } ],
+      "field" : {
+        "clazz" : "FieldFeatureInput",
+        "nativeType" : {
+          "name" : "string",
+          "isArray" : false,
+          "subFields" : [ ]
+        },
+        "field" : {
+          "name" : "_time",
+          "nativeType" : {
+            "name" : "string",
+            "isArray" : false,
+            "subFields" : [ ]
+          }
+        },
+        "isAggregationField" : false,
+        "isFromInline" : false
+      }
+    }, {
+      "clazz" : "RawOutput",
+      "outputs" : [ {
+        "name" : "eventType",
+        "index" : 1,
+        "warnings" : [ ]
+      } ],
+      "field" : {
+        "clazz" : "FieldFeatureInput",
+        "nativeType" : {
+          "name" : "string",
+          "isArray" : false,
+          "subFields" : [ ]
+        },
+        "field" : {
+          "name" : "eventType",
+          "nativeType" : {
+            "name" : "string",
+            "isArray" : false,
+            "subFields" : [ ]
+          }
+        },
+        "isAggregationField" : false,
+        "isFromInline" : false
+      }
+    }, {
+      "clazz" : "RawCalculatedFieldOutput",
+      "outputs" : [ {
+        "name" : "orderDate",
+        "index" : 2,
+        "warnings" : [ ]
+      } ],
+      "featureDefinition" : {
+        "clazz" : "FeatureDefinition",
+        "dsl" : "COALESCE(orderDate:string, _time:string)",
+        "field" : {
+          "name" : "undefined-value-b72f3117-841d-46b0-8364-48bc8ae6f1ae",
+          "nativeType" : {
+            "name" : "string",
+            "isArray" : false,
+            "subFields" : [ ]
+          }
+        },
+        "featureInputs" : [ {
+          "clazz" : "FieldFeatureInput",
+          "nativeType" : {
+            "name" : "string",
+            "isArray" : false,
+            "subFields" : [ ]
+          },
+          "field" : {
+            "name" : "orderDate",
+            "nativeType" : {
+              "name" : "string",
+              "isArray" : false,
+              "subFields" : [ ]
+            }
+          },
+          "isAggregationField" : false,
+          "isFromInline" : false
+        }, {
+          "clazz" : "FieldFeatureInput",
+          "nativeType" : {
+            "name" : "string",
+            "isArray" : false,
+            "subFields" : [ ]
+          },
+          "field" : {
+            "name" : "_time",
+            "nativeType" : {
+              "name" : "string",
+              "isArray" : false,
+              "subFields" : [ ]
+            }
+          },
+          "isAggregationField" : false,
+          "isFromInline" : false
+        } ],
+        "feature" : {
+          "clazz" : "StringFeatures$Coalesce2Feature"
+        },
+        "inline" : true,
+        "id" : "277b9d54-1760-4779-9ecb-a6a66054dd5f",
+        "infix" : false,
+        "blockId" : "5c716194-33d2-465b-a3eb-ce4624576b92",
+        "pathForRead" : { }
+      }
+    }, {
+      "clazz" : "RawOutput",
+      "outputs" : [ {
+        "name" : "orderId",
+        "index" : 3,
+        "warnings" : [ ]
+      } ],
+      "field" : {
+        "clazz" : "FieldFeatureInput",
+        "nativeType" : {
+          "name" : "string",
+          "isArray" : false,
+          "subFields" : [ ]
+        },
+        "field" : {
+          "name" : "orderId",
+          "nativeType" : {
+            "name" : "string",
+            "isArray" : false,
+            "subFields" : [ ]
+          }
+        },
+        "isAggregationField" : false,
+        "isFromInline" : false
+      }
+    }, {
+      "clazz" : "RawOutput",
+      "outputs" : [ {
+        "name" : "shipmentStatus",
+        "index" : 4,
+        "warnings" : [ ]
+      } ],
+      "field" : {
+        "clazz" : "FieldFeatureInput",
+        "nativeType" : {
+          "name" : "string",
+          "isArray" : false,
+          "subFields" : [ ]
+        },
+        "field" : {
+          "name" : "shipmentStatus",
+          "nativeType" : {
+            "name" : "string",
+            "isArray" : false,
+            "subFields" : [ ]
+          }
+        },
+        "isAggregationField" : false,
+        "isFromInline" : false
+      }
+    }, {
+      "clazz" : "RawOutput",
+      "outputs" : [ {
+        "name" : "trackingNumber",
+        "index" : 6,
+        "warnings" : [ ]
+      } ],
+      "field" : {
+        "clazz" : "FieldFeatureInput",
+        "nativeType" : {
+          "name" : "string",
+          "isArray" : false,
+          "subFields" : [ ]
+        },
+        "field" : {
+          "name" : "trackingNumber",
+          "nativeType" : {
+            "name" : "string",
+            "isArray" : false,
+            "subFields" : [ ]
+          }
+        },
+        "isAggregationField" : false,
+        "isFromInline" : false
+      }
+    } ],
+    "softRetention" : false,
+    "alters" : {
+      "alters" : [ {
+        "clazz" : "AddColumn",
+        "column" : "time",
+        "columnType" : {
+          "clazz" : "DbVarchar_Sizable",
+          "size" : 256
+        },
+        "nullable" : true
+      }, {
+        "clazz" : "AddColumn",
+        "column" : "eventType",
+        "columnType" : {
+          "clazz" : "DbVarchar_Sizable",
+          "size" : 256
+        },
+        "nullable" : true
+      }, {
+        "clazz" : "AddColumn",
+        "column" : "orderDate",
+        "columnType" : {
+          "clazz" : "DbVarchar_Sizable",
+          "size" : 256
+        },
+        "nullable" : true
+      }, {
+        "clazz" : "AddColumn",
+        "column" : "orderId",
+        "columnType" : {
+          "clazz" : "DbVarchar_Sizable",
+          "size" : 256
+        },
+        "nullable" : true
+      }, {
+        "clazz" : "AddColumn",
+        "column" : "shipmentStatus",
+        "columnType" : {
+          "clazz" : "DbVarchar_Sizable",
+          "size" : 256
+        },
+        "nullable" : true
+      }, {
+        "clazz" : "AddColumn",
+        "column" : "trackingNumber",
+        "columnType" : {
+          "clazz" : "DbVarchar_Sizable",
+          "size" : 256
+        },
+        "nullable" : true
+      } ]
+    },
+    "columns" : [ ],
+    "columnTypesInfo" : [ {
+      "name" : "eventType",
+      "info" : {
+        "typeName" : "character varying",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "orderDate",
+      "info" : {
+        "typeName" : "character varying",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "orderId",
+      "info" : {
+        "typeName" : "character varying",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "trackingNumber",
+      "info" : {
+        "typeName" : "character varying",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "shipmentStatus",
+      "info" : {
+        "typeName" : "character varying",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "time",
+      "info" : {
+        "typeName" : "character varying",
+        "isIdentity" : false
+      }
+    } ],
+    "createTable" : true
+  },
+  "outputInterval" : 1,
+  "startExecutionFrom" : "2022-09-23T02:09:00Z",
+  "allowCartesianProducts" : false,
+  "isDeleted" : false,
+  "isRunning" : true,
+  "deployedEver" : true,
+  "connectionPointer" : "0b1162bc-ca6a-48e7-8d1e-74a7ba5440d1",
+  "version" : 72,
+  "allowRenaming" : true,
+  "operationParallelism" : {
+    "clazz" : "NoOperationParallelism"
+  },
+  "outputSharding" : {
+    "clazz" : "NoOperationParallelism"
+  },
+  "earliestStartExecutionFrom" : "2022-09-23T02:09:00Z",
+  "workspaces" : [ "7c0fa7e3-bb4a-4fdd-8afc-36351270cfc8" ],
+  "reportingTags" : "",
+  "blocks" : [ {
+    "id" : "5c716194-33d2-465b-a3eb-ce4624576b92",
+    "title" : "Select Block",
+    "expression" : "// GENERATED @ 2022-09-23T03:55:43.519365405Z\nSELECT _time AS time,\n       eventType AS eventType,\n       COALESCE(orderDate, _time) AS orderDate,\n       orderId AS orderId,\n       shipmentStatus AS shipmentStatus,\n       trackingNumber AS trackingNumber\n  FROM \"order-shipping-status-out\"  \n",
+    "dslWarnings" : [ ],
+    "isSelectBlock" : true
+  } ],
+  "groupByDeletion" : true,
+  "eventTypes" : [ ],
+  "inputInterval" : 1,
+  "restrictions" : [ ],
+  "duplicateHandlingInfo" : {
+    "handling" : {
+      "clazz" : "DefaultDuplicateHandling"
+    },
+    "isUserDefined" : false
+  },
+  "deployTime" : "2022-09-23T04:07:42.119199759Z",
+  "status" : {
+    "clazz" : "Running"
+  },
+  "shards" : {
+    "clazz" : "ManualParallelismType",
+    "executionParallelism" : 1,
+    "displayValue" : "Manual - Shards"
+  },
+  "outputShards" : 1,
+  "hasAggregations" : false,
+  "allReferences" : [ "d61e0801-02f4-4596-89fb-420325539947" ],
+  "versionNumber" : 1
+}

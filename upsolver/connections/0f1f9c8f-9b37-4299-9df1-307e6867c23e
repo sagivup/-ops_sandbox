@@ -1,0 +1,38 @@
+{
+  "id" : "0f1f9c8f-9b37-4299-9df1-307e6867c23e",
+  "organizationId" : "355e3b5f-960d-406b-afa7-12f4fd8327eb",
+  "connection" : {
+    "clazz" : "S3Connection",
+    "credentials" : {
+      "clazz" : "KeyBasedCredentials",
+      "accessKey" : "AKIAWHTIBU5LGLG6OXFO",
+      "secretKey" : "B5GOPxPAudliG+2qKgAt7pxxGiVp1Pj8ehbbEMlzqU5xW0wB9ELRoGntBD8xbJRy"
+    },
+    "bucket" : "upsolver-managed-us-east-1",
+    "region" : "us-east-1",
+    "path" : "managed/355e3b5f-960d-406b-afa7-12f4fd8327eb-unallocated-organization",
+    "displayData" : {
+      "name" : "Default Storage Connection",
+      "description" : "",
+      "creationTime" : "2017-09-24T13:21:51.776Z",
+      "createdBy" : "",
+      "modifiedTime" : "2022-01-10T10:12:30.632157Z",
+      "modifiedBy" : {
+        "value" : "Shay Weiner (shay@upsolver.com)"
+      },
+      "versionId" : "a19dd08e-e770-4260-a10c-f5e11a8e304a"
+    },
+    "serverSideEncryptionKey" : {
+      "clazz" : "DefaultEncryptionKey"
+    },
+    "displayValue" : "s3://upsolver-managed-us-east-1/managed/355e3b5f-960d-406b-afa7-12f4fd8327eb-unallocated-organization"
+  },
+  "hidden" : true,
+  "validation" : {
+    "errors" : [ ],
+    "time" : "2023-01-02T13:40:00.203302147Z"
+  },
+  "workspaces" : [ ],
+  "extraOrganizationIds" : [ ],
+  "isManaged" : false
+}

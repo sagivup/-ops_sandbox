@@ -1,0 +1,64 @@
+{
+  "clazz" : "SimpleCloudStorageInput",
+  "id" : "b47b7065-fce7-496c-bfa4-0da4f6265c66",
+  "globalId" : "b47b7065-fce7-496c-bfa4-0da4f6265c66",
+  "organizationId" : "355e3b5f-960d-406b-afa7-12f4fd8327eb",
+  "computeEnvironment" : "1dda980d-c4d2-4db8-af9b-911bef9cb4ad",
+  "sourceStorage" : "d7344398-d1dd-4f87-bcc3-645271eb326d",
+  "prefix" : "",
+  "destinationStorage" : "0b1162bc-ca6a-48e7-8d1e-74a7ba5440d1",
+  "interval" : 1,
+  "startExecutionFrom" : "2022-09-28T08:19:00Z",
+  "fileMatchPattern" : "",
+  "compression" : {
+    "clazz" : "AutoDetectCompression",
+    "displayName" : "Auto Detect (Supports ZIP, GZip, Tar, Snappy and AWS KPL)"
+  },
+  "contentType" : {
+    "clazz" : "AvroContentType"
+  },
+  "displayData" : {
+    "name" : "Motty Test",
+    "description" : "",
+    "creationTime" : "2022-09-28T08:20:42.560284928Z",
+    "createdBy" : "Motty Chirinos (motty@upsolver.com)",
+    "modifiedTime" : "2022-09-28T12:16:47.525853062Z",
+    "modifiedBy" : {
+      "value" : "Motty Chirinos (motty@upsolver.com)"
+    },
+    "versionId" : "aef9cec5-d509-4e0b-b808-43ea4bc7a9c1"
+  },
+  "isDeleted" : true,
+  "deleteFilesAfterLoad" : false,
+  "softRetention" : false,
+  "physicalDelete" : {
+    "initiated" : true,
+    "shouldRun" : false
+  },
+  "version" : 72,
+  "operationParallelism" : {
+    "clazz" : "TaskTimeOperationParallelismProvider",
+    "parallelismByTime" : [ ],
+    "defaultTotalShards" : 1,
+    "defaultShardType" : {
+      "clazz" : "ShardingType$ByTask"
+    }
+  },
+  "requestType" : "SimpleCloudStorageInputRequest",
+  "workspaces" : [ ],
+  "previousLocations" : {
+    "locations" : [ ]
+  },
+  "reportingTags" : "",
+  "previewId" : "442ced08d55b46a5c6fed0a0f46c438d",
+  "isRunning" : false,
+  "parallelismType" : {
+    "clazz" : "ManualParallelismType",
+    "executionParallelism" : 1,
+    "displayValue" : "Manual - Shards"
+  },
+  "status" : {
+    "clazz" : "Archived"
+  },
+  "safeStartTime" : "2022-09-28T08:19:00Z"
+}

@@ -1,0 +1,276 @@
+{
+  "clazz" : "OutputTemplate",
+  "useNewEscaping" : false,
+  "supportMapSameKeyMultipleTimes" : false,
+  "id" : "d39474ed-b2f2-44a9-a2c5-37f757a2f817",
+  "displayData" : {
+    "name" : "pg_upsolver-tutorials-orders",
+    "description" : "",
+    "creationTime" : "2022-09-22T15:45:03.472567509Z",
+    "createdBy" : "pauline@dbx (pauline@upsolver.com)",
+    "modifiedTime" : "2022-09-23T03:45:58.763418978Z",
+    "modifiedBy" : {
+      "value" : "pauline@dbx (pauline@upsolver.com)"
+    },
+    "versionId" : "8925a4d3-ae47-4906-9d44-333bd1ebb8c1"
+  },
+  "inputs" : [ "26ba0c9b-17ed-4f9e-a679-9dde70deaf42" ],
+  "organizationId" : "355e3b5f-960d-406b-afa7-12f4fd8327eb",
+  "groupBy" : false,
+  "computeEnvironment" : "1dda980d-c4d2-4db8-af9b-911bef9cb4ad",
+  "outputParameters" : {
+    "clazz" : "PostgreSqlOutputParameters",
+    "mandatory" : {
+      "clazz" : "MandatoryPostgreSqlOutputParameters",
+      "jdbcConnection" : "ee820a10-f0ac-482b-b5af-4c03321578bd",
+      "schema" : {
+        "catalog" : "postgres",
+        "name" : "public"
+      },
+      "tableName" : "orders",
+      "cloudStorageConnection" : "0b1162bc-ca6a-48e7-8d1e-74a7ba5440d1"
+    },
+    "outputFields" : [ {
+      "clazz" : "RawOutput",
+      "outputs" : [ {
+        "name" : "buyerEmail",
+        "index" : 0,
+        "warnings" : [ ]
+      } ],
+      "field" : {
+        "clazz" : "FieldFeatureInput",
+        "nativeType" : {
+          "name" : "string",
+          "isArray" : false,
+          "subFields" : [ ]
+        },
+        "field" : {
+          "name" : "data.buyerEmail",
+          "nativeType" : {
+            "name" : "string",
+            "isArray" : false,
+            "subFields" : [ ]
+          }
+        },
+        "isAggregationField" : false,
+        "isFromInline" : false
+      }
+    }, {
+      "clazz" : "RawOutput",
+      "outputs" : [ {
+        "name" : "eventType",
+        "index" : 1,
+        "warnings" : [ ]
+      } ],
+      "field" : {
+        "clazz" : "FieldFeatureInput",
+        "nativeType" : {
+          "name" : "string",
+          "isArray" : false,
+          "subFields" : [ ]
+        },
+        "field" : {
+          "name" : "data.eventType",
+          "nativeType" : {
+            "name" : "string",
+            "isArray" : false,
+            "subFields" : [ ]
+          }
+        },
+        "isAggregationField" : false,
+        "isFromInline" : false
+      }
+    }, {
+      "clazz" : "RawOutput",
+      "outputs" : [ {
+        "name" : "netTotal",
+        "index" : 2,
+        "warnings" : [ ]
+      } ],
+      "field" : {
+        "clazz" : "FieldFeatureInput",
+        "nativeType" : {
+          "name" : "number",
+          "isArray" : false,
+          "subFields" : [ ]
+        },
+        "field" : {
+          "name" : "data.netTotal",
+          "nativeType" : {
+            "name" : "number",
+            "isArray" : false,
+            "subFields" : [ ]
+          }
+        },
+        "isAggregationField" : false,
+        "isFromInline" : false
+      }
+    }, {
+      "clazz" : "RawOutput",
+      "outputs" : [ {
+        "name" : "orderDate",
+        "index" : 3,
+        "warnings" : [ ]
+      } ],
+      "field" : {
+        "clazz" : "FieldFeatureInput",
+        "nativeType" : {
+          "name" : "string",
+          "isArray" : false,
+          "subFields" : [ ]
+        },
+        "field" : {
+          "name" : "data.orderDate",
+          "nativeType" : {
+            "name" : "string",
+            "isArray" : false,
+            "subFields" : [ ]
+          }
+        },
+        "isAggregationField" : false,
+        "isFromInline" : false
+      }
+    }, {
+      "clazz" : "RawOutput",
+      "outputs" : [ {
+        "name" : "orderId",
+        "index" : 4,
+        "warnings" : [ ]
+      } ],
+      "field" : {
+        "clazz" : "FieldFeatureInput",
+        "nativeType" : {
+          "name" : "string",
+          "isArray" : false,
+          "subFields" : [ ]
+        },
+        "field" : {
+          "name" : "data.orderId",
+          "nativeType" : {
+            "name" : "string",
+            "isArray" : false,
+            "subFields" : [ ]
+          }
+        },
+        "isAggregationField" : false,
+        "isFromInline" : false
+      }
+    } ],
+    "softRetention" : false,
+    "alters" : {
+      "alters" : [ {
+        "clazz" : "AddColumn",
+        "column" : "buyerEmail",
+        "columnType" : {
+          "clazz" : "DbVarchar_Sizable",
+          "size" : 256
+        },
+        "nullable" : true
+      }, {
+        "clazz" : "AddColumn",
+        "column" : "eventType",
+        "columnType" : {
+          "clazz" : "DbVarchar_Sizable",
+          "size" : 256
+        },
+        "nullable" : true
+      }, {
+        "clazz" : "AddColumn",
+        "column" : "netTotal",
+        "columnType" : {
+          "clazz" : "DbFloat8"
+        },
+        "nullable" : true
+      }, {
+        "clazz" : "AddColumn",
+        "column" : "orderDate",
+        "columnType" : {
+          "clazz" : "DbVarchar_Sizable",
+          "size" : 256
+        },
+        "nullable" : true
+      }, {
+        "clazz" : "AddColumn",
+        "column" : "orderId",
+        "columnType" : {
+          "clazz" : "DbVarchar_Sizable",
+          "size" : 256
+        },
+        "nullable" : true
+      } ]
+    },
+    "columns" : [ ],
+    "columnTypesInfo" : [ {
+      "name" : "netTotal",
+      "info" : {
+        "typeName" : "double precision",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "eventType",
+      "info" : {
+        "typeName" : "character varying",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "orderDate",
+      "info" : {
+        "typeName" : "character varying",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "orderId",
+      "info" : {
+        "typeName" : "character varying",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "buyerEmail",
+      "info" : {
+        "typeName" : "character varying",
+        "isIdentity" : false
+      }
+    } ],
+    "createTable" : true
+  },
+  "outputInterval" : 1,
+  "startExecutionFrom" : "2022-09-10T00:00:00Z",
+  "allowCartesianProducts" : false,
+  "isDeleted" : true,
+  "isRunning" : false,
+  "deployedEver" : true,
+  "connectionPointer" : "0b1162bc-ca6a-48e7-8d1e-74a7ba5440d1",
+  "physicalDelete" : {
+    "initiated" : true,
+    "shouldRun" : false
+  },
+  "version" : 72,
+  "allowRenaming" : true,
+  "operationParallelism" : {
+    "clazz" : "NoOperationParallelism"
+  },
+  "outputSharding" : {
+    "clazz" : "NoOperationParallelism"
+  },
+  "earliestStartExecutionFrom" : "2022-09-10T00:00:00Z",
+  "workspaces" : [ ],
+  "reportingTags" : "",
+  "blocks" : [ ],
+  "groupByDeletion" : true,
+  "eventTypes" : [ ],
+  "inputInterval" : 1,
+  "restrictions" : [ ],
+  "deployTime" : "2022-09-22T15:49:35.066096454Z",
+  "status" : {
+    "clazz" : "Archived"
+  },
+  "shards" : {
+    "clazz" : "ManualParallelismType",
+    "executionParallelism" : 1,
+    "displayValue" : "Manual - Shards"
+  },
+  "outputShards" : 1,
+  "hasAggregations" : false,
+  "allReferences" : [ "26ba0c9b-17ed-4f9e-a679-9dde70deaf42" ],
+  "versionNumber" : 1
+}

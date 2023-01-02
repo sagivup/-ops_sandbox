@@ -1,0 +1,60 @@
+{
+  "clazz" : "OutputTemplate",
+  "useNewEscaping" : false,
+  "supportMapSameKeyMultipleTimes" : false,
+  "id" : "26300986-d288-429c-952d-ad2a0f652e26",
+  "displayData" : {
+    "name" : "test",
+    "description" : "",
+    "creationTime" : "2022-10-13T15:42:22.414332230Z",
+    "createdBy" : "Yoni Iny (yoni@upsolver.com)",
+    "modifiedTime" : "2022-10-13T15:42:22.520114886Z",
+    "modifiedBy" : {
+      "value" : "Yoni Iny (yoni@upsolver.com)"
+    },
+    "versionId" : "36eab0b5-8e84-444a-9c2c-34e17ff8d033"
+  },
+  "inputs" : [ "3579c46a-e792-4523-aa8b-c7410e3b5297" ],
+  "organizationId" : "355e3b5f-960d-406b-afa7-12f4fd8327eb",
+  "groupBy" : false,
+  "outputParameters" : {
+    "clazz" : "UpsolverOutputParameters",
+    "outputFields" : [ ],
+    "softRetention" : false,
+    "addTimeField" : true,
+    "path" : "",
+    "shouldFlatten" : false
+  },
+  "outputInterval" : 1,
+  "startExecutionFrom" : "2022-08-29T10:04:00Z",
+  "allowCartesianProducts" : false,
+  "isDeleted" : false,
+  "isRunning" : false,
+  "deployedEver" : false,
+  "version" : 72,
+  "allowRenaming" : true,
+  "operationParallelism" : {
+    "clazz" : "NoOperationParallelism"
+  },
+  "outputSharding" : {
+    "clazz" : "NoOperationParallelism"
+  },
+  "workspaces" : [ ],
+  "reportingTags" : "",
+  "blocks" : [ ],
+  "groupByDeletion" : true,
+  "eventTypes" : [ ],
+  "restrictions" : [ ],
+  "status" : {
+    "clazz" : "New"
+  },
+  "shards" : {
+    "clazz" : "ManualParallelismType",
+    "executionParallelism" : 1,
+    "displayValue" : "Manual - Shards"
+  },
+  "outputShards" : 1,
+  "hasAggregations" : false,
+  "allReferences" : [ "3579c46a-e792-4523-aa8b-c7410e3b5297" ],
+  "versionNumber" : 1
+}

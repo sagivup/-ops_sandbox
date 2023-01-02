@@ -1,0 +1,35 @@
+{
+  "id" : "35ecd68a-c27e-4de7-b6b8-7b2559c9da75",
+  "organizationId" : "355e3b5f-960d-406b-afa7-12f4fd8327eb",
+  "connection" : {
+    "clazz" : "S3Connection",
+    "credentials" : {
+      "clazz" : "AwsIntegrationCredentials"
+    },
+    "bucket" : "upsolver-tutorials-orders",
+    "region" : "us-east-1",
+    "readOnly" : true,
+    "displayData" : {
+      "name" : "sagiv_tutorial-1 source",
+      "description" : "",
+      "creationTime" : "2022-12-14T13:46:39.263363322Z",
+      "createdBy" : "Sagiv Masvari (sagiv@upsolver.com)",
+      "modifiedTime" : "2022-12-14T13:46:39.929716661Z",
+      "modifiedBy" : {
+        "value" : "Sagiv Masvari (sagiv@upsolver.com)"
+      },
+      "versionId" : "e0603604-e1ff-40dd-9ee9-118ad5abe7ab"
+    },
+    "serverSideEncryptionKey" : {
+      "clazz" : "DefaultEncryptionKey"
+    },
+    "displayValue" : "s3://upsolver-tutorials-orders/"
+  },
+  "validation" : {
+    "errors" : [ ],
+    "time" : "2023-01-02T13:40:00.203302147Z"
+  },
+  "workspaces" : [ ],
+  "extraOrganizationIds" : [ ],
+  "isManaged" : false
+}

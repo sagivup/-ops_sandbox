@@ -1,0 +1,97 @@
+{
+  "clazz" : "OutputTemplate",
+  "useNewEscaping" : false,
+  "supportMapSameKeyMultipleTimes" : false,
+  "id" : "9ad00b8e-17e2-456f-8e7c-5dd217dcaa35",
+  "displayData" : {
+    "name" : "NativTest",
+    "description" : "",
+    "creationTime" : "2022-06-20T12:29:17.701385275Z",
+    "createdBy" : "Dor Zion (dor@upsolver.com)",
+    "modifiedTime" : "2022-06-20T12:29:41.700481807Z",
+    "modifiedBy" : {
+      "value" : "Dor Zion (dor@upsolver.com)"
+    },
+    "versionId" : "ed74dc7a-e52d-4cef-9725-de64205afd58"
+  },
+  "inputs" : [ "858eb106-2fa2-472d-93ba-09900a905edb" ],
+  "organizationId" : "355e3b5f-960d-406b-afa7-12f4fd8327eb",
+  "groupBy" : false,
+  "outputParameters" : {
+    "clazz" : "UpsolverOutputParameters",
+    "outputFields" : [ {
+      "clazz" : "RawOutput",
+      "outputs" : [ {
+        "name" : "processing_time",
+        "index" : 0,
+        "warnings" : [ ]
+      } ],
+      "field" : {
+        "clazz" : "FieldFeatureInput",
+        "nativeType" : {
+          "name" : "number",
+          "isArray" : false,
+          "subFields" : [ ]
+        },
+        "field" : {
+          "name" : "time",
+          "nativeType" : {
+            "name" : "number",
+            "isArray" : false,
+            "subFields" : [ ]
+          }
+        },
+        "isAggregationField" : false,
+        "isFromInline" : false
+      }
+    } ],
+    "softRetention" : false,
+    "addTimeField" : true,
+    "path" : "",
+    "shouldFlatten" : true
+  },
+  "outputInterval" : 1,
+  "startExecutionFrom" : "2022-06-12T14:53:00Z",
+  "allowCartesianProducts" : false,
+  "isDeleted" : false,
+  "isRunning" : false,
+  "deployedEver" : false,
+  "version" : 70,
+  "allowRenaming" : true,
+  "operationParallelism" : {
+    "clazz" : "NoOperationParallelism"
+  },
+  "outputSharding" : {
+    "clazz" : "NoOperationParallelism"
+  },
+  "workspaces" : [ ],
+  "reportingTags" : "",
+  "blocks" : [ {
+    "id" : "3d14a21a-b8e9-48b3-a62e-da08f7d1e4fe",
+    "title" : "Select Block",
+    "expression" : "// GENERATED @ 2022-06-20T12:29:19.162195227Z\nSELECT time:number AS processing_time\n  FROM \"orders\"  \n",
+    "dslWarnings" : [ ],
+    "isSelectBlock" : true
+  } ],
+  "groupByDeletion" : true,
+  "eventTypes" : [ ],
+  "restrictions" : [ ],
+  "duplicateHandlingInfo" : {
+    "handling" : {
+      "clazz" : "DefaultDuplicateHandling"
+    },
+    "isUserDefined" : false
+  },
+  "status" : {
+    "clazz" : "New"
+  },
+  "shards" : {
+    "clazz" : "ManualParallelismType",
+    "executionParallelism" : 1,
+    "displayValue" : "Manual - Shards"
+  },
+  "outputShards" : 1,
+  "hasAggregations" : false,
+  "allReferences" : [ "858eb106-2fa2-472d-93ba-09900a905edb" ],
+  "versionNumber" : 1
+}

@@ -1,0 +1,87 @@
+{
+  "clazz" : "OutputTemplate",
+  "useNewEscaping" : false,
+  "supportMapSameKeyMultipleTimes" : false,
+  "id" : "8bcd3622-babe-4ca8-a4bf-1cdb49fb339f",
+  "displayData" : {
+    "name" : "sagiv_postgress_test_delete",
+    "description" : "",
+    "creationTime" : "2022-12-22T10:00:00.377501989Z",
+    "createdBy" : "Sagiv Masvari (sagiv@upsolver.com)",
+    "modifiedTime" : "2022-12-22T10:14:56.529622846Z",
+    "modifiedBy" : {
+      "value" : "Sagiv Masvari (sagiv@upsolver.com)"
+    },
+    "versionId" : "2a5e3093-97ee-4d08-8148-ce754712f5f1"
+  },
+  "inputs" : [ "4f94d1db-6a3a-4230-9ebc-f2ede6f1a612" ],
+  "organizationId" : "355e3b5f-960d-406b-afa7-12f4fd8327eb",
+  "groupBy" : false,
+  "outputParameters" : {
+    "clazz" : "PostgreSqlOutputParameters",
+    "outputFields" : [ ],
+    "softRetention" : false,
+    "alters" : {
+      "alters" : [ {
+        "clazz" : "AddColumn",
+        "column" : "test",
+        "columnType" : {
+          "clazz" : "DbBoolean"
+        },
+        "nullable" : true,
+        "defaultValue" : "true"
+      } ]
+    },
+    "columns" : [ ],
+    "columnTypesInfo" : [ ],
+    "createTable" : true
+  },
+  "outputInterval" : 1,
+  "startExecutionFrom" : "2022-12-12T19:00:00Z",
+  "allowCartesianProducts" : false,
+  "isDeleted" : true,
+  "isRunning" : false,
+  "deployedEver" : false,
+  "physicalDelete" : {
+    "initiated" : false,
+    "shouldRun" : false
+  },
+  "version" : 75,
+  "allowRenaming" : true,
+  "operationParallelism" : {
+    "clazz" : "NoOperationParallelism"
+  },
+  "outputSharding" : {
+    "clazz" : "NoOperationParallelism"
+  },
+  "workspaces" : [ ],
+  "reportingTags" : "",
+  "blocks" : [ {
+    "id" : "bec7b5f1-8cc3-41b9-a7aa-cd562414a31c",
+    "title" : "Select Block",
+    "expression" : "// GENERATED @ 2022-12-22T10:00:46.895943860Z\nSELECT NULL AS test\n  FROM \"sagiv_tutorial-2\"  \n      \n",
+    "dslWarnings" : [ ],
+    "isSelectBlock" : true
+  } ],
+  "groupByDeletion" : true,
+  "eventTypes" : [ ],
+  "restrictions" : [ ],
+  "duplicateHandlingInfo" : {
+    "handling" : {
+      "clazz" : "DefaultDuplicateHandling"
+    },
+    "isUserDefined" : false
+  },
+  "status" : {
+    "clazz" : "Archived"
+  },
+  "shards" : {
+    "clazz" : "ManualParallelismType",
+    "executionParallelism" : 1,
+    "displayValue" : "Manual - Shards"
+  },
+  "outputShards" : 1,
+  "hasAggregations" : false,
+  "allReferences" : [ "4f94d1db-6a3a-4230-9ebc-f2ede6f1a612" ],
+  "versionNumber" : 1
+}

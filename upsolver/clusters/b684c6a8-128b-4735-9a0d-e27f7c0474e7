@@ -1,0 +1,69 @@
+{
+  "id" : "b684c6a8-128b-4735-9a0d-e27f7c0474e7",
+  "organizationId" : "355e3b5f-960d-406b-afa7-12f4fd8327eb",
+  "displayData" : {
+    "name" : "asd",
+    "description" : "",
+    "creationTime" : "2022-12-29T09:33:53.641721331Z",
+    "createdBy" : "Adar Shabtai (adar@upsolver.com)",
+    "modifiedTime" : "2022-12-29T09:34:00.104610597Z",
+    "modifiedBy" : {
+      "value" : "Adar Shabtai (adar@upsolver.com)"
+    },
+    "versionId" : "12a827c1-0ba7-44bb-9a37-b0fe8f32e10e"
+  },
+  "size" : {
+    "min" : "S",
+    "max" : "M"
+  },
+  "environmentType" : "realtime",
+  "privateVpc" : "1164127312615",
+  "hosts" : {
+    "hosts" : [ ]
+  },
+  "running" : false,
+  "runOnDefault" : false,
+  "elasticIps" : {
+    "value" : true,
+    "userEmail" : "adar@upsolver.com"
+  },
+  "writeLogsToUpsolver" : true,
+  "runReplayCluster" : false,
+  "extraSecurityGroups" : [ ],
+  "scalingProviderOverride" : {
+    "clazz" : "Scaling$LowLatency"
+  },
+  "deploymentType" : {
+    "clazz" : "DeploymentType$AWS",
+    "amiTagName" : "UpsolverPrivateVpc"
+  },
+  "isDeleted" : true,
+  "lastUpdatedBy" : "adar@upsolver.com",
+  "lastUpdateTime" : "2022-12-29T09:34:20.930642581Z",
+  "version" : 75,
+  "allowUpsolverSsh" : false,
+  "exposePrivateIps" : false,
+  "alwaysAssociatePublicIps" : false,
+  "useVersionsCoordinator" : false,
+  "assumeRoleOnServerRole" : false,
+  "storeType" : {
+    "clazz" : "RemoteStoreType",
+    "secretKey" : "c71nCjPhS9EIY2BrCqeDMnymaL2eMLTrWeS9ApWzibfuL3nrZSqWcaX2uMiID5R7"
+  },
+  "workspaces" : [ ],
+  "shouldCompareConfiguration" : true,
+  "tags" : {
+    "tags" : [ ]
+  },
+  "extraSpotTypes" : [ ],
+  "lastDeploymentTime" : "2022-12-29T09:33:53.641767881Z",
+  "excludeMonitoringReporters" : [ ],
+  "hibernated" : false,
+  "autohealEnabled" : true,
+  "serverFiles" : [ ],
+  "spotinstOverrides" : "",
+  "clazz" : "CustomerEnvironment",
+  "status" : {
+    "clazz" : "Stopped"
+  }
+}

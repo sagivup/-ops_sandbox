@@ -1,0 +1,94 @@
+{
+  "id" : "8e9715ec-d1b8-4e04-a82f-3f4555f9ae0f",
+  "organizationId" : "355e3b5f-960d-406b-afa7-12f4fd8327eb",
+  "displayData" : {
+    "name" : "sagiv_du",
+    "description" : "",
+    "creationTime" : "2022-09-15T09:20:43.676111441Z",
+    "createdBy" : "Sagiv Masvari (sagiv@upsolver.com)",
+    "modifiedTime" : "2023-01-02T11:37:18.220421060Z",
+    "modifiedBy" : {
+      "value" : "Sagiv Masvari (sagiv@upsolver.com)"
+    },
+    "versionId" : "32e429dc-b854-463d-b620-dd2f5ff9f1ed"
+  },
+  "size" : {
+    "min" : "XS",
+    "max" : "XS"
+  },
+  "environmentType" : "compute",
+  "privateVpc" : "1164127312615",
+  "region" : "us-east-1",
+  "hosts" : {
+    "hosts" : [ ]
+  },
+  "running" : false,
+  "runOnDefault" : false,
+  "elasticIps" : {
+    "value" : false,
+    "userEmail" : "sagiv@upsolver.com"
+  },
+  "instanceTypeOverride" : "m5.2xlarge",
+  "nextRestartOperation" : {
+    "clazz" : "CustomerEnvironment$RollOperation",
+    "time" : "2023-01-02T09:16:52.835203237Z"
+  },
+  "writeLogsToUpsolver" : true,
+  "runReplayCluster" : false,
+  "extraSecurityGroups" : [ ],
+  "scalingProviderOverride" : {
+    "clazz" : "Scaling$LowLatency"
+  },
+  "deploymentType" : {
+    "clazz" : "DeploymentType$AWS",
+    "amiTagName" : "UpsolverPrivateVpc"
+  },
+  "isDeleted" : false,
+  "lastUpdatedBy" : "sagiv@upsolver.com",
+  "lastUpdateTime" : "2023-01-02T11:37:18.220350831Z",
+  "version" : 72,
+  "allowUpsolverSsh" : false,
+  "exposePrivateIps" : false,
+  "alwaysAssociatePublicIps" : false,
+  "useVersionsCoordinator" : false,
+  "assumeRoleOnServerRole" : false,
+  "dryRunEnvironment" : {
+    "isRunning" : true,
+    "buildConfiguration" : {
+      "clazz" : "S3BuildConfiguration",
+      "tag" : "dryrun_rc309_sqlake"
+    },
+    "runUntil" : "2022-12-27T04:16:07.399187847Z",
+    "dryRunIdentifier" : "dryrun-2022-12-27T03:16:06.777170103Z",
+    "exceptionWhitelist" : "CancelledOperationException;NonDeterministicDryRunException\n",
+    "tasksToIgnorePatterns" : [ "index_part:hour", "index_part:5_minutes_merge", "index_part:20_minutes_merge", "index_part:full_merge", "index_part:\\d+_days_merge", "index_part:\\d+_hours_merge" ],
+    "acceptNewTasksUntil" : "2022-12-27T04:16:07.399187847Z"
+  },
+  "storeType" : {
+    "clazz" : "RemoteStoreType",
+    "secretKey" : "nyvfpn8ABh3tx1zNjRgUN//btCIBNhfCF715UFJds+zuTif3Puz5/VGF32KUEYpE"
+  },
+  "workspaces" : [ ],
+  "shouldCompareConfiguration" : true,
+  "tags" : {
+    "tags" : [ {
+      "key" : "test_tag",
+      "value" : "Sagiv"
+    }, {
+      "key" : "Project",
+      "value" : "Test_Upsolver"
+    } ]
+  },
+  "extraSpotTypes" : [ ],
+  "lastDeploymentTime" : "2023-01-01T19:01:01.891417373Z",
+  "excludeMonitoringReporters" : [ ],
+  "hibernated" : false,
+  "autohealEnabled" : true,
+  "serverFiles" : [ ],
+  "spotinstOverrides" : "",
+  "clazz" : "CustomerEnvironment",
+  "serverType" : "1 (m5.2xlarge - 8 cores, 32GB RAM)",
+  "status" : {
+    "clazz" : "Stopped"
+  }
+}

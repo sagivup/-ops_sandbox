@@ -1,0 +1,43 @@
+{
+  "id" : "b61e80a9-b7fe-498c-bf8e-573dce40222f",
+  "organizationId" : "355e3b5f-960d-406b-afa7-12f4fd8327eb",
+  "connection" : {
+    "clazz" : "GlueDataCatalogConnection",
+    "credentials" : {
+      "clazz" : "RoleBasedCredentials",
+      "arnRole" : "arn:aws:iam::428641199958:role/upsolver-role-355e3b5f-960d-406b-afa7-12f4fd8327eb",
+      "externalId" : "355e3b5f-960d-406b-afa7-12f4fd8327eb",
+      "integration" : {
+        "clazz" : "DefaultAwsCloudIntegration",
+        "accountId" : "428641199958",
+        "organizationId" : "355e3b5f-960d-406b-afa7-12f4fd8327eb",
+        "region" : "us-east-1",
+        "hasManagementRole" : true,
+        "includeRegionInRole" : false
+      },
+      "organizationId" : "355e3b5f-960d-406b-afa7-12f4fd8327eb",
+      "enforceExternalId" : true
+    },
+    "region" : "us-east-1",
+    "displayData" : {
+      "name" : "upsolver-tutorials-orders-glue-connection",
+      "description" : "",
+      "creationTime" : "2022-09-11T18:44:41.214640553Z",
+      "createdBy" : "pauline@dbx (pauline@upsolver.com)",
+      "modifiedTime" : "2022-09-11T18:44:41.649191177Z",
+      "modifiedBy" : {
+        "value" : "pauline@dbx (pauline@upsolver.com)"
+      },
+      "versionId" : "5a2ed0d8-a631-484d-9b8b-928e5f510c5b"
+    },
+    "supportsGlue" : true,
+    "displayValue" : "upsolver-tutorials-orders-glue-connection"
+  },
+  "validation" : {
+    "errors" : [ ],
+    "time" : "2023-01-02T13:40:00.203302147Z"
+  },
+  "workspaces" : [ ],
+  "extraOrganizationIds" : [ ],
+  "isManaged" : false
+}

@@ -1,0 +1,87 @@
+{
+  "id" : "4e977aab-ee2a-4d77-a83e-1b1c840864de",
+  "organizationId" : "355e3b5f-960d-406b-afa7-12f4fd8327eb",
+  "displayData" : {
+    "name" : "test-yair",
+    "description" : "",
+    "creationTime" : "2022-12-12T10:43:29.769763694Z",
+    "createdBy" : "Yair Uziel (yair@upsolver.com)",
+    "modifiedTime" : "2023-01-02T12:32:02.669101898Z",
+    "modifiedBy" : {
+      "value" : "Adar Shabtai (adar@upsolver.com)"
+    },
+    "versionId" : "215e0e25-b7fd-4642-95d2-42a43ef5cb4f"
+  },
+  "size" : {
+    "min" : "XS",
+    "max" : "XS"
+  },
+  "environmentType" : "compute",
+  "privateVpc" : "1164127312615",
+  "hosts" : {
+    "hosts" : [ ]
+  },
+  "running" : true,
+  "runOnDefault" : false,
+  "elasticIps" : {
+    "value" : false,
+    "userEmail" : "yair@upsolver.com"
+  },
+  "instanceTypeOverride" : "m5.xlarge",
+  "nextRestartOperation" : {
+    "clazz" : "CustomerEnvironment$RollOperation",
+    "time" : "2022-12-28T16:59:07Z"
+  },
+  "writeLogsToUpsolver" : true,
+  "runReplayCluster" : false,
+  "extraSecurityGroups" : [ ],
+  "scalingProviderOverride" : {
+    "clazz" : "Scaling$NoScaling"
+  },
+  "deploymentType" : {
+    "clazz" : "DeploymentType$AWS",
+    "amiTagName" : "UpsolverPrivateVpc"
+  },
+  "isDeleted" : false,
+  "lastUpdatedBy" : "adar@upsolver.com",
+  "lastUpdateTime" : "2023-01-02T12:32:02.668736312Z",
+  "version" : 74,
+  "allowUpsolverSsh" : true,
+  "exposePrivateIps" : false,
+  "alwaysAssociatePublicIps" : false,
+  "useVersionsCoordinator" : false,
+  "assumeRoleOnServerRole" : false,
+  "dryRunEnvironment" : {
+    "isRunning" : true,
+    "buildConfiguration" : {
+      "clazz" : "S3BuildConfiguration",
+      "tag" : "dryrun_rc324_sqlake"
+    },
+    "runUntil" : "2022-12-29T04:05:29.576255902Z",
+    "dryRunIdentifier" : "dryrun-2022-12-29T03:05:27.519377759Z",
+    "exceptionWhitelist" : "CancelledOperationException;NonDeterministicDryRunException\n",
+    "tasksToIgnorePatterns" : [ "index_part:hour", "index_part:5_minutes_merge", "index_part:20_minutes_merge", "index_part:full_merge", "index_part:\\d+_days_merge", "index_part:\\d+_hours_merge" ],
+    "acceptNewTasksUntil" : "2022-12-29T04:05:29.576255902Z"
+  },
+  "storeType" : {
+    "clazz" : "RemoteStoreType",
+    "secretKey" : "79M1U3S0CwpgB3652jP/kj4pYpiB7Jo/NpcQTe5Qi2G8pIewKq/Cr3qXLct1rYK9"
+  },
+  "workspaces" : [ ],
+  "shouldCompareConfiguration" : true,
+  "tags" : {
+    "tags" : [ ]
+  },
+  "extraSpotTypes" : [ ],
+  "lastDeploymentTime" : "2023-01-02T12:26:27.875896932Z",
+  "excludeMonitoringReporters" : [ ],
+  "hibernated" : false,
+  "autohealEnabled" : true,
+  "serverFiles" : [ ],
+  "spotinstOverrides" : "{\"compute\": {\n\t\t\"instanceTypes\": {\n\t\t\t\"ondemand\": \"m5.4xlarge\",\n\t\t\t\"spot\": [\n\t\t\t\t\"r5b.4xlarge\",\n\t\t\t\t\"r5ad.4xlarge\",\n\t\t\t\t\"r5a.4xlarge\",\n\t\t\t\t\"r5.4xlarge\",\n\t\t\t\t\"m5.4xlarge\",\n\t\t\t\t\"m5a.4xlarge\",\n\t\t\t\t\"m5ad.4xlarge\",\n\t\t\t\t\"m5d.4xlarge\",\n\t\t\t\t\"m5n.4xlarge\"\n\t\t\t],\n\t\t\t\"preferredSpot\": [\n\t\t\t\t\"m5.4xlarge\",\n\t\t\t\t\"m5a.4xlarge\",\n\t\t\t\t\"m5ad.4xlarge\",\n\t\t\t\t\"m5d.4xlarge\",\n\t\t\t\t\"m5n.4xlarge\"\n\t\t\t]\n\t\t}\n\t}}",
+  "clazz" : "CustomerEnvironment",
+  "serverType" : "0.5 (m5.xlarge - 4 cores, 16GB RAM)",
+  "status" : {
+    "clazz" : "Running"
+  }
+}

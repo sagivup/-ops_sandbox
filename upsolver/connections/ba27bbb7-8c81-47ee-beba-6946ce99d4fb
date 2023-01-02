@@ -1,0 +1,35 @@
+{
+  "id" : "ba27bbb7-8c81-47ee-beba-6946ce99d4fb",
+  "organizationId" : "355e3b5f-960d-406b-afa7-12f4fd8327eb",
+  "connection" : {
+    "clazz" : "SnowflakeConnection",
+    "connectionString" : "jdbc:snowflake://wm34832.us-east-2.aws.snowflakecomputing.com/?db=UPSOLVER",
+    "userName" : "meiupsolver",
+    "password" : "N8Gd80Xl+7Q2/WyBDUzryg==",
+    "displayData" : {
+      "name" : "sf_conn",
+      "description" : "",
+      "creationTime" : "2022-09-06T13:04:10.998670009Z",
+      "createdBy" : "Mei Long (mei@upsolver.com)",
+      "modifiedTime" : "2022-09-06T13:04:12.861262033Z",
+      "modifiedBy" : {
+        "value" : "Mei Long (mei@upsolver.com)"
+      },
+      "versionId" : "0501eec5-f4a0-4128-b1a2-69ded169bb9e"
+    },
+    "schemas" : [ ],
+    "displayValue" : "jdbc:snowflake://wm34832.us-east-2.aws.snowflakecomputing.com/?db=UPSOLVER"
+  },
+  "validation" : {
+    "errors" : [ {
+      "clazz" : "SimpleValidationResult",
+      "property" : "connectionString",
+      "error" : "Connection Error: Wrong account name, region or host",
+      "severity" : "error"
+    } ],
+    "time" : "2023-01-02T13:40:00.203302147Z"
+  },
+  "workspaces" : [ ],
+  "extraOrganizationIds" : [ ],
+  "isManaged" : false
+}

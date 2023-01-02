@@ -1,0 +1,42 @@
+{
+  "id" : "e338a34e-acf1-4012-abf2-0465d6c6b7a1",
+  "organizationId" : "355e3b5f-960d-406b-afa7-12f4fd8327eb",
+  "connection" : {
+    "clazz" : "KinesisConnection",
+    "credentials" : {
+      "clazz" : "KeyBasedCredentials",
+      "accessKey" : "AKIA52BJ2O6CDZNFZDCL",
+      "secretKey" : "DYNGuEeJZAXJ6eR8fTU2HoCtfM8+i/oLY9F69qoaMBfp2cHDi9FNCJ3pt15uEWQK"
+    },
+    "region" : "us-east-1",
+    "displayData" : {
+      "name" : "kinesis_conn",
+      "description" : "",
+      "creationTime" : "2022-09-14T20:38:59.286534608Z",
+      "createdBy" : "Mei Long (mei@upsolver.com)",
+      "modifiedTime" : "2022-09-14T20:38:59.372483791Z",
+      "modifiedBy" : {
+        "value" : "Mei Long (mei@upsolver.com)"
+      },
+      "versionId" : "943f2bc6-dd41-4aa4-bce5-19f9bbdfe026"
+    },
+    "readOnly" : true,
+    "maxWriters" : 20,
+    "streamsIncludePolicy" : {
+      "clazz" : "EntitiesIncludePolicy$All"
+    },
+    "displayValue" : "kinesis_conn/usEast1"
+  },
+  "validation" : {
+    "errors" : [ {
+      "clazz" : "SimpleValidationResult",
+      "property" : "accessKey",
+      "error" : "Given access key is invalid",
+      "severity" : "error"
+    } ],
+    "time" : "2023-01-02T13:40:00.203302147Z"
+  },
+  "workspaces" : [ ],
+  "extraOrganizationIds" : [ ],
+  "isManaged" : false
+}

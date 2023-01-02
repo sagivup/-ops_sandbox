@@ -1,0 +1,63 @@
+{
+  "clazz" : "CloudStorageInput",
+  "id" : "840415d3-1ea6-4b1f-8c03-df5d041d70c9",
+  "globalId" : "840415d3-1ea6-4b1f-8c03-df5d041d70c9",
+  "organizationId" : "355e3b5f-960d-406b-afa7-12f4fd8327eb",
+  "computeEnvironment" : "1dda980d-c4d2-4db8-af9b-911bef9cb4ad",
+  "sourceStorage" : "82e57821-1fff-449f-8c7c-4dbec076ca40",
+  "prefix" : "",
+  "datePattern" : "yyyy/MM/dd/HH",
+  "dataDumpDate" : "2022-12-14T08:37:11.455823969Z",
+  "destinationStorage" : "0b1162bc-ca6a-48e7-8d1e-74a7ba5440d1",
+  "maxDelay" : 1440,
+  "interval" : 1,
+  "startExecutionFrom" : "2022-12-12T14:00:00Z",
+  "fileMatchPattern" : "^.*$",
+  "compression" : {
+    "clazz" : "AutoDetectCompression",
+    "displayName" : "Auto Detect (Supports ZIP, GZip, Tar, Snappy and AWS KPL)"
+  },
+  "contentType" : {
+    "clazz" : "JsonContentType",
+    "nestedJsonPaths" : [ ],
+    "nestedJsons" : [ ],
+    "splitRootArray" : true,
+    "keepOriginalNestedJsonString" : false,
+    "storeJsonAsString" : false
+  },
+  "displayData" : {
+    "name" : "orders-motty",
+    "description" : "",
+    "creationTime" : "2022-12-14T08:37:11.455851695Z",
+    "createdBy" : "Motty Chirinos (motty@upsolver.com)",
+    "modifiedTime" : "2022-12-14T12:21:58.209741746Z",
+    "modifiedBy" : {
+      "value" : "Sagiv Masvari (sagiv@upsolver.com)"
+    },
+    "versionId" : "06bd8a2c-d909-49ea-bee8-407f16089559"
+  },
+  "isDeleted" : false,
+  "anchorDatePatternToStart" : true,
+  "softRetention" : false,
+  "version" : 74,
+  "operationParallelism" : {
+    "clazz" : "NoOperationParallelism"
+  },
+  "requestType" : "CloudStorageInputRequest",
+  "workspaces" : [ ],
+  "previousLocations" : {
+    "locations" : [ ]
+  },
+  "reportingTags" : "",
+  "previewId" : "f9c3a6c420234a0796f9ac7d655c0552",
+  "isRunning" : false,
+  "parallelismType" : {
+    "clazz" : "ManualParallelismType",
+    "executionParallelism" : 1,
+    "displayValue" : "Manual - Shards"
+  },
+  "status" : {
+    "clazz" : "Stopped"
+  },
+  "safeStartTime" : "2022-12-12T14:00:00Z"
+}

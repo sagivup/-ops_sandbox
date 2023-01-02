@@ -1,0 +1,47 @@
+{
+  "id" : "7fbfafdb-48d5-43ed-92bc-7539dc51dcb9",
+  "organizationId" : "355e3b5f-960d-406b-afa7-12f4fd8327eb",
+  "connection" : {
+    "clazz" : "AthenaConnection",
+    "credentials" : {
+      "clazz" : "RoleBasedCredentials",
+      "arnRole" : "arn:aws:iam::428641199958:role/upsolver-role-355e3b5f-960d-406b-afa7-12f4fd8327eb",
+      "externalId" : "355e3b5f-960d-406b-afa7-12f4fd8327eb",
+      "integration" : {
+        "clazz" : "DefaultAwsCloudIntegration",
+        "accountId" : "428641199958",
+        "organizationId" : "355e3b5f-960d-406b-afa7-12f4fd8327eb",
+        "region" : "us-east-1",
+        "hasManagementRole" : true,
+        "includeRegionInRole" : false
+      },
+      "organizationId" : "355e3b5f-960d-406b-afa7-12f4fd8327eb",
+      "enforceExternalId" : true
+    },
+    "s3StagingDir" : "s3://aws-athena-query-results-428641199958-us-east-1/upsolver",
+    "region" : "us-east-1",
+    "displayData" : {
+      "name" : "orders_new_athena_motty",
+      "description" : "",
+      "creationTime" : "2022-10-12T12:21:08.913173097Z",
+      "createdBy" : "Motty Chirinos (motty@upsolver.com)",
+      "modifiedTime" : "2022-10-12T12:21:09.390379167Z",
+      "modifiedBy" : {
+        "value" : "Motty Chirinos (motty@upsolver.com)"
+      },
+      "versionId" : "4ff69f66-04d6-42af-ac4f-971a3d6d252f"
+    },
+    "supportsGlue" : true,
+    "databaseIncludePolicy" : {
+      "clazz" : "EntitiesIncludePolicy$All"
+    },
+    "displayValue" : "orders_new_athena_motty"
+  },
+  "validation" : {
+    "errors" : [ ],
+    "time" : "2023-01-02T13:40:00.203302147Z"
+  },
+  "workspaces" : [ ],
+  "extraOrganizationIds" : [ ],
+  "isManaged" : false
+}

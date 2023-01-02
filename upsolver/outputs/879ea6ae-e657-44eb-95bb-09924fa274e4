@@ -1,0 +1,81 @@
+{
+  "clazz" : "OutputTemplate",
+  "useNewEscaping" : false,
+  "supportMapSameKeyMultipleTimes" : false,
+  "id" : "879ea6ae-e657-44eb-95bb-09924fa274e4",
+  "displayData" : {
+    "name" : "Sagiv_ES (1)",
+    "description" : "Duplicate of Sagiv_ES",
+    "creationTime" : "2022-09-22T07:06:23.659389802Z",
+    "createdBy" : "Adar Shabtai (adar@upsolver.com)",
+    "modifiedTime" : "2022-09-22T07:06:51.729199733Z",
+    "modifiedBy" : {
+      "value" : "Adar Shabtai (adar@upsolver.com)"
+    },
+    "versionId" : "e0348205-4a19-4672-aec6-1fba9f075c00"
+  },
+  "inputs" : [ "3579c46a-e792-4523-aa8b-c7410e3b5297" ],
+  "organizationId" : "355e3b5f-960d-406b-afa7-12f4fd8327eb",
+  "groupBy" : false,
+  "outputParameters" : {
+    "clazz" : "CloudStorageOutputParameters",
+    "compression" : {
+      "clazz" : "NoneCompression",
+      "noCompression" : [ ],
+      "displayName" : "None"
+    },
+    "outputFields" : [ ],
+    "path" : "",
+    "dateFormat" : {
+      "clazz" : "DefaultDateExtractor",
+      "pattern" : "yyyy/MM/dd/HH/mm/",
+      "smallestPart" : 1,
+      "hasWeek" : false,
+      "hasYear" : true,
+      "displayName" : "Default",
+      "displayValue" : "Default (yyyy/MM/dd/HH/mm/)"
+    },
+    "shouldFlatten" : true,
+    "softRetention" : false,
+    "outputOffset" : 0
+  },
+  "outputInterval" : 1,
+  "startExecutionFrom" : "2022-08-29T10:04:00Z",
+  "allowCartesianProducts" : false,
+  "isDeleted" : true,
+  "isRunning" : false,
+  "deployedEver" : false,
+  "physicalDelete" : {
+    "initiated" : false,
+    "shouldRun" : false
+  },
+  "version" : 72,
+  "allowRenaming" : true,
+  "operationParallelism" : {
+    "clazz" : "NoOperationParallelism"
+  },
+  "outputSharding" : {
+    "clazz" : "NoOperationParallelism"
+  },
+  "executionState" : {
+    "clazz" : "ExecutionState$Running"
+  },
+  "workspaces" : [ ],
+  "reportingTags" : "",
+  "blocks" : [ ],
+  "groupByDeletion" : true,
+  "eventTypes" : [ ],
+  "restrictions" : [ ],
+  "status" : {
+    "clazz" : "Archived"
+  },
+  "shards" : {
+    "clazz" : "ManualParallelismType",
+    "executionParallelism" : 1,
+    "displayValue" : "Manual - Shards"
+  },
+  "outputShards" : 1,
+  "hasAggregations" : false,
+  "allReferences" : [ "3579c46a-e792-4523-aa8b-c7410e3b5297" ],
+  "versionNumber" : 1
+}

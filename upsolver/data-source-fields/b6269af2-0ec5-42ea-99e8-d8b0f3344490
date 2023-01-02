@@ -1,0 +1,45 @@
+{
+  "inputId" : "b6269af2-0ec5-42ea-99e8-d8b0f3344490",
+  "organizationId" : "",
+  "fields" : [ {
+    "feature" : {
+      "clazz" : "FeatureDefinition",
+      "dsl" : "REGEX('a', data.app.name:string)",
+      "field" : {
+        "name" : "data.app.a",
+        "nativeType" : {
+          "name" : "string",
+          "isArray" : true,
+          "subFields" : [ ]
+        }
+      },
+      "featureInputs" : [ {
+        "clazz" : "FieldFeatureInput",
+        "nativeType" : {
+          "name" : "string",
+          "isArray" : false,
+          "subFields" : [ ]
+        },
+        "field" : {
+          "name" : "data.app.name",
+          "nativeType" : {
+            "name" : "string",
+            "isArray" : false,
+            "subFields" : [ ]
+          }
+        },
+        "isAggregationField" : false,
+        "isFromInline" : false
+      } ],
+      "feature" : {
+        "clazz" : "RegexMatchAll",
+        "pattern" : "a"
+      },
+      "inline" : false,
+      "id" : "9e594b6d-8abf-86a4-ca74-cdc539884f47",
+      "infix" : false,
+      "pathForRead" : { }
+    },
+    "immutable" : true
+  } ]
+}

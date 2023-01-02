@@ -1,0 +1,76 @@
+{
+  "id" : "7151ced9-cfd2-4403-af23-25a1f298785e",
+  "organizationId" : "355e3b5f-960d-406b-afa7-12f4fd8327eb",
+  "displayData" : {
+    "name" : "Motty Exercise",
+    "description" : "",
+    "creationTime" : "2022-10-12T09:26:51.589221558Z",
+    "createdBy" : "Motty Chirinos (motty@upsolver.com)",
+    "modifiedTime" : "2022-10-13T07:13:45.054272235Z",
+    "modifiedBy" : {
+      "value" : "Motty Chirinos (motty@upsolver.com)"
+    },
+    "versionId" : "b548eae9-b035-4375-99ad-aeb9b9c35a69"
+  },
+  "size" : {
+    "min" : "S",
+    "max" : "M"
+  },
+  "environmentType" : "compute",
+  "privateVpc" : "1164127312615",
+  "region" : "us-east-1",
+  "hosts" : {
+    "hosts" : [ ]
+  },
+  "running" : false,
+  "runOnDefault" : false,
+  "elasticIps" : {
+    "value" : false,
+    "userEmail" : "motty@upsolver.com"
+  },
+  "instanceTypeOverride" : "r5.4xlarge",
+  "nextRestartOperation" : {
+    "clazz" : "CustomerEnvironment$RollOperation",
+    "time" : "2022-10-12T16:47:11.601262129Z"
+  },
+  "writeLogsToUpsolver" : true,
+  "runReplayCluster" : false,
+  "extraSecurityGroups" : [ ],
+  "scalingProviderOverride" : {
+    "clazz" : "Scaling$LowLatency"
+  },
+  "deploymentType" : {
+    "clazz" : "DeploymentType$AWS",
+    "amiTagName" : "UpsolverPrivateVpc"
+  },
+  "isDeleted" : true,
+  "lastUpdatedBy" : "motty@upsolver.com",
+  "lastUpdateTime" : "2022-10-13T07:13:52.608830961Z",
+  "version" : 72,
+  "allowUpsolverSsh" : true,
+  "exposePrivateIps" : false,
+  "alwaysAssociatePublicIps" : false,
+  "useVersionsCoordinator" : false,
+  "assumeRoleOnServerRole" : false,
+  "storeType" : {
+    "clazz" : "RemoteStoreType",
+    "secretKey" : "WTjGO2PM/S4v5njPok9f+ygCZvqA9O/bC2ZxOJ0RCTLUTUMhKS05H0YMUOfIGAjq"
+  },
+  "workspaces" : [ ],
+  "shouldCompareConfiguration" : true,
+  "tags" : {
+    "tags" : [ ]
+  },
+  "extraSpotTypes" : [ ],
+  "lastDeploymentTime" : "2022-10-12T09:26:51.589382845Z",
+  "excludeMonitoringReporters" : [ ],
+  "hibernated" : false,
+  "autohealEnabled" : true,
+  "serverFiles" : [ ],
+  "spotinstOverrides" : "",
+  "clazz" : "CustomerEnvironment",
+  "serverType" : "2 (r5.4xlarge - 16 cores, 128GB RAM)",
+  "status" : {
+    "clazz" : "Stopped"
+  }
+}

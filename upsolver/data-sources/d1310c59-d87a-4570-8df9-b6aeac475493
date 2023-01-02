@@ -1,0 +1,50 @@
+{
+  "clazz" : "UploadFileInput",
+  "id" : "d1310c59-d87a-4570-8df9-b6aeac475493",
+  "globalId" : "d1310c59-d87a-4570-8df9-b6aeac475493",
+  "organizationId" : "355e3b5f-960d-406b-afa7-12f4fd8327eb",
+  "computeEnvironment" : "1dda980d-c4d2-4db8-af9b-911bef9cb4ad",
+  "connectionPointer" : "0b1162bc-ca6a-48e7-8d1e-74a7ba5440d1",
+  "displayData" : {
+    "name" : "vpclog-without_header",
+    "description" : "",
+    "creationTime" : "2022-03-05T12:29:29.408859Z",
+    "createdBy" : "amir (amir@upsolver.com)",
+    "modifiedTime" : "2022-07-10T06:02:22.276454459Z",
+    "modifiedBy" : {
+      "value" : "Dima Rabkin (dima@upsolver.com)"
+    },
+    "versionId" : "acd4fc54-3144-49e4-88d4-ca44ead94cce"
+  },
+  "contentType" : {
+    "clazz" : "CsvContentType",
+    "inferTypes" : true,
+    "header" : "",
+    "delimiter" : ",",
+    "quoteEscapeChar" : "\"",
+    "nestedJsons" : [ ],
+    "keepOriginalNestedJsonString" : false,
+    "allowDuplicateHeaders" : false,
+    "headers" : [ ]
+  },
+  "startExecutionFrom" : "2022-03-05T12:25:00Z",
+  "folder" : "uploads/a8303fcf-5724-46bd-ac6b-0e94b858b575",
+  "isDeleted" : true,
+  "physicalDelete" : {
+    "initiated" : true,
+    "shouldRun" : false
+  },
+  "version" : 68,
+  "workspaces" : [ ],
+  "previewId" : "40e5a05c08011bf89d3698754c5408ba",
+  "isRunning" : false,
+  "parallelismType" : {
+    "clazz" : "ManualParallelismType",
+    "executionParallelism" : 1,
+    "displayValue" : "Manual - Shards"
+  },
+  "status" : {
+    "clazz" : "Archived"
+  },
+  "safeStartTime" : "2022-03-05T12:25:00Z"
+}

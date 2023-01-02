@@ -1,0 +1,250 @@
+{
+  "inputId" : "25a6c8a2-379c-474e-8f3c-7a05d265e91e",
+  "organizationId" : "",
+  "fields" : [ {
+    "feature" : {
+      "clazz" : "FeatureDefinition",
+      "dsl" : "STRING_FORMAT('{0} 00:00', data.partition_date:string)",
+      "field" : {
+        "name" : "data.partition_date_with_time",
+        "nativeType" : {
+          "name" : "string",
+          "isArray" : false,
+          "subFields" : [ ]
+        }
+      },
+      "featureInputs" : [ {
+        "clazz" : "FieldFeatureInput",
+        "nativeType" : {
+          "name" : "string",
+          "isArray" : false,
+          "subFields" : [ ]
+        },
+        "field" : {
+          "name" : "data.partition_date",
+          "nativeType" : {
+            "name" : "string",
+            "isArray" : false,
+            "subFields" : [ ]
+          }
+        },
+        "isAggregationField" : false,
+        "isFromInline" : false
+      } ],
+      "feature" : {
+        "clazz" : "StringFeatures$UnaryMessageFormat",
+        "format" : "{0} 00:00"
+      },
+      "inline" : false,
+      "id" : "bbe8d439-eac1-9997-1008-eb1c40fcd3cc",
+      "infix" : false,
+      "pathForRead" : { }
+    },
+    "immutable" : true
+  }, {
+    "feature" : {
+      "clazz" : "FeatureDefinition",
+      "dsl" : "PARSE_DATE('d/M/yyyy HH:mm', data.partition_date_with_time:string)",
+      "field" : {
+        "name" : "data.partition_date_date",
+        "nativeType" : {
+          "name" : "instant",
+          "isArray" : false,
+          "subFields" : [ ]
+        }
+      },
+      "featureInputs" : [ {
+        "clazz" : "FieldFeatureInput",
+        "nativeType" : {
+          "name" : "string",
+          "isArray" : false,
+          "subFields" : [ ]
+        },
+        "field" : {
+          "name" : "data.partition_date_with_time",
+          "nativeType" : {
+            "name" : "string",
+            "isArray" : false,
+            "subFields" : [ ]
+          }
+        },
+        "isAggregationField" : false,
+        "isFromInline" : false
+      } ],
+      "feature" : {
+        "clazz" : "StringFeatures$ToDateFormattedFeature",
+        "format" : "d/M/yyyy HH:mm"
+      },
+      "inline" : false,
+      "id" : "1719c20e-c705-9f00-5f2c-d18912be8d17",
+      "infix" : false,
+      "pathForRead" : { }
+    },
+    "immutable" : true
+  }, {
+    "feature" : {
+      "clazz" : "FeatureDefinition",
+      "dsl" : "TO_UNIX_EPOCH_SECONDS(data.partition_date_date:instant)",
+      "field" : {
+        "name" : "data.parition_date_unixtime",
+        "nativeType" : {
+          "name" : "long",
+          "isArray" : false,
+          "subFields" : [ ]
+        }
+      },
+      "featureInputs" : [ {
+        "clazz" : "FieldFeatureInput",
+        "nativeType" : {
+          "name" : "instant",
+          "isArray" : false,
+          "subFields" : [ ]
+        },
+        "field" : {
+          "name" : "data.partition_date_date",
+          "nativeType" : {
+            "name" : "instant",
+            "isArray" : false,
+            "subFields" : [ ]
+          }
+        },
+        "isAggregationField" : false,
+        "isFromInline" : false
+      } ],
+      "feature" : {
+        "clazz" : "ToEpochTime"
+      },
+      "inline" : false,
+      "id" : "bee471eb-1746-fb21-1dd4-c0cfdc66a176",
+      "infix" : false,
+      "pathForRead" : { }
+    },
+    "immutable" : true
+  }, {
+    "feature" : {
+      "clazz" : "FeatureDefinition",
+      "dsl" : "PARSE_DATE('d/M/yyyy H:m', data.tmstmp:string)",
+      "field" : {
+        "name" : "data.timestamp_date",
+        "nativeType" : {
+          "name" : "instant",
+          "isArray" : false,
+          "subFields" : [ ]
+        }
+      },
+      "featureInputs" : [ {
+        "clazz" : "FieldFeatureInput",
+        "nativeType" : {
+          "name" : "string",
+          "isArray" : false,
+          "subFields" : [ ]
+        },
+        "field" : {
+          "name" : "data.tmstmp",
+          "nativeType" : {
+            "name" : "string",
+            "isArray" : false,
+            "subFields" : [ ]
+          }
+        },
+        "isAggregationField" : false,
+        "isFromInline" : false
+      } ],
+      "feature" : {
+        "clazz" : "StringFeatures$ToDateFormattedFeature",
+        "format" : "d/M/yyyy H:m"
+      },
+      "inline" : false,
+      "id" : "35772189-27e6-3690-36ef-f569d23c0e38",
+      "infix" : false,
+      "pathForRead" : { }
+    },
+    "immutable" : true
+  }, {
+    "feature" : {
+      "clazz" : "FeatureDefinition",
+      "dsl" : "TO_UNIX_EPOCH_SECONDS(data.timestamp_date:instant)",
+      "field" : {
+        "name" : "data.timestamp_unixtime",
+        "nativeType" : {
+          "name" : "long",
+          "isArray" : false,
+          "subFields" : [ ]
+        }
+      },
+      "featureInputs" : [ {
+        "clazz" : "FieldFeatureInput",
+        "nativeType" : {
+          "name" : "instant",
+          "isArray" : false,
+          "subFields" : [ ]
+        },
+        "field" : {
+          "name" : "data.timestamp_date",
+          "nativeType" : {
+            "name" : "instant",
+            "isArray" : false,
+            "subFields" : [ ]
+          }
+        },
+        "isAggregationField" : false,
+        "isFromInline" : false
+      } ],
+      "feature" : {
+        "clazz" : "ToEpochTime"
+      },
+      "inline" : false,
+      "id" : "dc3da7e3-4b3f-8951-f044-1fb23329fe31",
+      "infix" : false,
+      "pathForRead" : { }
+    },
+    "immutable" : true
+  }, {
+    "feature" : {
+      "clazz" : "FeatureDefinition",
+      "dsl" : "DIVIDE(data.parition_date_unixtime:long, 86400)",
+      "field" : {
+        "name" : "data.unix_time",
+        "nativeType" : {
+          "name" : "long",
+          "isArray" : false,
+          "subFields" : [ ]
+        }
+      },
+      "featureInputs" : [ {
+        "clazz" : "FieldFeatureInput",
+        "nativeType" : {
+          "name" : "long",
+          "isArray" : false,
+          "subFields" : [ ]
+        },
+        "field" : {
+          "name" : "data.parition_date_unixtime",
+          "nativeType" : {
+            "name" : "long",
+            "isArray" : false,
+            "subFields" : [ ]
+          }
+        },
+        "isAggregationField" : false,
+        "isFromInline" : false
+      }, {
+        "clazz" : "LiteralFeatureInput",
+        "literal" : 86400,
+        "nativeType" : {
+          "name" : "long",
+          "isArray" : false,
+          "subFields" : [ ]
+        }
+      } ],
+      "feature" : {
+        "clazz" : "SimpleLongFeatures$DivideFeature"
+      },
+      "inline" : false,
+      "id" : "e02513b2-7998-4042-300f-6fc99da034a1",
+      "infix" : false,
+      "pathForRead" : { }
+    },
+    "immutable" : true
+  } ]
+}

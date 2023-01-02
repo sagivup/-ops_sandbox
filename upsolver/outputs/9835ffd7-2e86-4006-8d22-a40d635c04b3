@@ -1,0 +1,64 @@
+{
+  "clazz" : "OutputTemplate",
+  "useNewEscaping" : false,
+  "supportMapSameKeyMultipleTimes" : false,
+  "id" : "9835ffd7-2e86-4006-8d22-a40d635c04b3",
+  "displayData" : {
+    "name" : "demo_data_do_not_delete",
+    "description" : "",
+    "creationTime" : "2022-09-06T13:24:21.800643407Z",
+    "createdBy" : "Mei Long (mei@upsolver.com)",
+    "modifiedTime" : "2022-09-06T13:24:34.876774546Z",
+    "modifiedBy" : {
+      "value" : "Mei Long (mei@upsolver.com)"
+    },
+    "versionId" : "4af94bb1-2b18-498c-ba11-195b964da58f"
+  },
+  "inputs" : [ "3a073c06-7046-404a-88ba-6b8a11adbac3" ],
+  "organizationId" : "355e3b5f-960d-406b-afa7-12f4fd8327eb",
+  "groupBy" : false,
+  "outputParameters" : {
+    "clazz" : "KafkaOutputParameters",
+    "outputFields" : [ ],
+    "shouldFlatten" : false,
+    "softRetention" : false,
+    "isRealtime" : false,
+    "dropBigMessages" : false
+  },
+  "outputInterval" : 1,
+  "startExecutionFrom" : "2022-08-30T14:59:00Z",
+  "allowCartesianProducts" : false,
+  "isDeleted" : true,
+  "isRunning" : false,
+  "deployedEver" : false,
+  "physicalDelete" : {
+    "initiated" : false,
+    "shouldRun" : false
+  },
+  "version" : 72,
+  "allowRenaming" : true,
+  "operationParallelism" : {
+    "clazz" : "NoOperationParallelism"
+  },
+  "outputSharding" : {
+    "clazz" : "NoOperationParallelism"
+  },
+  "workspaces" : [ ],
+  "reportingTags" : "",
+  "blocks" : [ ],
+  "groupByDeletion" : true,
+  "eventTypes" : [ ],
+  "restrictions" : [ ],
+  "status" : {
+    "clazz" : "Archived"
+  },
+  "shards" : {
+    "clazz" : "ManualParallelismType",
+    "executionParallelism" : 1,
+    "displayValue" : "Manual - Shards"
+  },
+  "outputShards" : 1,
+  "hasAggregations" : false,
+  "allReferences" : [ "3a073c06-7046-404a-88ba-6b8a11adbac3" ],
+  "versionNumber" : 1
+}

@@ -1,0 +1,38 @@
+{
+  "id" : "6a95db4a-4c67-43db-bcb0-33175f8a9163",
+  "organizationId" : "355e3b5f-960d-406b-afa7-12f4fd8327eb",
+  "connection" : {
+    "clazz" : "KinesisConnection",
+    "credentials" : {
+      "clazz" : "RoleBasedCredentials",
+      "arnRole" : "arn:aws:iam::949275490180:role/s3_test",
+      "externalId" : "SAMPLES",
+      "enforceExternalId" : true
+    },
+    "region" : "us-east-1",
+    "displayData" : {
+      "name" : "upsolver_kinesis_samples",
+      "description" : "",
+      "creationTime" : "2022-12-21T21:51:23.417883423Z",
+      "createdBy" : "Shay Weiner (shay@upsolver.com)",
+      "modifiedTime" : "2022-12-21T21:51:23.510766737Z",
+      "modifiedBy" : {
+        "value" : "Shay Weiner (shay@upsolver.com)"
+      },
+      "versionId" : "7bb223c6-3c59-4dcd-9748-64360fee43b9"
+    },
+    "readOnly" : true,
+    "maxWriters" : 20,
+    "streamsIncludePolicy" : {
+      "clazz" : "EntitiesIncludePolicy$All"
+    },
+    "displayValue" : "upsolver_kinesis_samples/usEast1"
+  },
+  "validation" : {
+    "errors" : [ ],
+    "time" : "2023-01-02T13:40:00.203302147Z"
+  },
+  "workspaces" : [ ],
+  "extraOrganizationIds" : [ ],
+  "isManaged" : false
+}

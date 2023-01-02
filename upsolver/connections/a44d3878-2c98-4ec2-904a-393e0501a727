@@ -1,0 +1,35 @@
+{
+  "id" : "a44d3878-2c98-4ec2-904a-393e0501a727",
+  "organizationId" : "355e3b5f-960d-406b-afa7-12f4fd8327eb",
+  "connection" : {
+    "clazz" : "KinesisConnection",
+    "credentials" : {
+      "clazz" : "AwsIntegrationCredentials"
+    },
+    "region" : "us-east-1",
+    "displayData" : {
+      "name" : "upsolver_kinesis_streams",
+      "description" : "",
+      "creationTime" : "2022-06-09T07:04:24.425135197Z",
+      "createdBy" : "Shay Weiner (shay@upsolver.com)",
+      "modifiedTime" : "2022-06-09T07:04:24.472387962Z",
+      "modifiedBy" : {
+        "value" : "Shay Weiner (shay@upsolver.com)"
+      },
+      "versionId" : "e9c17611-43df-4ec8-8da5-7c5896741dd7"
+    },
+    "readOnly" : true,
+    "maxWriters" : 20,
+    "streamsIncludePolicy" : {
+      "clazz" : "EntitiesIncludePolicy$All"
+    },
+    "displayValue" : "upsolver_kinesis_streams/usEast1"
+  },
+  "validation" : {
+    "errors" : [ ],
+    "time" : "2023-01-02T13:40:00.203302147Z"
+  },
+  "workspaces" : [ ],
+  "extraOrganizationIds" : [ ],
+  "isManaged" : false
+}

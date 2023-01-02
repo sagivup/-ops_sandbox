@@ -1,0 +1,34 @@
+{
+  "id" : "0af4c652-0e1d-4aa0-b27c-dd53693ed373",
+  "organizationId" : "355e3b5f-960d-406b-afa7-12f4fd8327eb",
+  "connection" : {
+    "clazz" : "KafkaConnection",
+    "displayData" : {
+      "name" : "kafka_salesinfo_conn",
+      "description" : "",
+      "creationTime" : "2022-09-06T13:20:26.616185742Z",
+      "createdBy" : "Mei Long (mei@upsolver.com)",
+      "modifiedTime" : "2022-09-06T13:20:26.906207140Z",
+      "modifiedBy" : {
+        "value" : "Mei Long (mei@upsolver.com)"
+      },
+      "versionId" : "90e548d1-0d47-4cb2-b5a9-e87696734961"
+    },
+    "hosts" : "pkc-2396y.us-east-1.aws.confluent.cloud:9092",
+    "topicsIncludePolicy" : {
+      "clazz" : "EntitiesIncludePolicy$All"
+    },
+    "consumerProperties" : "bootstrap.servers=pkc-2396y.us-east-1.aws.confluent.cloud:9092\nsecurity.protocol=SASL_SSL\nsasl.jaas.config=org.apache.kafka.common.security.plain.PlainLoginModule   required username=\"TYWVGXS66FMFAY6G\"   password=\"ntXppatHd5wydHjOE/STPZtl8OCF5h9AhMyFoC+aWqCsVe4eJJ4BOf1fL+dPh6P6\";\nssl.endpoint.identification.algorithm=https\nsasl.mechanism=PLAIN",
+    "version" : "0.10.x.x",
+    "ssl" : false,
+    "requireStaticIp" : false,
+    "displayValue" : "pkc-2396y.us-east-1.aws.confluent.cloud:9092"
+  },
+  "validation" : {
+    "errors" : [ ],
+    "time" : "2023-01-02T13:40:00.203302147Z"
+  },
+  "workspaces" : [ ],
+  "extraOrganizationIds" : [ ],
+  "isManaged" : false
+}

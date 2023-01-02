@@ -1,0 +1,44 @@
+{
+  "id" : "108c68fd-ee91-4f91-b8e3-a62fcc59ae1c",
+  "organizationId" : "355e3b5f-960d-406b-afa7-12f4fd8327eb",
+  "connection" : {
+    "clazz" : "S3DBXConnection",
+    "displayData" : {
+      "name" : "upsolver_public_samples",
+      "description" : "",
+      "creationTime" : "2022-06-01T14:59:53.246998639Z",
+      "createdBy" : "Roy Hasson (roy@upsolver.com)",
+      "modifiedTime" : "2022-06-01T14:59:53.353204503Z",
+      "modifiedBy" : {
+        "value" : "Roy Hasson (roy@upsolver.com)"
+      },
+      "versionId" : "889d5695-272c-4e94-bbc0-edeea06a9501"
+    },
+    "credentials" : {
+      "clazz" : "RoleBasedCredentials",
+      "arnRole" : "arn:aws:iam::949275490180:role/upsolver_samples_role",
+      "externalId" : "GTWKRE6K",
+      "enforceExternalId" : false
+    },
+    "bucketsIncludePolicy" : {
+      "clazz" : "EntitiesIncludePolicy$All"
+    },
+    "readOnly" : false,
+    "serverSideEncryptionKey" : {
+      "clazz" : "DefaultEncryptionKey"
+    },
+    "displayValue" : "S3 Storage"
+  },
+  "validation" : {
+    "errors" : [ {
+      "clazz" : "SimpleValidationResult",
+      "property" : "credentials.arnRole",
+      "error" : "No permissions to perform sts:AssumeRole on the given role, please check that the given role has the wanted trusted entity (check documentation) and that the external id matches the condition in the role. \n Original Message: \n User: arn:aws:sts::428641199958:assumed-role/upsolver-role-355e3b5f-960d-406b-afa7-12f4fd8327eb/i-0e12088f5cd1eaa2a is not authorized to perform: sts:AssumeRole on resource: arn:aws:iam::949275490180:role/upsolver_samples_role (Service: AWSSecurityTokenService; Status Code: 403; Error Code: AccessDenied; Request ID: 3e357db7-3cf3-4081-a4ba-89d37222aefb; Proxy: null)",
+      "severity" : "error"
+    } ],
+    "time" : "2023-01-02T13:40:00.203302147Z"
+  },
+  "workspaces" : [ ],
+  "extraOrganizationIds" : [ ],
+  "isManaged" : false
+}

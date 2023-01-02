@@ -1,0 +1,35 @@
+{
+  "id" : "0039c840-e408-4515-8aaa-22e44d41850f",
+  "organizationId" : "355e3b5f-960d-406b-afa7-12f4fd8327eb",
+  "connection" : {
+    "clazz" : "SnowflakeConnection",
+    "connectionString" : "jdbc:snowflake://baa55269.us-east-1.snowflakecomputing.com?db=DEMO_DB&role=DEMO_DB_ADMIN",
+    "userName" : "demo_user",
+    "password" : "zttjbCjKOzQnBmOkvCClRRvbhQ4BuDplir+gF0cB6o8=",
+    "displayData" : {
+      "name" : "snowtest",
+      "description" : "",
+      "creationTime" : "2022-06-07T15:28:29.807209149Z",
+      "createdBy" : "Idan Yitzhak (idan@upsolver.com)",
+      "modifiedTime" : "2022-06-07T15:28:31.643055680Z",
+      "modifiedBy" : {
+        "value" : "Idan Yitzhak (idan@upsolver.com)"
+      },
+      "versionId" : "b273d1ce-1bb7-4e23-a214-96e9f0f75407"
+    },
+    "schemas" : [ ],
+    "displayValue" : "jdbc:snowflake://baa55269.us-east-1.snowflakecomputing.com?db=DEMO_DB&role=DEMO_DB_ADMIN"
+  },
+  "validation" : {
+    "errors" : [ {
+      "clazz" : "SimpleValidationResult",
+      "property" : "password",
+      "error" : "Connection Error: Incorrect username or password was specified",
+      "severity" : "error"
+    } ],
+    "time" : "2023-01-02T13:40:00.203302147Z"
+  },
+  "workspaces" : [ ],
+  "extraOrganizationIds" : [ ],
+  "isManaged" : false
+}

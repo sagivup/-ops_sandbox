@@ -1,0 +1,37 @@
+{
+  "id" : "2d5c8089-c0ab-43f1-b6a4-ffc55ee00133",
+  "organizationId" : "355e3b5f-960d-406b-afa7-12f4fd8327eb",
+  "connection" : {
+    "clazz" : "KinesisConnection",
+    "credentials" : {
+      "clazz" : "KeyBasedCredentials",
+      "accessKey" : "AKIAUHP4B3REQOK2LS7J",
+      "secretKey" : "sTxyQBvCX6lWqcEwvNs/wqZhrCqUyQ7cllC820uWtkqIBSPq2h8y1n0TeUkj/R3W"
+    },
+    "region" : "us-east-1",
+    "displayData" : {
+      "name" : "sanity_kinesis_connection",
+      "description" : "",
+      "creationTime" : "2022-10-16T04:13:17.331113492Z",
+      "createdBy" : "Sahar Soffer (sahar@upsolver.com)",
+      "modifiedTime" : "2022-10-16T04:13:17.367679244Z",
+      "modifiedBy" : {
+        "value" : "Sahar Soffer (sahar@upsolver.com)"
+      },
+      "versionId" : "3a41f147-b94d-4abf-af1d-53646e955653"
+    },
+    "readOnly" : true,
+    "maxWriters" : 20,
+    "streamsIncludePolicy" : {
+      "clazz" : "EntitiesIncludePolicy$All"
+    },
+    "displayValue" : "sanity_kinesis_connection/usEast1"
+  },
+  "validation" : {
+    "errors" : [ ],
+    "time" : "2023-01-02T13:40:00.203302147Z"
+  },
+  "workspaces" : [ ],
+  "extraOrganizationIds" : [ ],
+  "isManaged" : false
+}

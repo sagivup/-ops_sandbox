@@ -1,0 +1,72 @@
+{
+  "id" : "77902366-93f2-4b1f-96f0-7a6d82949cd9",
+  "organizationId" : "355e3b5f-960d-406b-afa7-12f4fd8327eb",
+  "displayData" : {
+    "name" : "motty-test",
+    "description" : "",
+    "creationTime" : "2022-12-14T09:07:01.157855905Z",
+    "createdBy" : "Motty Chirinos (motty@upsolver.com)",
+    "modifiedTime" : "2022-12-14T11:58:37.955200068Z",
+    "modifiedBy" : {
+      "value" : "Motty Chirinos (motty@upsolver.com)"
+    },
+    "versionId" : "aef4cea9-44b5-43fe-95a4-9022e8ed476f"
+  },
+  "size" : {
+    "min" : "S",
+    "max" : "M"
+  },
+  "environmentType" : "compute",
+  "privateVpc" : "1164127312615",
+  "region" : "us-east-1",
+  "hosts" : {
+    "hosts" : [ ]
+  },
+  "running" : false,
+  "runOnDefault" : false,
+  "elasticIps" : {
+    "value" : false,
+    "userEmail" : "motty@upsolver.com"
+  },
+  "instanceTypeOverride" : "m5.2xlarge",
+  "writeLogsToUpsolver" : true,
+  "runReplayCluster" : false,
+  "extraSecurityGroups" : [ ],
+  "scalingProviderOverride" : {
+    "clazz" : "Scaling$LowLatency"
+  },
+  "deploymentType" : {
+    "clazz" : "DeploymentType$AWS",
+    "amiTagName" : "UpsolverPrivateVpc"
+  },
+  "isDeleted" : false,
+  "lastUpdatedBy" : "motty@upsolver.com",
+  "lastUpdateTime" : "2022-12-14T11:58:37.955093055Z",
+  "version" : 74,
+  "allowUpsolverSsh" : false,
+  "exposePrivateIps" : false,
+  "alwaysAssociatePublicIps" : false,
+  "useVersionsCoordinator" : false,
+  "assumeRoleOnServerRole" : false,
+  "storeType" : {
+    "clazz" : "RemoteStoreType",
+    "secretKey" : "r2xZJNIYQ2a/1ZRmPpCIuN6ulXxxxd2Hc8zl6QOtJ+1iM1yXDBXZlzpZ0ek+X9Jm"
+  },
+  "workspaces" : [ ],
+  "shouldCompareConfiguration" : true,
+  "tags" : {
+    "tags" : [ ]
+  },
+  "extraSpotTypes" : [ ],
+  "lastDeploymentTime" : "2022-12-14T09:07:01.158025899Z",
+  "excludeMonitoringReporters" : [ ],
+  "hibernated" : false,
+  "autohealEnabled" : true,
+  "serverFiles" : [ ],
+  "spotinstOverrides" : "",
+  "clazz" : "CustomerEnvironment",
+  "serverType" : "1 (m5.2xlarge - 8 cores, 32GB RAM)",
+  "status" : {
+    "clazz" : "Stopped"
+  }
+}

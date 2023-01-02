@@ -1,0 +1,47 @@
+{
+  "inputId" : "955e8d02-91ce-441f-b758-48422e7a5330",
+  "organizationId" : "",
+  "fields" : [ {
+    "feature" : {
+      "clazz" : "FeatureDefinition",
+      "dsl" : "TO_LOWER(data.exch_user:string)",
+      "field" : {
+        "name" : "lower_exch_user",
+        "nativeType" : {
+          "name" : "string",
+          "isArray" : false,
+          "subFields" : [ ]
+        }
+      },
+      "featureInputs" : [ {
+        "clazz" : "FieldFeatureInput",
+        "nativeType" : {
+          "name" : "string",
+          "isArray" : false,
+          "subFields" : [ ]
+        },
+        "field" : {
+          "name" : "data.exch_user",
+          "nativeType" : {
+            "name" : "string",
+            "isArray" : false,
+            "subFields" : [ ]
+          }
+        },
+        "isAggregationField" : false,
+        "isFromInline" : false
+      } ],
+      "feature" : {
+        "clazz" : "StringFeatures$ToLowerFeature"
+      },
+      "inline" : false,
+      "source" : {
+        "source" : "955e8d02-91ce-441f-b758-48422e7a5330",
+        "version" : 1
+      },
+      "id" : "7c9a902a-c51b-4952-941c-03165fad04b4",
+      "infix" : false,
+      "pathForRead" : { }
+    }
+  } ]
+}
